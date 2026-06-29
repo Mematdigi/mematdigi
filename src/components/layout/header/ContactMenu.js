@@ -1,0 +1,120 @@
+"use client";
+import Link from "next/link";
+
+const ContactMenu = ({ isContactOpen, setIsContactOpen }) => {
+	const handleClick = () => {
+		setIsContactOpen(false);
+	};
+
+	return (
+		<>
+			<div
+				className={`body-overlay  ${isContactOpen ? "opened" : ""}`}
+				onClick={handleClick}
+			></div>
+			<div
+				className={`tj-offcanvas-area d-none d-lg-block  ${
+					isContactOpen ? "opened" : ""
+				}`}
+			>
+				<div className="hamburger_bg"></div>
+				<div className="hamburger_wrapper">
+					<div className="hamburger_inner">
+						<div className="hamburger_top d-flex align-items-center justify-content-between">
+							<div className="hamburger_logo">
+								<Link href="/" className="mobile_logo">
+									<img src="/images/logos/memat-digi-logo.png" alt="Memat Digi Logo" />
+								</Link>
+							</div>
+							<div className="hamburger_close">
+								<button className="hamburger_close_btn" onClick={handleClick}>
+									<i className="fa-thin fa-times"></i>
+								</button>
+							</div>
+						</div>
+
+						<div className="offcanvas-text">
+							<p>
+								We Create what you dream and we earn what you appreciate.
+								At MematDigi with our 360 digital and tech services we turn
+								your ideas into impactful solutions that drive growth.
+							</p>
+						</div>
+
+						<div className="hamburger-search-area">
+							<h5 className="hamburger-title">Search Now!</h5>
+							<div className="hamburger_search">
+								<form method="get" action="/">
+									<button type="submit">
+										<i className="tji-search"></i>
+									</button>
+									<input
+										type="search"
+										autoComplete="off"
+										name="s"
+										placeholder="Search here..."
+									/>
+								</form>
+							</div>
+						</div>
+
+						<div className="hamburger-infos">
+							<h5 className="hamburger-title">Contact Info</h5>
+							<div className="contact-info">
+								<div className="contact-item">
+									<span className="subtitle">Phone</span>
+									<Link className="contact-link" href="tel:+919136797555">
+										+91 9136797555
+									</Link>
+								</div>
+								<div className="contact-item">
+									<span className="subtitle">Email</span>
+									<Link className="contact-link" href="mailto:info@mematdigi.com">
+										info@mematdigi.com
+									</Link>
+								</div>
+								<div className="contact-item">
+									<span className="subtitle">Location</span>
+									<span className="contact-link">
+										129, P.P Trade Center, NSP,
+										Pitampura, Delhi-110034
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>;
+
+					<div className="hamburger-socials">
+						<h5 className="hamburger-title">Follow Us</h5>
+						<div className="social-links style-3">
+							<ul>
+								<li>
+									<a href="https://www.facebook.com/mematdigi" target="_blank">
+										<i className="fa-brands fa-facebook-f"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.instagram.com/mematdigi" target="_blank">
+										<i className="fa-brands fa-instagram"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://wa.me/919136797555" target="_blank">
+										<i className="fa-brands fa-whatsapp"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.linkedin.com/company/mematdigi" target="_blank">
+										<i className="fa-brands fa-linkedin-in"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</>
+	);
+};
+
+export default ContactMenu;

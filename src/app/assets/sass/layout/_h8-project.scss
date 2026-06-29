@@ -1,0 +1,225 @@
+@use "../utilities" as *;
+
+
+// ── Hero Section ──
+.pf-hero-section {
+  background: #ffffff;
+}
+.pf-hero-heading {
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 800;
+  color: #0d1117;
+  margin-bottom: 20px;
+}
+.pf-hero-accent {
+  color: #f08020;
+}
+.pf-hero-desc {
+  font-size: 16px;
+  line-height: 1.75;
+  color: #3a454f;
+  margin-bottom: 32px;
+}
+.pf-hero-btn {
+  display: inline-flex;
+  background: #f08020;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 13px 28px;
+  border-radius: 8px;
+  &:hover {
+    background: #0d1117;
+    color: #ffffff;
+  }
+}
+.pf-hero-img-wrap {
+  border-radius: 20px;
+  overflow: hidden;
+}
+.pf-hero-img {
+  width: 100%;
+  height: 580px;
+  object-fit: cover;
+}
+
+// ── Grid Section ──
+.pf-grid-section {
+  background: #e7ebef;
+  padding: 60px 20px; // Added padding to give the section breathing room
+}
+
+// Ensure you have a container wrapping your title and grid
+.pf-section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pf-section-eyebrow {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #f08020;
+  margin-bottom: 8px;
+}
+.pf-section-title {
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 800;
+  color: #0d1117;
+  margin-bottom: 40px; // Added margin to separate from cards
+  em {
+    font-style: italic;
+    color: #f08020;
+  }
+}
+
+// ADDED: The grid container to put cards side-by-side
+.pf-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+}
+
+// ── Card ──
+.pf-card {
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #ccd3da;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease; // Added transition for smooth hover
+  &:hover {
+    border-color: rgba(240, 128, 32, 0.2); // Fixed hex code with opacity
+    box-shadow: 0 12px 40px rgba(240, 128, 32, 0.08);
+    transform: translateY(-4px); // Added a slight lift effect
+  }
+}
+.pf-card__img-wrap {
+  position: relative;
+  background: #1c2530;
+}
+.pf-card__browser-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 14px;
+  background: #1c2530;
+}
+
+// ADDED: Dimensions for the colored browser dots
+.pf-card__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.pf-card__screen {
+  line-height: 0;
+  overflow: hidden;
+}
+.pf-card__img {
+  width: 100%;
+  height: 300px; // REDUCED from 480px so it looks like a standard card image
+  object-fit: cover;
+  object-position: top; // Added so the top of the website screenshot shows, not the middle
+  display: block;
+}
+.pf-card__badge {
+  position: absolute;
+  top: 42px;
+  right: 14px;
+  background: #22c55e;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+.pf-card__body {
+  padding: 22px 24px 26px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background: #ffffff;
+}
+.pf-card__meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.pf-card__category {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #f08020;
+}
+.pf-card__sep {
+  color: #ccd3da;
+}
+.pf-card__tech {
+  font-size: 11px;
+  font-weight: 600;
+  color: #6a7682;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.pf-card__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0d1117;
+  margin-bottom: 10px;
+  a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    &:hover {
+      color: #f08020;
+    }
+  }
+}
+.pf-card__desc {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #3a454f;
+  margin-bottom: 16px;
+  flex: 1;
+}
+.pf-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.pf-card__tag {
+  font-size: 11px;
+  font-weight: 600;
+  color: #3a454f;
+  background: #e7ebef;
+  border: 1px solid #ccd3da;
+  border-radius: 6px;
+  padding: 4px 10px;
+}
+.pf-card__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  justify-content: center;
+  background: #f08020;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 13px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.2s;
+  &:hover {
+    background: #ff8215;
+    color: #ffffff;
+  }
+}
