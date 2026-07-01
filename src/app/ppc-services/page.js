@@ -10,13 +10,30 @@ import Header from "@/components/layout/header/Header";
 import BackToTop from "@/components/shared/others/BackToTop";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
 
+/* ============================================================
+ *  PAGE: PPC SERVICES
+ *  URL          : https://www.mematdigi.com/ppc-services
+ *  Meta Title   : Best PPC Services India | Hire Memat Digi PPC Expert
+ *  Meta Desc    : Get expert PPC services in India from Memat Digi. We build
+ *                 high-converting campaigns that cut CPC and maximize ROI.
+ *                 Request a call today!
+ *  Primary KW   : PPC services in India
+ *  (Ye 'use client' component hai — meta tags page.js / generateMetadata
+ *   me set karo, yahan sirf reference ke liye likha hai.)
+ *
+ *  Saara content yahin se manage karo, JSX clean rahega. Chaaho to
+ *  ise alag data.js file me move karke yahan import kar lo.
+ * ========================================================== */
+
 const heroData = {
     bgImage: "/images/hero/h9-hero-bg.webp",
-    eyebrow: "WEBSITE DEVELOPMENT COMPANY",
-    titlePre: "Best Website Development Company in India That Builds High-Converting Websites",
+    eyebrow: "PPC SERVICES",
+    titlePre: "Best PPC Services in India That Drive Instant Traffic and",
+    titleHighlight: "Real Conversions",
+    titlePost: "",
     desc: (
         <>
-            As a leading website development company in India, we build fast, SEO-friendly, and conversion-focused websites for businesses looking to generate more leads and grow online.
+            As a trusted PPC company in India, we deliver ROI-focused PPC management services that drive qualified traffic, increase conversions, and maximize your advertising budget through data-driven campaigns.
         </>
     ),
     stats: [
@@ -25,45 +42,37 @@ const heroData = {
         { number: "15", suffix: "+", label: "Industries Served" },
         { number: "135", suffix: "+", label: "Projects Delivered" },
     ],
-    primaryCta: { text: "Get Free Consultation", url: "/contact-us" },
+    primaryCta: { text: "Get PPC Audit", url: "/contact-us" },
     form: {
         tag: "GET IN TOUCH",
         title: "Request A Quote",
         subtitle: "Fill out the form and our team will reach out within 24 hours.",
-        serviceOptions: [
-            { value: "", label: "Select Services *" },
-            { value: "custom-web", label: "Custom Web Development" },
-            { value: "ecommerce", label: "Ecommerce Development" },
-            { value: "webapp", label: "Web App Development" },
-            { value: "shopify", label: "Shopify Development" },
-            { value: "redesign", label: "Website Redesign" },
-            { value: "uiux", label: "UI/UX Design" },
-            { value: "other", label: "Other" },
-        ],
+        // Note: PPC form fields = Name, Email, Phone, Website URL, Message.
+        // Pehle wala Business Type dropdown hata diya — ab Website URL input hai.
     },
 };
 
 const chooseData = {
-    subTitle: "COMMON WEBSITE PROBLEMS",
+    subTitle: "COMMON PPC CHALLENGES",
     subIcon: "tji-box",
-    title: "Why Most Business Websites Fail to Generate Leads",
+    title: "Why Your PPC Campaigns Are Burning Budget Without Results",
     desc: "",
     banner: "/images/choose/h8-choose-bnner.webp",
     boxes: [
         {
             icon: "tji-innovative",
-            title: "Poor User Experience",
-            desc: "Slow loading pages, confusing navigation, and poor mobile responsiveness frustrate visitors and drive potential customers away before they take action.",
+            title: "Poor Campaign Strategy",
+            desc: "Many PPC campaigns fail because of poor keyword targeting, weak campaign structures, and ineffective bidding strategies that waste budget without generating qualified leads or sales.",
         },
         {
             icon: "tji-award",
-            title: "Invisible on Search Engines",
-            desc: "Many websites lack SEO-friendly foundations, making it difficult for customers to find your business on Google when they are actively searching.",
+            title: "Low Conversion Performance",
+            desc: "Clicks alone don't grow a business. Without optimized ad copy, high-converting landing pages, and accurate conversion tracking, paid campaigns struggle to deliver measurable ROI.",
         },
         {
             icon: "tji-support",
-            title: "No Conversion Strategy",
-            desc: "A website without clear messaging, strong CTAs, and lead generation elements becomes a digital brochure instead of a business growth tool.",
+            title: "Wasted Ad Spend",
+            desc: "Running ads without continuous optimization leads to rising costs and declining results. A successful PPC strategy requires regular bid adjustments, audience refinement, and performance analysis to maximize every advertising budget.",
         },
     ],
 };
@@ -71,62 +80,62 @@ const chooseData = {
 const servicesData = {
     subTitle: "WHAT WE OFFER",
     subIcon: "tji-box",
-    title: "Our Website Development Services for Businesses Across India",
-    desc: 'From custom web development to ecommerce, web apps, and ongoing support - everything your business needs is built under one roof.',
+    title: "Our PPC Services for Businesses Across India",
+    desc: "From Google Search and Shopping to Meta, YouTube, and remarketing - complete PPC management services built to maximize ROI across every paid channel.",
     moreUrl: "/services",
     items: [
         {
             icon: "tji-service-1",
-            title: "Custom Web Development",
-            desc: "We build fully custom websites from scratch - no templates, no shortcuts. Every line of code is written around your brand, your audience, and your business goals.",
+            title: "Google Search Ads",
+            desc: "We build and manage high-intent Google Search campaigns that put your business in front of people actively searching for exactly what you offer - driving qualified traffic that converts, not just clicks that cost.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "Ecommerce Development",
-            desc: "Launch a high-performing online store built for sales. Our ecommerce website development in India covers product catalogs, payment gateways, inventory management, and conversion optimization.",
+            title: "Google Shopping Ads",
+            desc: "For ecommerce brands, visibility at the moment of purchase intent is everything. Our Google Shopping Ads management places your products in front of high-intent buyers with optimized feeds, bidding, and targeting that drives direct sales.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "Web App Development",
-            desc: "From dashboards and portals to SaaS platforms - our web application development team builds scalable, secure, and high-performance web apps for businesses across India.",
+            title: "Performance Max Campaigns",
+            desc: "Full-funnel, maximum reach across Search, Display, YouTube, Gmail, and Maps - all from a single campaign. Our PPC management services in India team builds and optimizes Performance Max campaigns that extract maximum output from every rupee of ad spend.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "Shopify Development",
-            desc: "We build and customize Shopify stores that look great and sell even better. From theme development to app integration - complete Shopify development services for your ecommerce brand.",
+            title: "Remarketing & Retargeting",
+            desc: "Not every visitor converts the first time. Our remarketing strategies bring back website visitors, cart abandoners, and past customers with highly targeted ads - one of the most cost-effective PPC services for businesses that want to maximize conversion from existing traffic.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "Magento Web Development",
-            desc: "Enterprise-grade ecommerce solutions built on Magento - powerful, scalable, and built to handle high volumes of traffic, products, and transactions without breaking a sweat.",
+            title: "Meta Ads",
+            desc: "Facebook and Instagram ads managed by our PPC experts in India - audience targeting, creative strategy, and conversion optimization that moves people from scroll to action across every stage of the funnel.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "Website Redesign Services",
-            desc: "Your old website is costing you leads. Our website redesign services start with a full audit - fixing UX gaps, improving speed, and rebuilding for conversion without losing your SEO equity.",
+            title: "YouTube Ads",
+            desc: "Video ads that build intent before the search even happens. Our YouTube Ads management reaches your target audience at the right moment - building brand awareness and warming up prospects before they ever reach Google.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "UI/UX Design",
-            desc: "Beautiful design means nothing if users cannot navigate it. We design intuitive, conversion-focused interfaces that guide visitors naturally toward the action you want them to take.",
+            title: "Bing Ads Management",
+            desc: "Microsoft Bing reaches millions of users your Google campaigns miss. As a full-service pay per click company, we manage Bing Ads campaigns that expand your paid reach at a lower cost per click - giving you a competitive edge most brands ignore.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "SEO-Friendly Websites",
-            desc: "Every website we build has SEO-friendly website development baked in from day one - clean URLs, schema markup, fast load times, mobile responsiveness, and proper heading structure throughout.",
+            title: "Landing Page Optimization",
+            desc: "Clicks alone do not pay the bills - conversions do. We audit and optimize your landing pages for speed, messaging, CTA placement, and trust signals - ensuring every rupee of PPC spend has the best possible chance of converting into a lead or sale.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "Maintenance & Support",
-            desc: "We stay involved after launch. Our website maintenance and support plans cover security patches, performance updates, content changes, and technical fixes - so your website never goes stale.",
+            title: "PPC Audit",
+            desc: "Not getting results from your current campaigns? Our comprehensive PPC audit identifies wasted spend, targeting mistakes, quality score issues, and conversion tracking gaps - giving you a clear, prioritized action plan to fix what is broken fast.",
             url: "/services",
         },
     ],
@@ -134,7 +143,7 @@ const servicesData = {
 
 const solutionsData = {
     subTitle: "WHO WE SERVE",
-    title: "Website Development Services for Startups, Ecommerce & Enterprises",
+    title: "PPC Services for Every Business Type in India",
     moreText: "More Services",
     moreUrl: "/services",
     items: [
@@ -142,21 +151,21 @@ const solutionsData = {
             icon: "tji-service-1",
             title: "Startups & Small Businesses",
             url: "/services",
-            desc: "Your website is your most important salesperson - and it needs to work from day one. Our affordable website development in India for startups focuses on speed, clarity, and conversion so your business makes a strong first impression without overspending on development.",
+            desc: "Every rupee matters when you are starting out. Our PPC services in India for startups and small businesses are built around maximum efficiency - tight targeting, strong ad copy, and optimized landing pages that generate leads fast without burning through a limited budget on traffic that never converts.",
             list: ["Expansion Strategies", "Operational Efficiency", "Competitive Edge"],
         },
         {
             icon: "tji-service-1",
             title: "D2C & Ecommerce Brands",
             url: "/services",
-            desc: "Selling online is competitive. We build ecommerce websites that do more than display products - they guide visitors through a seamless buying journey, reduce cart abandonment, and drive repeat revenue through smart design and performance optimization.",
+            desc: "Ecommerce PPC is a different game - product feeds, shopping campaigns, dynamic remarketing, and ROAS optimization all working together. As a performance marketing agency in India, we build full-funnel paid strategies that drive new customer acquisition and repeat revenue for D2C brands at scale.",
             list: ["Expansion Strategies", "Operational Efficiency", "Competitive Edge"],
         },
         {
             icon: "tji-service-1",
             title: "B2B & Enterprise Companies",
             url: "/services",
-            desc: "Corporate website development for enterprises requires a different approach - lead capture, gated content, CRM integration, and authority-building design that speaks directly to decision-makers. We deliver exactly that, on time and at scale.",
+            desc: "Long sales cycles and high-value deals demand a completely different PPC approach. Our PPC agency in India builds account-based paid strategies targeting specific industries, job titles, and buying signals - putting your brand in front of the decision-makers who actually control the budget.",
             list: ["Expansion Strategies", "Operational Efficiency", "Competitive Edge"],
         },
         // Aur solutions add karne ho to yahan object push kar do ⬇️
@@ -166,103 +175,103 @@ const solutionsData = {
 const featuresData = {
     subTitle: "INDUSTRIES WE SERVE",
     subIcon: "tji-box",
-    title: "Industry Specific Website Development Services",
+    title: "Industries We Serve With Our PPC Services in India",
     items: [
         {
             id: 1,
             icon: "tji-innovative",
             title: "Healthcare",
-            desc: "HIPAA-aware, trust-building websites for clinics, hospitals, and health brands that convert patients into appointments",
+            desc: "Patient acquisition PPC campaigns for clinics, hospitals, and health brands that drive appointment bookings at the lowest possible cost per lead",
         },
         {
             id: 2,
             icon: "tji-award",
             title: "Real Estate",
-            desc: "Property listing websites with advanced search, lead capture forms, and location-based features built for real estate agencies",
+            desc: "High-intent property lead generation campaigns for developers and agents that target serious buyers and investors at the right moment",
         },
         {
             id: 3,
             icon: "tji-team",
             title: "Education",
-            desc: "Student-focused websites for schools, colleges, and edtech platforms that drive admissions and build institutional authority",
+            desc: "Student enrollment PPC strategies for schools, colleges, and edtech brands that drive admissions through Search, Display, and YouTube campaigns",
         },
         {
             id: 4,
             icon: "tji-support",
             title: "Ecommerce",
-            desc: "High-converting online stores with seamless checkout, product filtering, and performance optimization built for sales growth",
+            desc: "Full-funnel PPC management for online stores - Google Shopping, Performance Max, and remarketing working together to maximize ROAS",
         },
         {
             id: 5,
             icon: "tji-support",
             title: "Finance & Fintech",
-            desc: "Secure, compliance-aware websites for financial brands that build trust and generate qualified inbound leads",
+            desc: "Compliant, conversion-focused PPC services for financial brands that generate qualified leads at a sustainable cost per acquisition",
         },
         {
             id: 6,
             icon: "tji-support",
             title: "SaaS & Technology",
-            desc: "Product-led websites for tech companies that communicate value clearly and convert visitors into trial signups",
+            desc: "Demand generation PPC for tech companies targeting decision-makers with trial signups, demo requests, and enterprise lead campaigns",
         },
     ],
 };
 
 const scalableHighlightData = {
     eye: 'BUSINESS CHALLENGES',
-    title: "Common Website Challenges We",
-    titleSpan: "Help Businesses Overcome",
+    title: "PPC Challenges Every Business in India Faces -",
+    titleSpan: "And How We Fix Them",
     paragraphs: [
-        "Most businesses come to us with the same problems - a website that looks fine on the surface but is quietly losing leads every single day. Whether it is poor mobile performance, slow load times, zero search visibility, or a design that confuses rather than converts - these are not small problems. They are revenue problems. As India's best website development company, we have seen every version of a broken website and we know exactly how to fix it.",
+        "Most businesses that come to us have already wasted significant budget on PPC campaigns that delivered nothing. They worked with a PPC company in India that set up the campaigns, sent monthly reports, and collected the management fee - while the cost per lead climbed and the conversion rate stayed flat. These are not isolated cases. They are the norm. As the best PPC company in India trusted by 100+ businesses, we know exactly what breaks paid campaigns and exactly how to rebuild them for results.",
     ],
     features: [
-        "Slow load times costing you rankings and users who never come back",
-        "Poor mobile experience driving away the majority of your traffic",
-        "No SEO foundation making your website invisible to search engines",
-        "Unclear messaging that fails to communicate your value in seconds",
-        "No conversion strategy leaving leads on the table with every visit",
-        "Outdated design damaging trust before a single word is read",
+        "High cost per lead with no improvement - because campaigns were never properly optimized after launch",
+        "Clicks with zero conversions - because landing pages were never built or tested for conversion",
+        "No conversion tracking in place - meaning there was never any real data to make decisions from",
+        "Wrong audience targeting - driving irrelevant traffic that was never going to convert regardless of ad spend",
+        "Ad spend going to broad match keywords - burning budget on searches with zero commercial intent",
+        "No remarketing strategy - losing warm prospects who visited but did not convert on the first visit",
     ],
 };
 
 const servicesData9 = {
     subTitle: "OUR PROCESS",
-    title: "How We Deliver Your Website Development Project",
+    title: "How We Manage Your PPC Campaigns in India",
     moreText: "More services",
     moreUrl: "/services",
     items: [
         {
             id: 1,
             icon: "tji-innovative",
-            title: "Discovery & Requirement Gathering",
-            desc: "We start by understanding your business, your audience, and your goals. Every decision from here - design, structure, technology - is made with your growth in mind, not ours.",
+            title: "PPC Audit & Account Analysis",
+            desc: "Every engagement starts with a full audit of your existing campaigns - identifying wasted spend, targeting errors, quality score issues, and conversion tracking gaps. We fix the foundation before we spend a single rupee of your budget on new campaigns.",
             url: "/services",
         },
         {
             id: 2,
             icon: "tji-award",
-            title: "UI/UX Design & Wireframing",
-            desc: "Before a single line of code is written, we design and wireframe every page. You see exactly what your website will look like and how users will move through it before development begins.",
+            title: "Keyword Research & Campaign Strategy",
+            desc: "Our Google Ads experts in India identify the exact keywords your audience uses at each stage of the buying journey - building a campaign structure that captures high-intent searches while eliminating irrelevant traffic that burns budget without converting.",
             url: "/services",
         },
         {
             id: 3,
             icon: "tji-team",
-            title: "Development & Testing",
-            desc: "Our developers build your website with clean, optimized code - SEO-friendly website development standards applied throughout. Every page is tested across devices, browsers, and speeds before it goes anywhere near a live server.",
+            title: "Ad Copy & Landing Page Creation",
+            desc: "We write ad copy that earns clicks from the right audience and build or optimize landing pages that convert those clicks into leads and sales. Ad and landing page alignment is where most PPC campaigns win or lose - we get it right from the start.",
             url: "/services",
         },
         {
             id: 4,
             icon: "tji-support",
-            title: "Launch & Deployment",
-            desc: "We handle the full launch - domain configuration, hosting setup, speed optimization and Core Web Vitals. Your website goes live the right way, with everything in place from day one.",
+            title: "Campaign Launch & Bid Management",
+            desc: "We launch with precision - smart bidding strategies, audience layering, device adjustments, and budget allocation across campaigns - then actively manage every element to improve performance week over week as the algorithm learns and data builds.",
             url: "/services",
         },
         {
             id: 5,
             icon: "tji-support",
-            title: "Post-Launch Support & Maintenance",
-            desc: "The launch is just the beginning. We provide ongoing website maintenance and support to keep your website fast, secure, and generating leads - long after the project is delivered.",
+            title: "Reporting & Continuous Optimization",
+            desc: "You get a clear, plain-language monthly report covering leads generated, cost per lead, conversion rate, and ROAS. No jargon. No vanity metrics. Just the numbers that show exactly what our PPC management services in India are delivering for your business.",
             url: "/services",
         },
     ],
@@ -271,54 +280,65 @@ const servicesData9 = {
 const scalableHighlightData2 = {
     eye: 'WHY CHOOSE US',
     title: "Why Choose Mematdigi as Your ",
-    titleSpan: "Website Development Company",
+    titleSpan: "PPC Agency in India",
     paragraphs: [
-        "When you are looking for the best website development company in India, you need more than a team that can code. You need a partner that understands business, understands SEO, and understands that a website is only valuable if it generates results. At Mematdigi, we are that partner. As a trusted web development agency in India, we have delivered 135+ websites across industries - every single one built with the same commitment to performance, conversion, and long-term business growth. Our professional website developers are experts in Shopify, Magento, custom web development, UI/UX, SEO, and performance optimization.",
+        "At Mematdigi, we have built our reputation as the best PPC company in India by focusing on one metric above all others - your return on ad spend. We are not the pay per click company that chases cheap clicks and calls it performance. We are the PPC agency in India that takes full ownership of your paid campaigns, optimizes relentlessly, and ties every decision to your actual business goals. As a trusted Google Ads agency managing campaigns across Search, Shopping, Performance Max, Meta, and YouTube - we bring the full stack of PPC expertise to every engagement, regardless of budget size.",
+        "When you work with the PPC experts at Mematdigi, you get a pay per click service provider that treats your ad budget like it is their own money. From the first audit to consistent month-on-month improvement in your cost per conversion - we are the PPC agency in India that delivers what we promise, every single time.",
     ],
     features: [
-        "Best website development company in India - proven track record across 15+ industries with measurable results",
-        "Affordable website development in India - transparent pricing built around your budget with no hidden costs",
-        "Hire website developers in India - dedicated developers who stay involved from brief to launch and beyond",
-        "Custom web development - every website built from scratch around your brand, goals, and audience",
-        "Top website development company in India - trusted by startups, ecommerce brands, and enterprises across the country",
-        "Professional website developers - certified experts in web development, UI/UX, SEO, and performance optimization",
+        "Best PPC services in India - proven across 15+ industries with measurable improvements in cost per lead and ROAS",
+        "Google Ads expert in India - certified specialists who manage your campaigns with the same attention they would give their own business",
+        "PPC management services India - active, hands-on campaign management - not set it and forget it",
+        "Pay per click marketing agency with full transparency - every spend justified, every decision explained",
+        "Hire PPC expert India - dedicated account managers who proactively optimize, not just react to problems",
+        "Performance marketing agency India - full-funnel paid strategies that drive awareness, leads, and revenue together",
     ],
 };
 
 const faqData = {
     subTitle: "FAQs",
     subIcon: "tji-box",
-    title: "Frequently Asked Questions About Website Development in India",
+    title: "Frequently Asked Questions About PPC Services in India",
     phone: { display: "1-888-452-1505", tel: "18884521505" },
     items: [
         {
-            title: "What makes Memat Digi the best website development company in India? ",
-            desc: "We combine conversion-focused design, performance-driven development, and dedicated support under one roof. Our website development services India businesses trust are built around measurable outcomes - not just deliverables. We focus on results: more leads, better performance, and long-term digital growth.",
+            title: "What is PPC and how does it work? ",
+            desc: "Pay per click (PPC) is a digital advertising model where you pay only when someone clicks your ad. Platforms like Google and Meta display your ads to users searching for relevant terms, and you are charged per click. A well-managed PPC company in India ensures those clicks come from high-intent users most likely to convert.",
             initActive: true,
         },
         {
-            title: "How long does it take to develop a website in India? ",
-            desc: "Timelines vary by project complexity. A simple business website typically takes 2-4 weeks. An ecommerce website development or complex web application may take 6-12 weeks. We provide a detailed timeline at the start of every project so you always know what to expect.",
+            title: "How much do PPC management services cost in India? ",
+            desc: "PPC packages India typically range from ₹10,000 to ₹50,000+ per month in management fees, depending on the number of campaigns, platforms, and ad spend managed. Your actual ad budget is separate and paid directly to Google or Meta.",
             initActive: false,
         },
         {
-            title: "Can I hire website developers in India for ongoing support? ",
-            desc: "Absolutely. We offer dedicated maintenance & support plans for businesses that need continuous updates, monitoring, and improvements. When you hire website developers in India through Memat Digi, you gain a long-term technology partner.",
+            title: "How long before I see results from Google Ads? ",
+            desc: "Most campaigns show initial data within the first 7-14 days. Meaningful optimisation and stable results typically emerge within 30-60 days as the algorithm learns and our Google Ads management services team refines the targeting.",
             initActive: false,
         },
         {
-            title: "Will my website be SEO-friendly from day one? ",
-            desc: "Yes. SEO-friendly website development is part of our core process. We implement technical SEO foundations - clean URL structures, schema markup, meta tags, mobile responsiveness, and speed optimization - during the development phase, not as an afterthought.",
+            title: "What is the minimum ad budget to start PPC in India? ",
+            desc: "We generally recommend a minimum ad budget of ₹15,000-₹20,000 per month to generate statistically meaningful data. Lower budgets can work for local campaigns, but limit optimisation speed.",
             initActive: false,
         },
         {
-            title: "Do you build websites for small businesses?",
-            desc: "Yes. Our website development for small business packages are specifically designed to deliver maximum impact at an affordable price. We work with businesses of all sizes - from solopreneurs to enterprise corporations.",
+            title: "How is PPC different from SEO? ",
+            desc: "PPC delivers immediate visibility through paid placements; SEO builds organic rankings over time. Both are valuable - PPC drives instant leads while SEO compounds authority. Many businesses use both in combination for maximum impact.",
             initActive: false,
         },
         {
-            title: "How much does website development cost in India? ",
-            desc: "Website development cost in India typically ranges from ₹30,000 to ₹1,50,000 or more, depending on the project scope, features, and complexity.",
+            title: "Do you offer conversion tracking setup? ",
+            desc: "Yes. Conversion tracking setup is included in every plan. We track form submissions, phone calls, purchases, and other key actions - ensuring every campaign decision is backed by real performance data.",
+            initActive: false,
+        },
+        {
+            title: "Can I run PPC for my local business in India? ",
+            desc: "Absolutely. Local search ads and call-only campaigns are among the most cost-effective formats for local service businesses. Our PPC management services India include geo-targeting to ensure your ads only show in your service areas.",
+            initActive: false,
+        },
+        {
+            title: "What platforms do you manage PPC on?",
+            desc: "We manage campaigns across Google Ads, Microsoft Bing Ads, Meta (Facebook & Instagram), YouTube, and LinkedIn - making us a true full-service pay per click marketing agency.",
             initActive: false,
         },
     ],
@@ -327,8 +347,8 @@ const faqData = {
 const contactData = {
     left: {
         subTitle: "CONTACT US NOW",
-        title: "Ready to Build Your Website With India's Top Website Development Company?",
-        desc: "Ready to partner with the best website development company in India? Mematdigi delivers custom web development, ecommerce website development, and SEO-friendly websites built to generate leads, improve user experience, and increase conversions. Whether you're a startup, ecommerce brand, or enterprise, we create websites designed for long-term business growth and measurable results. ",
+        title: "Ready to Get More Leads With India's Best PPC Services?",
+        desc: "Ready to grow with the best PPC services in India? Partner with Mematdigi, a trusted PPC company in India, for ROI-focused PPC management services that increase qualified traffic, improve conversions, and maximize your advertising budget. Our PPC experts build data-driven campaigns designed to deliver measurable business growth. ",
     },
     form: {
         subTitle: "Get a Call Now",
@@ -337,12 +357,13 @@ const contactData = {
         titleSpan: "Line.",
         selectOptions: [
             { value: "0", optionName: "Choose an option" },
-            { value: "1", optionName: "Custom Web Development" },
-            { value: "2", optionName: "Ecommerce Development" },
-            { value: "3", optionName: "Web App Development" },
-            { value: "4", optionName: "Shopify Development" },
-            { value: "5", optionName: "Website Redesign" },
-            { value: "6", optionName: "Maintenance & Support" },
+            { value: "1", optionName: "Google Search Ads" },
+            { value: "2", optionName: "Google Shopping Ads" },
+            { value: "3", optionName: "Performance Max Campaigns" },
+            { value: "4", optionName: "Remarketing & Retargeting" },
+            { value: "5", optionName: "Meta Ads" },
+            { value: "6", optionName: "YouTube Ads" },
+            { value: "7", optionName: "PPC Audit" },
         ],
     },
 };
@@ -356,7 +377,7 @@ const HeroSection = () => {
         fullName: "",
         phone: "",
         email: "",
-        service: "",
+        website: "",
         message: "",
     });
     const [isSubmitting, setIsSubmitting] = useState(false);
@@ -372,7 +393,7 @@ const HeroSection = () => {
             console.log("Form submitted:", formData);
             await new Promise((r) => setTimeout(r, 600));
             alert("Thanks! We'll be in touch shortly.");
-            setFormData({ fullName: "", phone: "", email: "", service: "", message: "" });
+            setFormData({ fullName: "", phone: "", email: "", website: "", message: "" });
         } catch (err) {
             console.error(err);
         } finally {
@@ -476,19 +497,15 @@ const HeroSection = () => {
                                             />
                                         </div>
 
+                                        {/* Business Type dropdown ki jagah ab Website URL field (PPC requirement) */}
                                         <div className="form-group">
-                                            <select
-                                                name="service"
-                                                value={formData.service}
+                                            <input
+                                                type="url"
+                                                name="website"
+                                                placeholder="Website URL"
+                                                value={formData.website}
                                                 onChange={handleChange}
-                                                required
-                                            >
-                                                {heroData.form.serviceOptions.map((opt) => (
-                                                    <option key={opt.value} value={opt.value}>
-                                                        {opt.label}
-                                                    </option>
-                                                ))}
-                                            </select>
+                                            />
                                         </div>
 
                                         <div className="form-group">
@@ -734,8 +751,8 @@ const FeaturesSection = () => {
     );
 };
 
-/* Reusable — pehle ye 2 baar copy-paste hua tha (ScoralableServicesSection
- * aur ScoralableServicesSection2 bilkul same the). Ab ek hi component hai. */
+/* Reusable — pehle ye 2 baar copy-paste hua tha (dono highlight section
+ * bilkul same the). Ab ek hi component hai, data prop ke through render hota hai. */
 const ScalableHighlightSection = ({ data }) => {
     return (
         <section className="services-section p-3 m-5 mb-5 border rounded-3 box-shadow">
@@ -1060,7 +1077,7 @@ const ContactSection = () => {
     );
 };
 
-export default function WebDevelopmentServices() {
+export default function PpcServices() {
     return (
         <div>
             <BackToTop />

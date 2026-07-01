@@ -12,11 +12,13 @@ import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
 
 const heroData = {
     bgImage: "/images/hero/h9-hero-bg.webp",
-    eyebrow: "WEBSITE DEVELOPMENT COMPANY",
-    titlePre: "Best Website Development Company in India That Builds High-Converting Websites",
+    eyebrow: "CONTENT MARKETING",
+    titlePre: "Content Marketing Agency in India That Turns Content Into",
+    titleHighlight: "Business Growth",
+    titlePost: "",
     desc: (
         <>
-            As a leading website development company in India, we build fast, SEO-friendly, and conversion-focused websites for businesses looking to generate more leads and grow online.
+            As a trusted content marketing agency in India, we deliver strategic content marketing services that increase organic traffic, build brand authority, and generate qualified leads. From SEO content writing and blogging to website copywriting and B2B content marketing, we create content that drives sustainable business growth.
         </>
     ),
     stats: [
@@ -25,45 +27,43 @@ const heroData = {
         { number: "15", suffix: "+", label: "Industries Served" },
         { number: "135", suffix: "+", label: "Projects Delivered" },
     ],
-    primaryCta: { text: "Get Free Consultation", url: "/contact-us" },
+    primaryCta: { text: "Get Content Strategy Call", url: "/contact-us" },
     form: {
         tag: "GET IN TOUCH",
         title: "Request A Quote",
         subtitle: "Fill out the form and our team will reach out within 24 hours.",
+        // Content Marketing form fields = Name, Email, Phone, Business Type, Message.
         serviceOptions: [
-            { value: "", label: "Select Services *" },
-            { value: "custom-web", label: "Custom Web Development" },
-            { value: "ecommerce", label: "Ecommerce Development" },
-            { value: "webapp", label: "Web App Development" },
-            { value: "shopify", label: "Shopify Development" },
-            { value: "redesign", label: "Website Redesign" },
-            { value: "uiux", label: "UI/UX Design" },
+            { value: "", label: "Business Type *" },
+            { value: "startup", label: "Startup / Small Business" },
+            { value: "d2c", label: "D2C / Ecommerce Brand" },
+            { value: "b2b", label: "B2B / Enterprise" },
             { value: "other", label: "Other" },
         ],
     },
 };
 
 const chooseData = {
-    subTitle: "COMMON WEBSITE PROBLEMS",
+    subTitle: "COMMON CONTENT MARKETING CHALLENGES",
     subIcon: "tji-box",
-    title: "Why Most Business Websites Fail to Generate Leads",
+    title: "Why Your Content Is Not Driving Traffic or Leads",
     desc: "",
     banner: "/images/choose/h8-choose-bnner.webp",
     boxes: [
         {
             icon: "tji-innovative",
-            title: "Poor User Experience",
-            desc: "Slow loading pages, confusing navigation, and poor mobile responsiveness frustrate visitors and drive potential customers away before they take action.",
+            title: "No Content Strategy",
+            desc: "Publishing content without a clear strategy leads to inconsistent results. Without keyword research, search intent analysis, and topic planning, your content struggles to attract the right audience.",
         },
         {
             icon: "tji-award",
-            title: "Invisible on Search Engines",
-            desc: "Many websites lack SEO-friendly foundations, making it difficult for customers to find your business on Google when they are actively searching.",
+            title: "Low Search Visibility",
+            desc: "Well-written content alone won't rank. Poor SEO optimization, weak internal linking, and content that doesn't match user intent prevent your website from gaining organic visibility and qualified traffic.",
         },
         {
             icon: "tji-support",
-            title: "No Conversion Strategy",
-            desc: "A website without clear messaging, strong CTAs, and lead generation elements becomes a digital brochure instead of a business growth tool.",
+            title: "Poor Lead Generation",
+            desc: "Content should support business growth, not just fill your blog. Without compelling messaging, conversion-focused copy, and a clear content funnel, your content fails to generate qualified leads and measurable results.",
         },
     ],
 };
@@ -71,62 +71,62 @@ const chooseData = {
 const servicesData = {
     subTitle: "WHAT WE OFFER",
     subIcon: "tji-box",
-    title: "Our Website Development Services for Businesses Across India",
-    desc: 'From custom web development to ecommerce, web apps, and ongoing support - everything your business needs is built under one roof.',
+    title: "Our Content Marketing Services for Businesses Across India",
+    desc: "From content strategy and SEO writing to B2B content and performance analysis - everything your business needs to turn content into a consistent growth engine.",
     moreUrl: "/services",
     items: [
         {
             icon: "tji-service-1",
-            title: "Custom Web Development",
-            desc: "We build fully custom websites from scratch - no templates, no shortcuts. Every line of code is written around your brand, your audience, and your business goals.",
+            title: "Content Strategy & Planning",
+            desc: "We build data-driven content strategies around your audience, your keywords, and your competitors - creating a roadmap that tells you exactly what to publish, when to publish it, and why it will work.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "Ecommerce Development",
-            desc: "Launch a high-performing online store built for sales. Our ecommerce website development in India covers product catalogs, payment gateways, inventory management, and conversion optimization.",
+            title: "Blogging & Article Writing",
+            desc: "Our blog writing services produce well-researched, SEO-optimized articles that rank on Google, build topical authority, and drive the kind of organic traffic that converts into real leads for your business.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "Web App Development",
-            desc: "From dashboards and portals to SaaS platforms - our web application development team builds scalable, secure, and high-performance web apps for businesses across India.",
+            title: "Website Copywriting",
+            desc: "Your website copy is your most important sales asset. Our website content writing services produce clear, conversion-focused copy that communicates your value instantly and guides visitors naturally toward the action you want them to take.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "Shopify Development",
-            desc: "We build and customize Shopify stores that look great and sell even better. From theme development to app integration - complete Shopify development services for your ecommerce brand.",
+            title: "SEO Content Writing",
+            desc: "Every piece of content we produce as your content marketing agency in India is optimized for search - keyword research, search intent alignment, on-page SEO, and internal linking - so your content ranks and keeps ranking long after it is published.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "Magento Web Development",
-            desc: "Enterprise-grade ecommerce solutions built on Magento - powerful, scalable, and built to handle high volumes of traffic, products, and transactions without breaking a sweat.",
+            title: "Social Media Content",
+            desc: "Platform-specific content that stops the scroll and drives engagement - written and designed around what your specific audience responds to on Instagram, LinkedIn, Facebook, and Twitter, backed by performance data not guesswork.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "Website Redesign Services",
-            desc: "Your old website is costing you leads. Our website redesign services start with a full audit - fixing UX gaps, improving speed, and rebuilding for conversion without losing your SEO equity.",
+            title: "Email Content Marketing",
+            desc: "Strategically written email campaigns that nurture leads, retain customers, and drive repeat revenue - from welcome sequences and drip campaigns to newsletters and promotional emails that people actually open and act on.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "UI/UX Design",
-            desc: "Beautiful design means nothing if users cannot navigate it. We design intuitive, conversion-focused interfaces that guide visitors naturally toward the action you want them to take.",
+            title: "B2B Content Marketing",
+            desc: "B2B content marketing services built for long sales cycles and complex buying decisions - whitepapers, case studies, thought leadership articles, and LinkedIn content that builds authority with the decision-makers who control the budget.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "SEO-Friendly Websites",
-            desc: "Every website we build has SEO-friendly website development baked in from day one - clean URLs, schema markup, fast load times, mobile responsiveness, and proper heading structure throughout.",
+            title: "Content Distribution & Promotion",
+            desc: "Great content that nobody sees is wasted content. We distribute and promote every piece across the right channels - organic search, social media, email, and syndication - so your content reaches the audience it was built for.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "Maintenance & Support",
-            desc: "We stay involved after launch. Our website maintenance and support plans cover security patches, performance updates, content changes, and technical fixes - so your website never goes stale.",
+            title: "Content Performance Analysis",
+            desc: "We track what matters - organic traffic, keyword rankings, engagement rate, leads generated, and content ROI - and deliver clear monthly reports that show exactly how our content marketing services are growing your business.",
             url: "/services",
         },
     ],
@@ -134,7 +134,7 @@ const servicesData = {
 
 const solutionsData = {
     subTitle: "WHO WE SERVE",
-    title: "Website Development Services for Startups, Ecommerce & Enterprises",
+    title: "Content Marketing Solutions for Every Business Type",
     moreText: "More Services",
     moreUrl: "/services",
     items: [
@@ -142,21 +142,21 @@ const solutionsData = {
             icon: "tji-service-1",
             title: "Startups & Small Businesses",
             url: "/services",
-            desc: "Your website is your most important salesperson - and it needs to work from day one. Our affordable website development in India for startups focuses on speed, clarity, and conversion so your business makes a strong first impression without overspending on development.",
+            desc: "Building organic authority from zero takes time - but the right content strategy from day one makes all the difference. Our content marketing agency in India works with startups to identify low-competition, high-intent topics that drive qualified traffic fast, building a content foundation that compounds into long-term organic growth without burning budget on paid channels.",
             list: ["Expansion Strategies", "Operational Efficiency", "Competitive Edge"],
         },
         {
             icon: "tji-service-1",
             title: "D2C & Ecommerce Brands",
             url: "/services",
-            desc: "Selling online is competitive. We build ecommerce websites that do more than display products - they guide visitors through a seamless buying journey, reduce cart abandonment, and drive repeat revenue through smart design and performance optimization.",
+            desc: "Product pages alone do not build brands. Our SEO content marketing services for D2C brands combine buying guide content, product comparison articles, and social media content that builds brand awareness, drives organic discovery, and keeps customers coming back - turning one-time buyers into loyal repeat customers through strategic content at every stage of the funnel.",
             list: ["Expansion Strategies", "Operational Efficiency", "Competitive Edge"],
         },
         {
             icon: "tji-service-1",
             title: "B2B & Enterprise Companies",
             url: "/services",
-            desc: "Corporate website development for enterprises requires a different approach - lead capture, gated content, CRM integration, and authority-building design that speaks directly to decision-makers. We deliver exactly that, on time and at scale.",
+            desc: "B2B buyers research extensively before they ever speak to a salesperson. Our B2B content marketing services build the kind of authoritative, trust-building content - case studies, whitepapers, thought leadership, and industry guides - that positions your brand as the obvious choice long before the first conversation happens.",
             list: ["Expansion Strategies", "Operational Efficiency", "Competitive Edge"],
         },
         // Aur solutions add karne ho to yahan object push kar do ⬇️
@@ -166,103 +166,103 @@ const solutionsData = {
 const featuresData = {
     subTitle: "INDUSTRIES WE SERVE",
     subIcon: "tji-box",
-    title: "Industry Specific Website Development Services",
+    title: "Industries We Serve With Our Content Marketing Services in India",
     items: [
         {
             id: 1,
             icon: "tji-innovative",
             title: "Healthcare",
-            desc: "HIPAA-aware, trust-building websites for clinics, hospitals, and health brands that convert patients into appointments",
+            desc: "Patient education content, doctor authority building, and health brand storytelling that builds trust and drives appointment enquiries organically",
         },
         {
             id: 2,
             icon: "tji-award",
             title: "Real Estate",
-            desc: "Property listing websites with advanced search, lead capture forms, and location-based features built for real estate agencies",
+            desc: "Property guides, neighborhood content, investment analysis articles, and local SEO content that attracts serious buyers and generates consistent inbound leads",
         },
         {
             id: 3,
             icon: "tji-team",
             title: "Education",
-            desc: "Student-focused websites for schools, colleges, and edtech platforms that drive admissions and build institutional authority",
+            desc: "Course guides, career content, institutional thought leadership, and student-focused articles that drive admissions and build long-term brand authority",
         },
         {
             id: 4,
             icon: "tji-support",
             title: "Ecommerce",
-            desc: "High-converting online stores with seamless checkout, product filtering, and performance optimization built for sales growth",
+            desc: "Product content, buying guides, category SEO, and brand storytelling that drives organic discovery and converts content readers into paying customers",
         },
         {
             id: 5,
             icon: "tji-support",
             title: "Finance & Fintech",
-            desc: "Secure, compliance-aware websites for financial brands that build trust and generate qualified inbound leads",
+            desc: "Compliant, trust-building financial content that educates audiences, builds brand credibility, and generates qualified organic leads from high-intent search traffic",
         },
         {
             id: 6,
             icon: "tji-support",
             title: "SaaS & Technology",
-            desc: "Product-led websites for tech companies that communicate value clearly and convert visitors into trial signups",
+            desc: "Technical content marketing, product-led content, comparison articles, and thought leadership that attracts decision-makers and drives trial signups and demos",
         },
     ],
 };
 
 const scalableHighlightData = {
     eye: 'BUSINESS CHALLENGES',
-    title: "Common Website Challenges We",
-    titleSpan: "Help Businesses Overcome",
+    title: "Content Marketing Challenges Every Business in India Faces -",
+    titleSpan: "And How We Fix Them",
     paragraphs: [
-        "Most businesses come to us with the same problems - a website that looks fine on the surface but is quietly losing leads every single day. Whether it is poor mobile performance, slow load times, zero search visibility, or a design that confuses rather than converts - these are not small problems. They are revenue problems. As India's best website development company, we have seen every version of a broken website and we know exactly how to fix it.",
+        "Most businesses that come to us have been creating content for months - sometimes years - and have very little to show for it. Blogs that rank for nothing. Social posts that get no engagement. Website copy that fails to convert. The problem is almost never the effort. It is the absence of a real content strategy services framework connecting what gets created to what the audience actually searches for and what the business actually needs to grow. As a trusted content marketing agency in India working with 100+ businesses, we have seen every version of broken content marketing - and we know exactly how to fix it.",
     ],
     features: [
-        "Slow load times costing you rankings and users who never come back",
-        "Poor mobile experience driving away the majority of your traffic",
-        "No SEO foundation making your website invisible to search engines",
-        "Unclear messaging that fails to communicate your value in seconds",
-        "No conversion strategy leaving leads on the table with every visit",
-        "Outdated design damaging trust before a single word is read",
+        "Content that ranks for nothing - because keyword research and search intent were never part of the process",
+        "High bounce rates on content pages - because the content answers the wrong question for the wrong audience",
+        "No leads from content - because there is no conversion strategy connecting content consumption to business action",
+        "Inconsistent publishing - because there is no content calendar, no strategy, and no system behind the effort",
+        "Content that duplicates existing pages - causing keyword cannibalization that hurts rankings across the whole website",
+        "No performance tracking - meaning there is no way to know what is working or where the strategy needs to change",
     ],
 };
 
 const servicesData9 = {
     subTitle: "OUR PROCESS",
-    title: "How We Deliver Your Website Development Project",
+    title: "How We Deliver Our Content Marketing Services",
     moreText: "More services",
     moreUrl: "/services",
     items: [
         {
             id: 1,
             icon: "tji-innovative",
-            title: "Discovery & Requirement Gathering",
-            desc: "We start by understanding your business, your audience, and your goals. Every decision from here - design, structure, technology - is made with your growth in mind, not ours.",
+            title: "Content Audit & Competitor Analysis",
+            desc: "We start by auditing your existing content - identifying what is working, what is wasting effort, and where your biggest growth opportunities are. We benchmark against your top competitors to find the content gaps your strategy needs to fill first.",
             url: "/services",
         },
         {
             id: 2,
             icon: "tji-award",
-            title: "UI/UX Design & Wireframing",
-            desc: "Before a single line of code is written, we design and wireframe every page. You see exactly what your website will look like and how users will move through it before development begins.",
+            title: "Content Strategy & Topic Planning",
+            desc: "We build a custom content strategy around your audience, your keywords, and your business goals - with a detailed content calendar that maps every piece of content to a specific search intent, funnel stage, and measurable business outcome.",
             url: "/services",
         },
         {
             id: 3,
             icon: "tji-team",
-            title: "Development & Testing",
-            desc: "Our developers build your website with clean, optimized code - SEO-friendly website development standards applied throughout. Every page is tested across devices, browsers, and speeds before it goes anywhere near a live server.",
+            title: "Content Creation & Optimization",
+            desc: "Our content creation services team produces every piece of content to the highest standard - fully researched, SEO-optimized, and written for the human reading it as much as the algorithm ranking it. Every piece is reviewed before it goes anywhere near your website.",
             url: "/services",
         },
         {
             id: 4,
             icon: "tji-support",
-            title: "Launch & Deployment",
-            desc: "We handle the full launch - domain configuration, hosting setup, speed optimization and Core Web Vitals. Your website goes live the right way, with everything in place from day one.",
+            title: "Content Distribution & Promotion",
+            desc: "We distribute every piece of content across the channels where your audience actually is - organic search, social media, email newsletters, and content syndication partners - maximizing reach and ensuring the content investment delivers the widest possible return.",
             url: "/services",
         },
         {
             id: 5,
             icon: "tji-support",
-            title: "Post-Launch Support & Maintenance",
-            desc: "The launch is just the beginning. We provide ongoing website maintenance and support to keep your website fast, secure, and generating leads - long after the project is delivered.",
+            title: "Performance Tracking & Reporting",
+            desc: "Monthly performance reports covering keyword rankings, organic traffic growth, engagement metrics, leads generated, and content ROI. Clear, plain-language reporting that shows exactly how our content marketing services in India are contributing to your business growth.",
             url: "/services",
         },
     ],
@@ -271,54 +271,55 @@ const servicesData9 = {
 const scalableHighlightData2 = {
     eye: 'WHY CHOOSE US',
     title: "Why Choose Mematdigi as Your ",
-    titleSpan: "Website Development Company",
+    titleSpan: "Content Marketing Agency in India",
     paragraphs: [
-        "When you are looking for the best website development company in India, you need more than a team that can code. You need a partner that understands business, understands SEO, and understands that a website is only valuable if it generates results. At Mematdigi, we are that partner. As a trusted web development agency in India, we have delivered 135+ websites across industries - every single one built with the same commitment to performance, conversion, and long-term business growth. Our professional website developers are experts in Shopify, Magento, custom web development, UI/UX, SEO, and performance optimization.",
+        "At Mematdigi, we built our reputation as a leading content marketing agency in India by treating content as a business growth channel - not a box to tick. We are not the content marketing services agency that produces articles to fill a quota. We are the strategic content partner that builds every piece of content around a specific search intent, a specific audience need, and a specific business outcome. As a full-service content marketing company in India, we cover every content format and every distribution channel - from SEO content writing services and blog writing services to B2B content marketing services and email campaigns - all connected by a single, coherent strategy built around your growth goals.",
+        "Whether you are a startup looking for affordable content development services to build organic authority or an enterprise that needs a full-scale content marketing company in India to manage every channel - Mematdigi delivers content marketing services in India that drive real traffic, real leads, and real business growth. Stop publishing content that nobody reads and start building content that actually works for your business.",
     ],
     features: [
-        "Best website development company in India - proven track record across 15+ industries with measurable results",
-        "Affordable website development in India - transparent pricing built around your budget with no hidden costs",
-        "Hire website developers in India - dedicated developers who stay involved from brief to launch and beyond",
-        "Custom web development - every website built from scratch around your brand, goals, and audience",
-        "Top website development company in India - trusted by startups, ecommerce brands, and enterprises across the country",
-        "Professional website developers - certified experts in web development, UI/UX, SEO, and performance optimization",
+        "Content marketing agency in India with proven results - 100+ businesses grown through strategic, data-driven content",
+        "Content marketing services agency covering every format - blogs, website copy, social media, email, B2B content, and more",
+        "SEO content writing services built to rank - every piece optimized for search intent, keywords, and long-term organic growth",
+        "Blog writing services that build authority - well-researched, professionally written articles that earn rankings and keep them",
+        "B2B content marketing services for complex sales - thought leadership, case studies, and whitepapers that convert decision-makers",
+        "Content creation services with complete transparency - clear strategy, consistent delivery, and monthly performance reporting",
     ],
 };
 
 const faqData = {
     subTitle: "FAQs",
     subIcon: "tji-box",
-    title: "Frequently Asked Questions About Website Development in India",
+    title: "Frequently Asked Questions About Content Marketing Services in India",
     phone: { display: "1-888-452-1505", tel: "18884521505" },
     items: [
         {
-            title: "What makes Memat Digi the best website development company in India? ",
-            desc: "We combine conversion-focused design, performance-driven development, and dedicated support under one roof. Our website development services India businesses trust are built around measurable outcomes - not just deliverables. We focus on results: more leads, better performance, and long-term digital growth.",
+            title: "What does a content marketing agency in India do? ",
+            desc: "A content marketing agency in India builds and executes strategies that use content - blogs, website copy, social media, email, and video - to attract the right audience, build brand authority, and generate leads and sales. At Mematdigi, our content marketing services agency goes beyond production - we tie every piece of content to a measurable business outcome.",
             initActive: true,
         },
         {
-            title: "How long does it take to develop a website in India? ",
-            desc: "Timelines vary by project complexity. A simple business website typically takes 2-4 weeks. An ecommerce website development or complex web application may take 6-12 weeks. We provide a detailed timeline at the start of every project so you always know what to expect.",
+            title: "How is content marketing different from SEO? ",
+            desc: "SEO focuses on technical optimization and link building to improve rankings. Content marketing creates the valuable, keyword-optimized content that gives SEO something to work with. Our SEO content writing services combine both - producing content that is strategically written for search engines and genuinely useful for the humans reading it, driving rankings and engagement simultaneously.",
             initActive: false,
         },
         {
-            title: "Can I hire website developers in India for ongoing support? ",
-            desc: "Absolutely. We offer dedicated maintenance & support plans for businesses that need continuous updates, monitoring, and improvements. When you hire website developers in India through Memat Digi, you gain a long-term technology partner.",
+            title: "How long does content marketing take to show results? ",
+            desc: "Content marketing is a compounding strategy - results build over time. Most businesses working with a content marketing agency see measurable organic traffic improvements within 3-6 months. Content development services focused on low-competition, high-intent keywords can show results faster. The businesses that commit for 12+ months see the most dramatic, sustainable growth from content.",
             initActive: false,
         },
         {
-            title: "Will my website be SEO-friendly from day one? ",
-            desc: "Yes. SEO-friendly website development is part of our core process. We implement technical SEO foundations - clean URL structures, schema markup, meta tags, mobile responsiveness, and speed optimization - during the development phase, not as an afterthought.",
+            title: "Do you offer content marketing services for B2B businesses? ",
+            desc: "Yes - B2B content marketing services are a core part of what we do. B2B content requires a completely different approach - longer formats, more technical depth, and content designed for decision-makers at specific stages of a long buying cycle. Our content strategy services for B2B businesses include whitepapers, case studies, thought leadership articles, and LinkedIn content built to convert complex buyers.",
             initActive: false,
         },
         {
-            title: "Do you build websites for small businesses?",
-            desc: "Yes. Our website development for small business packages are specifically designed to deliver maximum impact at an affordable price. We work with businesses of all sizes - from solopreneurs to enterprise corporations.",
+            title: "What types of content do you create? ",
+            desc: "Our content creation services cover every format - SEO blog articles, website copywriting, landing page copy, social media content, email newsletters, whitepapers, case studies, product descriptions, and video scripts. Our blog writing services and website content writing services are among our most popular - producing content that ranks, converts, and builds long-term brand authority.",
             initActive: false,
         },
         {
-            title: "How much does website development cost in India? ",
-            desc: "Website development cost in India typically ranges from ₹30,000 to ₹1,50,000 or more, depending on the project scope, features, and complexity.",
+            title: "How do you measure the success of content marketing?",
+            desc: "We track what actually matters for your business - organic traffic growth, keyword rankings, time on page, leads generated from content, and content-influenced revenue. As a data-driven content marketing company in India, we deliver monthly performance reports that show exactly how our content marketing services in India are contributing to your growth - in plain language, without vanity metrics.",
             initActive: false,
         },
     ],
@@ -327,8 +328,8 @@ const faqData = {
 const contactData = {
     left: {
         subTitle: "CONTACT US NOW",
-        title: "Ready to Build Your Website With India's Top Website Development Company?",
-        desc: "Ready to partner with the best website development company in India? Mematdigi delivers custom web development, ecommerce website development, and SEO-friendly websites built to generate leads, improve user experience, and increase conversions. Whether you're a startup, ecommerce brand, or enterprise, we create websites designed for long-term business growth and measurable results. ",
+        title: "Ready to Grow Your Business With India's Best Content Marketing Agency?",
+        desc: "Ready to partner with a trusted content marketing agency in India? Mematdigi delivers strategic content marketing services that increase organic traffic, strengthen brand authority, and generate qualified leads. From startups to enterprise businesses, we create content designed to drive sustainable growth and measurable business results. ",
     },
     form: {
         subTitle: "Get a Call Now",
@@ -337,12 +338,13 @@ const contactData = {
         titleSpan: "Line.",
         selectOptions: [
             { value: "0", optionName: "Choose an option" },
-            { value: "1", optionName: "Custom Web Development" },
-            { value: "2", optionName: "Ecommerce Development" },
-            { value: "3", optionName: "Web App Development" },
-            { value: "4", optionName: "Shopify Development" },
-            { value: "5", optionName: "Website Redesign" },
-            { value: "6", optionName: "Maintenance & Support" },
+            { value: "1", optionName: "Content Strategy & Planning" },
+            { value: "2", optionName: "Blogging & Article Writing" },
+            { value: "3", optionName: "Website Copywriting" },
+            { value: "4", optionName: "SEO Content Writing" },
+            { value: "5", optionName: "Email Content Marketing" },
+            { value: "6", optionName: "B2B Content Marketing" },
+            { value: "7", optionName: "Content Performance Analysis" },
         ],
     },
 };
@@ -734,8 +736,8 @@ const FeaturesSection = () => {
     );
 };
 
-/* Reusable — pehle ye 2 baar copy-paste hua tha (ScoralableServicesSection
- * aur ScoralableServicesSection2 bilkul same the). Ab ek hi component hai. */
+/* Reusable — pehle ye 2 baar copy-paste hua tha (dono highlight section
+ * bilkul same the). Ab ek hi component hai, data prop ke through render hota hai. */
 const ScalableHighlightSection = ({ data }) => {
     return (
         <section className="services-section p-3 m-5 mb-5 border rounded-3 box-shadow">
@@ -1060,7 +1062,7 @@ const ContactSection = () => {
     );
 };
 
-export default function WebDevelopmentServices() {
+export default function ContentMarketingServices() {
     return (
         <div>
             <BackToTop />

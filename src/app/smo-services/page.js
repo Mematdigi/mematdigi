@@ -10,13 +10,27 @@ import Header from "@/components/layout/header/Header";
 import BackToTop from "@/components/shared/others/BackToTop";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
 
+/* ============================================================
+ *  PAGE: SMO SERVICES
+ *  URL          : https://www.mematdigi.com/smo-services
+ *  Meta Title   : Best SMO Services in India | Social Media Optimization Agency
+ *  Meta Desc    : Looking for expert SMO services in India? Memat Digi helps
+ *                 brands grow on social media with proven optimization
+ *                 strategies. Get your free SMO audit today.
+ *  (Ye 'use client' component hai — meta tags page.js / generateMetadata
+ *   me set karo, yahan sirf reference ke liye likha hai.)
+ *
+ *  Saara content yahin se manage karo, JSX clean rahega. Chaaho to
+ *  ise alag data.js file me move karke yahan import kar lo.
+ * ========================================================== */
+
 const heroData = {
     bgImage: "/images/hero/h9-hero-bg.webp",
-    eyebrow: "WEBSITE DEVELOPMENT COMPANY",
-    titlePre: "Best Website Development Company in India That Builds High-Converting Websites",
+    eyebrow: "SMO SERVICES",
+    titlePre: "Best SMO Services in India That Build Real Social Media Presence",
     desc: (
         <>
-            As a leading website development company in India, we build fast, SEO-friendly, and conversion-focused websites for businesses looking to generate more leads and grow online.
+            As a trusted SMO company in India, we deliver the best SMO services to boost social media presence, increase engagement, enhance brand visibility, and generate qualified leads through strategic content and optimization.
         </>
     ),
     stats: [
@@ -25,45 +39,44 @@ const heroData = {
         { number: "15", suffix: "+", label: "Industries Served" },
         { number: "135", suffix: "+", label: "Projects Delivered" },
     ],
-    primaryCta: { text: "Get Free Consultation", url: "/contact-us" },
+    primaryCta: { text: "Get Free SMO Audit", url: "/contact-us" },
     form: {
         tag: "GET IN TOUCH",
         title: "Request A Quote",
         subtitle: "Fill out the form and our team will reach out within 24 hours.",
+        // Content me form field "Business Type" specify hua tha, isliye
+        // is dropdown ko Business Type ke options se bhar diya hai.
         serviceOptions: [
-            { value: "", label: "Select Services *" },
-            { value: "custom-web", label: "Custom Web Development" },
-            { value: "ecommerce", label: "Ecommerce Development" },
-            { value: "webapp", label: "Web App Development" },
-            { value: "shopify", label: "Shopify Development" },
-            { value: "redesign", label: "Website Redesign" },
-            { value: "uiux", label: "UI/UX Design" },
+            { value: "", label: "Business Type *" },
+            { value: "startup", label: "Startup / Small Business" },
+            { value: "d2c", label: "D2C / Ecommerce Brand" },
+            { value: "b2b", label: "B2B / Enterprise" },
             { value: "other", label: "Other" },
         ],
     },
 };
 
 const chooseData = {
-    subTitle: "COMMON WEBSITE PROBLEMS",
+    subTitle: "COMMON SMO PROBLEMS",
     subIcon: "tji-box",
-    title: "Why Most Business Websites Fail to Generate Leads",
+    title: "Why Your Social Media Is Not Delivering Results",
     desc: "",
     banner: "/images/choose/h8-choose-bnner.webp",
     boxes: [
         {
             icon: "tji-innovative",
-            title: "Poor User Experience",
-            desc: "Slow loading pages, confusing navigation, and poor mobile responsiveness frustrate visitors and drive potential customers away before they take action.",
+            title: "Poor Profile Optimization",
+            desc: "Many businesses have incomplete profiles, inconsistent branding, and missing optimization elements that reduce credibility and make it difficult for the right audience to discover and trust their business.",
         },
         {
             icon: "tji-award",
-            title: "Invisible on Search Engines",
-            desc: "Many websites lack SEO-friendly foundations, making it difficult for customers to find your business on Google when they are actively searching.",
+            title: "Low Reach & Engagement",
+            desc: "Posting regularly isn't enough. Without a platform-specific content strategy, optimized hashtags, and audience-focused content, your social media struggles to generate meaningful engagement or organic growth.",
         },
         {
             icon: "tji-support",
-            title: "No Conversion Strategy",
-            desc: "A website without clear messaging, strong CTAs, and lead generation elements becomes a digital brochure instead of a business growth tool.",
+            title: "No Business Results",
+            desc: "Followers and likes alone don't grow a business. Without professional SMO services, your social media fails to generate qualified leads, strengthen brand authority, or contribute to measurable business growth.",
         },
     ],
 };
@@ -71,62 +84,62 @@ const chooseData = {
 const servicesData = {
     subTitle: "WHAT WE OFFER",
     subIcon: "tji-box",
-    title: "Our Website Development Services for Businesses Across India",
-    desc: 'From custom web development to ecommerce, web apps, and ongoing support - everything your business needs is built under one roof.',
+    title: "Our SMO Services for Businesses Across India",
+    desc: "Everything your social media needs to grow organically - profile optimization, content strategy, branding, and performance tracking under one roof.",
     moreUrl: "/services",
     items: [
         {
             icon: "tji-service-1",
-            title: "Custom Web Development",
-            desc: "We build fully custom websites from scratch - no templates, no shortcuts. Every line of code is written around your brand, your audience, and your business goals.",
+            title: "Profile Optimization",
+            desc: "We optimize your social media profiles with the right keywords, branding, and CTAs - improving your social media visibility in India and making every profile a conversion-ready asset.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "Ecommerce Development",
-            desc: "Launch a high-performing online store built for sales. Our ecommerce website development in India covers product catalogs, payment gateways, inventory management, and conversion optimization.",
+            title: "Content Strategy",
+            desc: "Our data-driven social media content strategy is built around your audience, your industry, and your competitors - so every post has a purpose and every campaign moves the needle.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "Web App Development",
-            desc: "From dashboards and portals to SaaS platforms - our web application development team builds scalable, secure, and high-performance web apps for businesses across India.",
+            title: "Engagement Management",
+            desc: "We handle comments, messages, and community interactions to build trust, strengthen relationships, and create the kind of social media engagement that turns followers into customers.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "Shopify Development",
-            desc: "We build and customize Shopify stores that look great and sell even better. From theme development to app integration - complete Shopify development services for your ecommerce brand.",
+            title: "Analytics & Reporting",
+            desc: "We track what matters - reach, engagement, follower growth, and conversions - and deliver clear monthly reports that show exactly how our SMO services are growing your business.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "Magento Web Development",
-            desc: "Enterprise-grade ecommerce solutions built on Magento - powerful, scalable, and built to handle high volumes of traffic, products, and transactions without breaking a sweat.",
+            title: "Hashtag & Keyword Research",
+            desc: "We identify the exact hashtags and keywords your audience uses - improving discoverability, expanding organic reach, and building social media presence across every platform we manage.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "Website Redesign Services",
-            desc: "Your old website is costing you leads. Our website redesign services start with a full audit - fixing UX gaps, improving speed, and rebuilding for conversion without losing your SEO equity.",
+            title: "Competitor Analysis",
+            desc: "We benchmark your social media performance against your top competitors - identifying content gaps, engagement opportunities, and platform strategies that give you a measurable edge.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "UI/UX Design",
-            desc: "Beautiful design means nothing if users cannot navigate it. We design intuitive, conversion-focused interfaces that guide visitors naturally toward the action you want them to take.",
+            title: "Brand Visual Identity",
+            desc: "We build and maintain a consistent brand look and voice across every platform - so whether someone finds you on Instagram or LinkedIn, they experience the same professional, trustworthy brand.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "SEO-Friendly Websites",
-            desc: "Every website we build has SEO-friendly website development baked in from day one - clean URLs, schema markup, fast load times, mobile responsiveness, and proper heading structure throughout.",
+            title: "Social Media Audit",
+            desc: "A comprehensive audit of your existing social profiles - covering optimization gaps, content performance, audience analysis, and a clear roadmap to better SMO results starting from day one.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "Maintenance & Support",
-            desc: "We stay involved after launch. Our website maintenance and support plans cover security patches, performance updates, content changes, and technical fixes - so your website never goes stale.",
+            title: "Social Media Branding",
+            desc: "From profile aesthetics to content tone - our social media branding services build a cohesive brand identity that attracts the right audience and makes your business instantly recognizable online.",
             url: "/services",
         },
     ],
@@ -134,7 +147,7 @@ const servicesData = {
 
 const solutionsData = {
     subTitle: "WHO WE SERVE",
-    title: "Website Development Services for Startups, Ecommerce & Enterprises",
+    title: "SMO Services for Every Business Type",
     moreText: "More Services",
     moreUrl: "/services",
     items: [
@@ -142,21 +155,21 @@ const solutionsData = {
             icon: "tji-service-1",
             title: "Startups & Small Businesses",
             url: "/services",
-            desc: "Your website is your most important salesperson - and it needs to work from day one. Our affordable website development in India for startups focuses on speed, clarity, and conversion so your business makes a strong first impression without overspending on development.",
+            desc: "Building a social media presence from zero is hard without the right strategy. Our SMO services in India for startups and small businesses focus on building an optimized, professional presence fast - on the platforms where your audience actually spends time - so you start generating leads, not just followers.",
             list: ["Expansion Strategies", "Operational Efficiency", "Competitive Edge"],
         },
         {
             icon: "tji-service-1",
             title: "D2C & Ecommerce Brands",
             url: "/services",
-            desc: "Selling online is competitive. We build ecommerce websites that do more than display products - they guide visitors through a seamless buying journey, reduce cart abandonment, and drive repeat revenue through smart design and performance optimization.",
+            desc: "Social media is one of your most powerful sales channels - but only when it is optimized correctly. Our social media optimization agency specializes in building ecommerce brand presence that drives product discovery, builds customer trust, and converts social traffic into repeat revenue.",
             list: ["Expansion Strategies", "Operational Efficiency", "Competitive Edge"],
         },
         {
             icon: "tji-service-1",
             title: "B2B & Enterprise Companies",
             url: "/services",
-            desc: "Corporate website development for enterprises requires a different approach - lead capture, gated content, CRM integration, and authority-building design that speaks directly to decision-makers. We deliver exactly that, on time and at scale.",
+            desc: "B2B social media requires a completely different approach - thought leadership, LinkedIn authority, and content that speaks to decision-makers. Our SMO services for B2B and enterprise companies build the kind of credible social media presence that generates qualified leads from the right people.",
             list: ["Expansion Strategies", "Operational Efficiency", "Competitive Edge"],
         },
         // Aur solutions add karne ho to yahan object push kar do ⬇️
@@ -166,103 +179,103 @@ const solutionsData = {
 const featuresData = {
     subTitle: "INDUSTRIES WE SERVE",
     subIcon: "tji-box",
-    title: "Industry Specific Website Development Services",
+    title: "Industries We Serve With Our SMO Services in India",
     items: [
         {
             id: 1,
             icon: "tji-innovative",
             title: "Healthcare",
-            desc: "HIPAA-aware, trust-building websites for clinics, hospitals, and health brands that convert patients into appointments",
+            desc: "Trust-building social media optimization for clinics, hospitals, and health brands that attracts patients and builds authority",
         },
         {
             id: 2,
             icon: "tji-award",
             title: "Real Estate",
-            desc: "Property listing websites with advanced search, lead capture forms, and location-based features built for real estate agencies",
+            desc: "Lead-generating social media presence for property developers and agents that showcases listings and drives enquiries",
         },
         {
             id: 3,
             icon: "tji-team",
             title: "Education",
-            desc: "Student-focused websites for schools, colleges, and edtech platforms that drive admissions and build institutional authority",
+            desc: "Student acquisition social media strategies for schools, colleges, and edtech brands that build institutional credibility",
         },
         {
             id: 4,
             icon: "tji-support",
             title: "Ecommerce",
-            desc: "High-converting online stores with seamless checkout, product filtering, and performance optimization built for sales growth",
+            desc: "Product-focused social media optimization that drives discovery, engagement, and direct sales for online stores",
         },
         {
             id: 5,
             icon: "tji-support",
             title: "Finance & Fintech",
-            desc: "Secure, compliance-aware websites for financial brands that build trust and generate qualified inbound leads",
+            desc: "Compliance-aware social media branding for financial brands that builds trust and generates qualified leads",
         },
         {
             id: 6,
             icon: "tji-support",
             title: "SaaS & Technology",
-            desc: "Product-led websites for tech companies that communicate value clearly and convert visitors into trial signups",
+            desc: "Thought leadership social media strategies for tech companies that attract decision-makers and drive demo requests",
         },
     ],
 };
 
 const scalableHighlightData = {
     eye: 'BUSINESS CHALLENGES',
-    title: "Common Website Challenges We",
-    titleSpan: "Help Businesses Overcome",
+    title: "Social Media Challenges Every Business in India Faces -",
+    titleSpan: "And How We Fix Them",
     paragraphs: [
-        "Most businesses come to us with the same problems - a website that looks fine on the surface but is quietly losing leads every single day. Whether it is poor mobile performance, slow load times, zero search visibility, or a design that confuses rather than converts - these are not small problems. They are revenue problems. As India's best website development company, we have seen every version of a broken website and we know exactly how to fix it.",
+        "Most businesses managing social media in-house face the same problems - inconsistent posting, zero engagement growth, profiles that look abandoned, and content that never reaches the right audience. These are not small problems. They quietly damage your brand credibility every single day. As the best SMO company in India trusted by 100+ businesses, we have seen every version of a broken social media strategy - and we know exactly how to rebuild it.",
     ],
     features: [
-        "Slow load times costing you rankings and users who never come back",
-        "Poor mobile experience driving away the majority of your traffic",
-        "No SEO foundation making your website invisible to search engines",
-        "Unclear messaging that fails to communicate your value in seconds",
-        "No conversion strategy leaving leads on the table with every visit",
-        "Outdated design damaging trust before a single word is read",
+        "Zero engagement despite consistent posting - because content is being created without a platform-specific strategy",
+        "Incomplete and unoptimized profiles - costing you credibility before a single message is sent",
+        "No brand consistency across platforms - creating confusion and eroding trust with every new visitor",
+        "Wrong hashtags and zero discoverability - keeping your content invisible to the audience that matters",
+        "No content strategy or posting schedule - resulting in bursts of activity followed by long silences that hurt reach",
+        "No performance tracking - meaning there is no way to know what is working or where to improve",
     ],
 };
 
 const servicesData9 = {
     subTitle: "OUR PROCESS",
-    title: "How We Deliver Your Website Development Project",
+    title: "How We Deliver Our SMO Services",
     moreText: "More services",
     moreUrl: "/services",
     items: [
         {
             id: 1,
             icon: "tji-innovative",
-            title: "Discovery & Requirement Gathering",
-            desc: "We start by understanding your business, your audience, and your goals. Every decision from here - design, structure, technology - is made with your growth in mind, not ours.",
+            title: "Social Media Audit & Analysis",
+            desc: "We start with a full audit of your existing social media profiles - benchmarking against your top competitors and identifying exactly what is holding your social media presence back before we change a single thing.",
             url: "/services",
         },
         {
             id: 2,
             icon: "tji-award",
-            title: "UI/UX Design & Wireframing",
-            desc: "Before a single line of code is written, we design and wireframe every page. You see exactly what your website will look like and how users will move through it before development begins.",
+            title: "Profile Optimization & Branding",
+            desc: "We optimize every profile element - bios, keywords, CTAs, cover images, and highlights - and align your social media branding services across every platform so your brand makes the right first impression every time.",
             url: "/services",
         },
         {
             id: 3,
             icon: "tji-team",
-            title: "Development & Testing",
-            desc: "Our developers build your website with clean, optimized code - SEO-friendly website development standards applied throughout. Every page is tested across devices, browsers, and speeds before it goes anywhere near a live server.",
+            title: "Content Strategy Development",
+            desc: "We build a custom social media content strategy around your audience, your industry, and your competitors - with a 30-day content calendar planned before a single post goes live on any platform.",
             url: "/services",
         },
         {
             id: 4,
             icon: "tji-support",
-            title: "Launch & Deployment",
-            desc: "We handle the full launch - domain configuration, hosting setup, speed optimization and Core Web Vitals. Your website goes live the right way, with everything in place from day one.",
+            title: "Engagement & Community Building",
+            desc: "We publish, engage, respond, and grow consistently. Every comment, message, and interaction is managed to build the kind of genuine social media engagement that converts followers into customers over time.",
             url: "/services",
         },
         {
             id: 5,
             icon: "tji-support",
-            title: "Post-Launch Support & Maintenance",
-            desc: "The launch is just the beginning. We provide ongoing website maintenance and support to keep your website fast, secure, and generating leads - long after the project is delivered.",
+            title: "Reporting & Continuous Optimization",
+            desc: "Monthly performance reports with clear, actionable insights. We refine the strategy every cycle based on real data - so your SMO results compound over time instead of plateauing after the first 60 days.",
             url: "/services",
         },
     ],
@@ -271,54 +284,55 @@ const servicesData9 = {
 const scalableHighlightData2 = {
     eye: 'WHY CHOOSE US',
     title: "Why Choose Mematdigi as Your ",
-    titleSpan: "Website Development Company",
+    titleSpan: "SMO Agency in India",
     paragraphs: [
-        "When you are looking for the best website development company in India, you need more than a team that can code. You need a partner that understands business, understands SEO, and understands that a website is only valuable if it generates results. At Mematdigi, we are that partner. As a trusted web development agency in India, we have delivered 135+ websites across industries - every single one built with the same commitment to performance, conversion, and long-term business growth. Our professional website developers are experts in Shopify, Magento, custom web development, UI/UX, SEO, and performance optimization.",
+        "At Mematdigi, we built our reputation as the best SMO company in India by treating social media as a business growth channel - not a vanity exercise. We are not the social media optimization agency that chases follower counts and calls it success. We are the SMO company in India that builds optimized, conversion-ready social media presence that attracts the right audience, builds genuine trust, and drives real business results. Every strategy we build is custom - researched around your industry, your competitors, and your specific audience - because social media optimization that works for one business rarely works for another.",
+        "Whether you are a startup looking for affordable SMO services in India or an established brand that needs a full-scale social media optimization agency to manage every platform - Mematdigi delivers the best SMO services in India with complete transparency and a team that genuinely cares about your growth.",
     ],
     features: [
-        "Best website development company in India - proven track record across 15+ industries with measurable results",
-        "Affordable website development in India - transparent pricing built around your budget with no hidden costs",
-        "Hire website developers in India - dedicated developers who stay involved from brief to launch and beyond",
-        "Custom web development - every website built from scratch around your brand, goals, and audience",
-        "Top website development company in India - trusted by startups, ecommerce brands, and enterprises across the country",
-        "Professional website developers - certified experts in web development, UI/UX, SEO, and performance optimization",
+        "Best SMO company in India - 100+ businesses grown across India's most competitive industries",
+        "SMO agency with platform specialists - dedicated experts per platform, not generalists managing everything",
+        "Social media optimization company with transparent reporting - clear metrics, no vanity numbers, no smoke and mirrors",
+        "Social media growth services built for ROI - every campaign tied to leads, conversions, and revenue",
+        "Social media branding services - consistent brand identity built across every platform we manage",
+        "Social media engagement strategies that convert - turning followers into customers, not just numbers",
     ],
 };
 
 const faqData = {
     subTitle: "FAQs",
     subIcon: "tji-box",
-    title: "Frequently Asked Questions About Website Development in India",
+    title: "Frequently Asked Questions About SMO Services in India",
     phone: { display: "1-888-452-1505", tel: "18884521505" },
     items: [
         {
-            title: "What makes Memat Digi the best website development company in India? ",
-            desc: "We combine conversion-focused design, performance-driven development, and dedicated support under one roof. Our website development services India businesses trust are built around measurable outcomes - not just deliverables. We focus on results: more leads, better performance, and long-term digital growth.",
+            title: "What is SMO and how will it benefit my business? ",
+            desc: "SMO - Social Media Optimization - is optimising your social media channels, content and strategy to build your online presence. In India, for businesses, it is about posting content regularly on social media platforms such as Instagram, Facebook or LinkedIn, earning the trust of the audience, and then converting their trust into leads and conversions. It is not just about sharing content - it's about sharing content strategically.",
             initActive: true,
         },
         {
-            title: "How long does it take to develop a website in India? ",
-            desc: "Timelines vary by project complexity. A simple business website typically takes 2-4 weeks. An ecommerce website development or complex web application may take 6-12 weeks. We provide a detailed timeline at the start of every project so you always know what to expect.",
+            title: "How long will it take to see the impact of SMO services? ",
+            desc: "Improved engagement, visits to your profile and reach usually show 4-6 weeks in. It takes 3-6 months of regular effort to see substantial growth in followers and leads. SMO is not a short-term strategy. Companies that commit to a sound plan for 6+ months experience the benefits of compounding growth that paid advertising can't match.",
             initActive: false,
         },
         {
-            title: "Can I hire website developers in India for ongoing support? ",
-            desc: "Absolutely. We offer dedicated maintenance & support plans for businesses that need continuous updates, monitoring, and improvements. When you hire website developers in India through Memat Digi, you gain a long-term technology partner.",
+            title: "What are the costs of SMO in India? ",
+            desc: "In India, SMO packages cost between ₹8,000 - ₹50,000 monthly based on the platforms used, content type and campaign sophistication. At Memat Digi, we charge based on what your business needs - not a set menu. Small businesses can start small and grow their campaigns as they succeed.",
             initActive: false,
         },
         {
-            title: "Will my website be SEO-friendly from day one? ",
-            desc: "Yes. SEO-friendly website development is part of our core process. We implement technical SEO foundations - clean URL structures, schema markup, meta tags, mobile responsiveness, and speed optimization - during the development phase, not as an afterthought.",
+            title: "What social media channels should I use? ",
+            desc: "It all depends on where your audience hangs out. Facebook and Instagram are good for most consumer brands. LinkedIn works for B2B. YouTube establishes authority over time with video. We will first analyse your business and target audience before suggesting platforms - because it's often better to be a jack of two or three trades, rather than a master of all.",
             initActive: false,
         },
         {
-            title: "Do you build websites for small businesses?",
-            desc: "Yes. Our website development for small business packages are specifically designed to deliver maximum impact at an affordable price. We work with businesses of all sizes - from solopreneurs to enterprise corporations.",
+            title: "Who is the best SMO service provider in India? ",
+            desc: "We have over 15 years of experience working with businesses across India. We take time to audit your current profiles and competitors before starting any work in SMO. You will have platform experts, regular reports and a team which will tell you what is and what is not working - and no \"beautified\" results. If you are looking for SMO agencies in India, we are willing to show you what we would do for your company, before signing.",
             initActive: false,
         },
         {
-            title: "How much does website development cost in India? ",
-            desc: "Website development cost in India typically ranges from ₹30,000 to ₹1,50,000 or more, depending on the project scope, features, and complexity.",
+            title: "SMO or SMM - which is better for my business?",
+            desc: "SMO is about improving your social media presence without paid promotion through social media profiles, content strategy, engagement and reach. SMM (Social Media Marketing) usually refers to advertising. Most companies require both, but SMO is a prerequisite. Paid ads won't be effective on an unoptimized profile. We suggest doing SMO first and then using paid ads if you have an organic foundation.",
             initActive: false,
         },
     ],
@@ -327,8 +341,8 @@ const faqData = {
 const contactData = {
     left: {
         subTitle: "CONTACT US NOW",
-        title: "Ready to Build Your Website With India's Top Website Development Company?",
-        desc: "Ready to partner with the best website development company in India? Mematdigi delivers custom web development, ecommerce website development, and SEO-friendly websites built to generate leads, improve user experience, and increase conversions. Whether you're a startup, ecommerce brand, or enterprise, we create websites designed for long-term business growth and measurable results. ",
+        title: "Ready to Grow Your Social Media Presence With India's Best SMO Services?",
+        desc: "Ready to grow your brand with the best SMO services in India? Partner with Mematdigi, a trusted SMO company in India, to build a stronger social media presence, increase engagement, improve brand visibility, and generate qualified leads through customized social media optimization strategies designed for long-term business growth. ",
     },
     form: {
         subTitle: "Get a Call Now",
@@ -337,12 +351,12 @@ const contactData = {
         titleSpan: "Line.",
         selectOptions: [
             { value: "0", optionName: "Choose an option" },
-            { value: "1", optionName: "Custom Web Development" },
-            { value: "2", optionName: "Ecommerce Development" },
-            { value: "3", optionName: "Web App Development" },
-            { value: "4", optionName: "Shopify Development" },
-            { value: "5", optionName: "Website Redesign" },
-            { value: "6", optionName: "Maintenance & Support" },
+            { value: "1", optionName: "Profile Optimization" },
+            { value: "2", optionName: "Content Strategy" },
+            { value: "3", optionName: "Engagement Management" },
+            { value: "4", optionName: "Analytics & Reporting" },
+            { value: "5", optionName: "Social Media Branding" },
+            { value: "6", optionName: "Social Media Audit" },
         ],
     },
 };
@@ -734,8 +748,8 @@ const FeaturesSection = () => {
     );
 };
 
-/* Reusable — pehle ye 2 baar copy-paste hua tha (ScoralableServicesSection
- * aur ScoralableServicesSection2 bilkul same the). Ab ek hi component hai. */
+/* Reusable — pehle ye 2 baar copy-paste hua tha (dono highlight section
+ * bilkul same the). Ab ek hi component hai, data prop ke through render hota hai. */
 const ScalableHighlightSection = ({ data }) => {
     return (
         <section className="services-section p-3 m-5 mb-5 border rounded-3 box-shadow">
@@ -1060,7 +1074,7 @@ const ContactSection = () => {
     );
 };
 
-export default function WebDevelopmentServices() {
+export default function SmoServices() {
     return (
         <div>
             <BackToTop />
