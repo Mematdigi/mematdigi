@@ -12,13 +12,13 @@ import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
 
 const heroData = {
     bgImage: "/images/hero/h9-hero-bg.webp",
-    eyebrow: "MOBILE APP DEVELOPMENT",
-    titlePre: "Mobile App Development Company in India That Builds",
-    titleHighlight: "Apps That Perform",
+    eyebrow: "VIDEO OPTIMIZATION SERVICES",
+    titlePre: "Best Video Optimization Services in India to Increase Visibility, Engagement and",
+    titleHighlight: "Rankings",
     titlePost: "",
     desc: (
         <>
-            As a trusted mobile app development company in India, we deliver custom, scalable, high-performance apps for iOS, Android, Flutter, and React Native that enhance user experience and drive business growth.
+            As a trusted provider of video optimization services in India, we help businesses improve YouTube rankings, increase video visibility, and drive higher engagement through data-driven optimization. From YouTube SEO and keyword research to metadata optimization and performance tracking, we turn every video into a powerful growth asset.
         </>
     ),
     stats: [
@@ -32,39 +32,40 @@ const heroData = {
         tag: "GET IN TOUCH",
         title: "Request A Quote",
         subtitle: "Fill out the form and our team will reach out within 24 hours.",
-        // Mobile form fields = Name, Email, Phone, Business Type, Message.
-        // Website URL input hata kar Business Type dropdown wapas laaya.
         serviceOptions: [
-            { value: "", label: "Business Type *" },
-            { value: "startup", label: "Startup / Small Business" },
-            { value: "d2c", label: "D2C / Ecommerce Brand" },
-            { value: "b2b", label: "B2B / Enterprise" },
+            { value: "", label: "Select Services *" },
+            { value: "youtube-seo", label: "YouTube SEO Services" },
+            { value: "keyword-research", label: "Video Keyword Research" },
+            { value: "metadata", label: "Video Metadata Optimization" },
+            { value: "thumbnails", label: "YouTube Thumbnail Optimization" },
+            { value: "performance", label: "Video Performance Optimization" },
+            { value: "analytics", label: "Video Analytics & Reporting" },
             { value: "other", label: "Other" },
         ],
     },
 };
 
 const chooseData = {
-    subTitle: "COMMON APP DEVELOPMENT CHALLENGES",
+    subTitle: "COMMON CHALLENGES",
     subIcon: "tji-box",
-    title: "Why Most Mobile Apps Fail to Deliver Business Results",
+    title: "Why Your Videos Are Not Reaching the Right Audience",
     desc: "",
     banner: "/images/choose/h8-choose-bnner.webp",
     boxes: [
         {
             icon: "tji-innovative",
-            title: "Poor User Experience",
-            desc: "Many mobile apps fail because of slow performance, confusing navigation, and poor UI/UX design, leading users to abandon the app after only a few interactions.",
+            title: "Poor Search Visibility",
+            desc: "Without proper YouTube SEO, keyword research, and metadata optimization, even high-quality videos struggle to appear in search results, limiting their reach and reducing opportunities to attract the right audience.",
         },
         {
             icon: "tji-award",
-            title: "Lack of Scalability",
-            desc: "Apps built without a scalable architecture often struggle with increasing users, new features, and platform updates, creating performance issues that limit long-term business growth.",
+            title: "Low Engagement & Click-Through Rates",
+            desc: "Weak titles, unoptimized thumbnails, and poor audience retention signals make it difficult to earn clicks and keep viewers watching, preventing videos from achieving their full performance potential.",
         },
         {
             icon: "tji-support",
-            title: "No Long-Term Support",
-            desc: "Building an app is only the beginning. Without regular updates, maintenance, security improvements, and post-launch support, even well-designed mobile apps quickly lose reliability and user trust.",
+            title: "No Optimization Strategy",
+            desc: "Publishing videos consistently is not enough. Without performance tracking, competitor analysis, and continuous optimization, businesses miss valuable opportunities to improve rankings, increase watch time, and generate measurable business results.",
         },
     ],
 };
@@ -72,62 +73,44 @@ const chooseData = {
 const servicesData = {
     subTitle: "WHAT WE OFFER",
     subIcon: "tji-box",
-    title: "Our Mobile App Development Services for Businesses Across India",
-    desc: "From native iOS and Android to cross-platform apps, UI/UX design, and post-launch support - complete mobile app development services built to perform at every stage of growth.",
+    title: "Our Video Optimization Services for Businesses Across India",
+    desc: "From YouTube SEO and keyword research to thumbnail optimization and performance tracking - complete video optimization services built to improve your rankings, increase engagement, and grow your video channel organically.",
     moreUrl: "/services",
     items: [
         {
             icon: "tji-service-1",
-            title: "iOS App Development",
-            desc: "We build high-performance, App Store-ready iOS applications built for speed, security, and seamless user experience - designed to meet Apple's strict guidelines while delivering the business results your investment demands.",
+            title: "YouTube SEO Services",
+            desc: "We optimize your YouTube channel and videos for search - keyword-optimized titles, descriptions, tags, and closed captions - so your content ranks higher in YouTube search results, gets recommended more often, and reaches the right audience consistently.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "Android App Development",
-            desc: "India runs on Android. We build scalable, feature-rich Android apps that work flawlessly across devices, screen sizes, and OS versions - built for the market where your users actually are.",
+            title: "Video Keyword Research",
+            desc: "We identify the exact keywords your target audience is searching for on YouTube and Google - balancing search volume, competition, and intent to build a keyword strategy that drives qualified views and sustainable video channel growth.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "Cross-Platform App Development",
-            desc: "Build once, deploy everywhere. Our cross platform app development services use Flutter and React Native to deliver native-quality experiences on both iOS and Android - at a fraction of the time and cost of building two separate apps.",
+            title: "Video Metadata Optimization",
+            desc: "We optimize every metadata element of your videos - titles, descriptions, tags, categories, chapters, and end screens - ensuring search engines and YouTube's algorithm understand exactly what your content is about and rank it accordingly.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "Flutter App Development",
-            desc: "Flutter is the future of cross-platform mobile development. We build beautiful, high-performance Flutter apps with a single codebase that feels completely native on both iOS and Android - fast to build, easy to maintain, and smooth to use.",
+            title: "YouTube Thumbnail Optimization",
+            desc: "Your thumbnail is the first decision point between your video and every competitor in the results. We design and optimize thumbnails that earn clicks - tested for CTR performance and designed to communicate your video's value in a single image.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "React Native Development",
-            desc: "React Native gives you the speed of cross-platform development with near-native performance. Our React Native team builds robust, scalable mobile applications for businesses that need to move fast without compromising on quality or user experience.",
+            title: "Video Performance Optimization",
+            desc: "We audit and improve the technical and strategic elements that drive video performance - watch time, audience retention, engagement rate, and CTR - identifying and fixing the specific factors that are preventing your videos from performing at their potential.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "App Design & UI/UX",
-            desc: "Great apps start with great design. Our mobile UI/UX design team creates intuitive, conversion-focused interfaces that guide users naturally through your app - reducing drop-off, improving retention, and making every interaction feel effortless.",
-            url: "/services",
-        },
-        {
-            icon: "tji-service-1",
-            title: "Backend & API Development",
-            desc: "The best mobile apps are powered by the best backends. We build secure, scalable backend systems and API integrations that handle real-world traffic, real-time data, and complex business logic - without breaking under pressure.",
-            url: "/services",
-        },
-        {
-            icon: "tji-service-1",
-            title: "App Testing & QA",
-            desc: "Every app we build goes through rigorous testing across devices, OS versions, and real-world usage scenarios before a single user ever touches it. Our QA process catches what development misses - so your launch is clean, your reviews are positive, and your users stay.",
-            url: "/services",
-        },
-        {
-            icon: "tji-service-1",
-            title: "App Maintenance & Deployment",
-            desc: "Launch day is just the beginning. We manage app store deployment, handle OS update compatibility, push feature updates, and provide ongoing technical support - so your mobile app development company in India relationship does not end when the project does.",
+            title: "Video Analytics & Reporting",
+            desc: "We track every metric that matters - views, watch time, subscriber growth, CTR, audience retention, and revenue - delivering clear monthly reports that show exactly how our video optimization services in India are improving your channel performance.",
             url: "/services",
         },
     ],
@@ -135,7 +118,7 @@ const servicesData = {
 
 const solutionsData = {
     subTitle: "WHO WE SERVE",
-    title: "Mobile App Development Solutions for Every Business Type",
+    title: "Video Optimization Solutions for Every Business Type",
     moreText: "More Services",
     moreUrl: "/services",
     items: [
@@ -143,127 +126,126 @@ const solutionsData = {
             icon: "tji-service-1",
             title: "Startups & Small Businesses",
             url: "/services",
-            desc: "Your app idea deserves a development partner that treats it like their own. Our mobile app development company in India works with startups to build lean, focused MVPs that validate your concept fast - without the enterprise price tag. We help you launch smart, gather real user feedback, and iterate quickly toward product-market fit.",
+            desc: "Video is one of the most powerful organic growth channels available to a business with a limited marketing budget - but only when it is optimized correctly from the start. Our video optimization services in India help startups build YouTube presence strategically, targeting low-competition keywords that drive qualified viewers and converting video traffic into leads without the cost of paid advertising.",
             list: ["Expansion Strategies", "Operational Efficiency", "Competitive Edge"],
         },
         {
             icon: "tji-service-1",
-            title: "D2C & Ecommerce Brands",
+            title: "Ecommerce & D2C Brands",
             url: "/services",
-            desc: "Mobile commerce is where D2C growth happens. We build ecommerce apps that make buying frictionless - fast product browsing, seamless checkout, push notification campaigns, and loyalty features that drive repeat purchases and customer lifetime value for brands serious about mobile-first growth.",
+            desc: "Product videos, unboxing content, and tutorial videos are among the highest-converting content formats in ecommerce - when they are visible. Our YouTube SEO services help ecommerce brands optimize product and review videos for search, improve click-through rates with better thumbnails, and build the kind of video presence that drives both YouTube traffic and Google Shopping visibility.",
             list: ["Expansion Strategies", "Operational Efficiency", "Competitive Edge"],
         },
         {
             icon: "tji-service-1",
             title: "B2B & Enterprise Companies",
             url: "/services",
-            desc: "Enterprise app development demands a different level of security, scalability, and integration capability. We build B2B mobile applications - from internal workflow tools and CRM apps to customer-facing platforms - that integrate with your existing tech stack and scale as your organization grows.",
+            desc: "Corporate videos, case studies, webinar recordings, and thought leadership content represent a significant investment for B2B businesses. Our video marketing services help enterprises maximize the return on that investment - optimizing every video for discoverability, improving watch time and engagement, and building YouTube channel authority that strengthens brand credibility with decision-makers.",
             list: ["Expansion Strategies", "Operational Efficiency", "Competitive Edge"],
         },
-        // Aur solutions add karne ho to yahan object push kar do ⬇️
     ],
 };
 
 const featuresData = {
     subTitle: "INDUSTRIES WE SERVE",
     subIcon: "tji-box",
-    title: "Industries We Build Mobile Apps For Across India",
+    title: "Industries We Help Grow With Video Optimization Services",
     items: [
         {
             id: 1,
             icon: "tji-innovative",
             title: "Healthcare",
-            desc: "Patient engagement apps, appointment booking, teleconsultation platforms, and health tracking solutions built with security and compliance at the core",
+            desc: "Patient education videos, doctor authority content, and health brand channels optimized for the searches patients make when researching symptoms and treatments",
         },
         {
             id: 2,
             icon: "tji-award",
             title: "Real Estate",
-            desc: "Property listing apps, virtual tour features, lead management tools, and broker portals that modernize the real estate buying and renting experience",
+            desc: "Property walkthrough videos, neighborhood guides, and agent authority content optimized to attract buyers and investors actively searching on YouTube",
         },
         {
             id: 3,
             icon: "tji-team",
             title: "Education",
-            desc: "Learning management systems, student engagement apps, live class platforms, and edtech solutions that make education more accessible and interactive",
+            desc: "Course preview videos, tutorial content, and institutional authority channels optimized to drive student discovery and enrollment through YouTube search",
         },
         {
             id: 4,
             icon: "tji-support",
             title: "Ecommerce",
-            desc: "High-converting mobile shopping apps with seamless checkout, product discovery, push notifications, and loyalty features that drive revenue growth",
+            desc: "Product demonstration videos, unboxing content, and buying guide videos optimized to appear in YouTube and Google searches at the moment of purchase intent",
         },
         {
             id: 5,
             icon: "tji-support",
             title: "Finance & Fintech",
-            desc: "Secure banking apps, payment solutions, investment platforms, and financial management tools built with enterprise-grade security standards",
+            desc: "Financial education content, product explainer videos, and trust-building brand channels optimized to reach audiences researching financial decisions",
         },
         {
             id: 6,
             icon: "tji-support",
             title: "SaaS & Technology",
-            desc: "Mobile companions for SaaS products, internal business tools, and customer-facing technology applications built to scale with your platform",
+            desc: "Product demo videos, tutorial content, and thought leadership channels optimized to drive trial signups and brand awareness among technical decision-makers",
         },
     ],
 };
 
 const scalableHighlightData = {
     eye: 'BUSINESS CHALLENGES',
-    title: "Mobile App Challenges Every Business in India Faces -",
-    titleSpan: "And How We Fix Them",
+    title: "Common Video Optimization Challenges Businesses Face -",
+    titleSpan: "And How We Solve Them",
     paragraphs: [
-        "Most businesses that come to us have already been through one failed app development experience. They hired a mobile app development company in India based on the lowest quote, received a product that barely worked, and were left without support when it inevitably broke. These are not edge cases - they are what happens when you choose the wrong development partner. As a leading mobile app development company trusted by 100+ businesses, we have rebuilt broken apps, rescued abandoned projects, and delivered first-time-right solutions for clients across every industry.",
+        "Most businesses that come to us for video optimization services have been uploading videos for months without seeing meaningful growth in views, subscribers, or leads. They know their content is good. They cannot understand why it is not performing. The answer is almost always the same - the optimization layer that makes videos discoverable, clickable, and watchable was never properly built. As a trusted provider of video optimization services in India working with businesses across industries, we have diagnosed and fixed every version of this problem.",
     ],
     features: [
-        "Apps that crash on launch - because testing was skipped to cut costs and meet a rushed deadline",
-        "No post-launch support - leaving businesses unable to fix bugs or release updates after delivery",
-        "Poor UI/UX design - creating apps users find confusing, frustrating, and abandon after one session",
-        "No backend scalability - apps that work for 100 users but collapse under real traffic load",
-        "No app store optimization - apps built but never discoverable in the App Store or Google Play",
-        "Source code ownership issues - developers who retain code access and use it as leverage post-delivery",
+        "Low video visibility in YouTube search - because keyword targeting, title structure, and description optimization were never applied correctly from the start",
+        "Poor YouTube rankings despite consistent uploading - because upload frequency without optimization does not signal relevance to the algorithm",
+        "Weak click-through rates on well-ranked videos - because thumbnails and titles are not compelling enough to earn the click when competing content appears alongside yours",
+        "Low audience retention killing distribution - because YouTube suppresses videos that viewers abandon early, regardless of how well they rank initially",
+        "Ineffective metadata optimization - missing tags, categories, chapters, and closed captions that help the algorithm understand and distribute your content",
+        "No performance tracking or reporting - making it impossible to identify what is working, what needs improvement, and where the next growth opportunity lies",
     ],
 };
 
 const servicesData9 = {
     subTitle: "OUR PROCESS",
-    title: "How We Deliver Your Mobile App Development Project",
+    title: "Our Video Optimization Process for Better Rankings and Engagement",
     moreText: "More services",
     moreUrl: "/services",
     items: [
         {
             id: 1,
             icon: "tji-innovative",
-            title: "Discovery & Requirement Analysis",
-            desc: "We start by understanding your business goals, your users, and your technical requirements in detail. Every decision made from here - platform choice, technology stack, feature prioritization - is grounded in what your app actually needs to succeed, not what is easiest to build.",
+            title: "Video Performance Audit",
+            desc: "We start with a comprehensive audit of your existing YouTube channel and video library - analyzing current rankings, watch time, CTR, audience retention, and metadata quality to identify exactly what is holding your video performance back.",
             url: "/services",
         },
         {
             id: 2,
             icon: "tji-award",
-            title: "UI/UX Design & Prototyping",
-            desc: "Before a single line of code is written, we design every screen and prototype the full user journey. You see exactly how your app will look and feel, how users will navigate it, and how key actions will work - all before development begins.",
+            title: "Keyword Research & Competitor Analysis",
+            desc: "We conduct in-depth YouTube keyword research - identifying the exact search terms your audience uses, analyzing competitor channels, and building a keyword strategy that targets the right searches with the right content at the right level of competition.",
             url: "/services",
         },
         {
             id: 3,
             icon: "tji-team",
-            title: "App Development & Testing",
-            desc: "Our development team builds your app with clean, scalable code - following mobile app development best practices for performance, security, and maintainability. Every feature is tested continuously throughout development, not just at the end.",
+            title: "Metadata & Thumbnail Optimization",
+            desc: "We optimize every metadata element - titles, descriptions, tags, chapters, and closed captions - and create or improve thumbnails for maximum CTR. Every change is made with both the algorithm and the human viewer in mind.",
             url: "/services",
         },
         {
             id: 4,
             icon: "tji-support",
-            title: "Launch & App Store Deployment",
-            desc: "We handle the complete App Store and Google Play submission process - optimizing your listing, preparing screenshots and descriptions, and managing the review process so your app launches cleanly and reaches users from day one.",
+            title: "Video SEO Implementation",
+            desc: "We implement the complete video SEO strategy - publishing schedule optimization, playlist structure, end screen and card strategy, community tab engagement, and channel-level optimization that improves overall authority and distribution.",
             url: "/services",
         },
         {
             id: 5,
             icon: "tji-support",
-            title: "Post-Launch Support & Maintenance",
-            desc: "After launch, we monitor performance, fix issues fast, push OS compatibility updates, and release new features on a structured roadmap. Our mobile app development services do not end at delivery - we are your long-term technology partner.",
+            title: "Analytics, Reporting & Continuous Optimization",
+            desc: "Monthly performance reports covering view growth, watch time improvement, subscriber trends, CTR changes, and audience retention data - all connected to specific optimizations made that month and the plan for the next cycle.",
             url: "/services",
         },
     ],
@@ -271,56 +253,56 @@ const servicesData9 = {
 
 const scalableHighlightData2 = {
     eye: 'WHY CHOOSE US',
-    title: "Why Choose Mematdigi as Your ",
-    titleSpan: "Mobile App Development Company in India",
+    title: "Why Choose Mematdigi for ",
+    titleSpan: "Video Optimization Services in India",
     paragraphs: [
-        "Choosing the right mobile app development company in India is one of the most important decisions your business will make. A bad choice costs you time, money, and opportunity. At Mematdigi, we have built our reputation as a leading mobile app development company by doing what most development companies do not - staying involved, staying accountable, and staying focused on your business results long after the project is delivered. Whether you need a startup MVP, a cross-platform app for a growing D2C brand, or enterprise app development for a complex B2B workflow - our team brings the same commitment to quality, transparency, and performance to every engagement.",
-        "When you work with the app developers at Mematdigi, you get more than a development team - you get a mobile app development company in India that treats your product like their own. From the first discovery call to ongoing post-launch maintenance, we are the mobile app development partner that Indian businesses trust to build apps that actually perform.",
+        "At Mematdigi, we have built our expertise in video optimization services in India by treating YouTube as what it actually is - the world's second-largest search engine, with its own ranking signals, its own algorithm, and its own optimization requirements that are completely different from web SEO. We are not the agency that uploads your videos with a few keyword-stuffed tags and calls it optimization. We are the video marketing services partner that builds a complete YouTube SEO strategy - from keyword research and metadata optimization to thumbnail testing, performance tracking, and continuous improvement that compounds your channel's growth month over month.",
+        "Whether you are a startup building your first YouTube presence or an enterprise that needs a specialist provider of video optimization services in india to improve the performance of an established channel - Mematdigi delivers the YouTube SEO services and video content optimization that turn video investment into measurable, compounding business growth."
     ],
     features: [
-        "Mobile app development company in India with 135+ apps delivered across 15+ industries",
-        "Best mobile app development company for startups - lean MVPs built fast, built right, built to validate",
-        "Hire mobile app developer in India - dedicated developers assigned to your project from day one to launch",
-        "Custom mobile app development - every app built from scratch around your users, your goals, and your business model",
-        "Enterprise app development - secure, scalable, integrated solutions built for the complexity of real enterprise environments",
-        "Hire mobile app developers in India - a full team including designers, developers, QA engineers, and a project manager under one roof",
+        "Video optimization services in india - proven channel growth across healthcare, education, ecommerce, finance, and SaaS verticals",
+        "YouTube SEO services - complete channel and video optimization that improves search rankings and drives organic view growth",
+        "Video performance optimization - watch time, retention, and CTR improvements that signal quality to the algorithm and accelerate distribution",
+        "Video metadata optimization - titles, descriptions, tags, chapters, and closed captions optimized for both algorithm and viewer",
+        "Video SEO services - search engine optimization applied specifically to video content across YouTube and Google video search",
+        "Video marketing services - strategic channel growth planning that connects video performance to real business outcomes",
     ],
 };
 
 const faqData = {
     subTitle: "FAQs",
     subIcon: "tji-box",
-    title: "Frequently Asked Questions About Mobile App Development in India",
+    title: "Frequently Asked Questions About Video Optimization Services in India",
     phone: { display: "1-888-452-1505", tel: "18884521505" },
     items: [
         {
-            title: "How much does mobile app development cost in India? ",
-            desc: "No fixed answer here - it really depends on what you're building. A basic app might cost ₹3-5 lakhs. Add a payment gateway, admin panel, real-time chat, and suddenly you're looking at ₹15-30 lakhs. We've seen both. Share what you have in mind and we'll give you a realistic number, not a ballpark pulled from thin air.",
+            title: "What are video optimization services and why does my business need them?",
+            desc: "Video optimization services in India involve improving every element that affects how your videos rank, get discovered, and perform - keyword targeting, metadata, thumbnails, watch time, and audience retention. Without optimization, even well-produced videos remain invisible. Our video optimization services ensure your content reaches the right audience and delivers measurable business results.",
             initActive: true,
         },
         {
-            title: "Should I build an Android or iOS app first? ",
-            desc: "Where are your users? That's the only question that matters. If they're in India, Android - no debate, it owns the market here. If you're going after users in the US or Europe, or targeting people who spend money on apps, start with iOS. Can't decide or the budget is tight? Build once for both with Flutter or React Native. Works well for most businesses.",
+            title: "How do YouTube SEO services improve video rankings?",
+            desc: "YouTube SEO services improve rankings by optimizing the signals YouTube's algorithm uses to evaluate relevance and quality - keyword-optimized titles and descriptions, properly structured tags, closed captions, engagement signals, and watch time. Our YouTube SEO approach treats every video as a search-optimized asset that earns rankings over time, not just at upload.",
             initActive: false,
         },
         {
-            title: "Do you provide app maintenance after launch? ",
-            desc: "Launch day is actually just the beginning. Apps break. OS updates happen. Users find bugs you never imagined. We stay involved after go-live - fixing issues, pushing updates, keeping things running. Think of it less like a service and more like having a team on call.",
+            title: "What is included in your video optimization service?",
+            desc: "Our video optimization services cover keyword research, metadata optimization, thumbnail improvement, channel structure optimization, playlist strategy, end screen and card setup, and performance tracking. For existing channels, we also conduct a full video SEO audit identifying every optimization opportunity across your current library of published content.",
             initActive: false,
         },
         {
-            title: "Is cross-platform app development as good as native? ",
-            desc: "For 90% of apps out there - yes, genuinely. Most users won't feel any difference. Where it gets complicated is if your app needs to do something very hardware-specific, like advanced camera processing or real-time sensor data. That's when native start making sense. We'll be upfront with you about which one your project actually needs.",
+            title: "Do you optimize existing videos or only new videos?",
+            desc: "Both. Our video content optimization service covers existing videos - updating titles, descriptions, tags, and thumbnails to improve their performance - as well as new videos, where we apply optimization from the start. Optimizing existing videos often delivers the fastest results because the content is already indexed and partially ranked.",
             initActive: false,
         },
         {
-            title: "Do you sign an NDA before starting the project? ",
-            desc: "Always, before we even get into details. A lot of founders are nervous about sharing their ideas - that's fair. We sign an NDA first, then talk. Your concept stays yours and goes nowhere outside this conversation.",
+            title: "Can video optimization help increase views and engagement?",
+            desc: "Yes - significantly. Proper video optimization improves discoverability in search, increases CTR through better thumbnails and titles, and improves watch time through better content structure and audience retention strategies. Businesses that implement professional video optimization services consistently see meaningful improvements in views, watch time, subscriber growth, and engagement within 60–90 days.",
             initActive: false,
         },
         {
-            title: "Will I own the source code after the project?",
-            desc: "Yes - completely. Once we're done and payment is settled, the code is handed over to you. No monthly fees to \"keep access,\" no vendor lock-in. We've heard enough horror stories from clients burned by other agencies to make this a hard rule for us.",
+            title: "Do you provide performance reports after optimization?",
+            desc: "Yes. Every client receives monthly video analytics and performance reports covering view growth, watch time improvement, CTR changes, subscriber trends, and audience retention data. Our video performance optimization reporting is written in plain language - no jargon, no vanity metrics, just clear data showing exactly how your channel is growing.",
             initActive: false,
         },
     ],
@@ -329,8 +311,8 @@ const faqData = {
 const contactData = {
     left: {
         subTitle: "CONTACT US NOW",
-        title: "Ready to Build Your Mobile App With India's Leading App Development Company?",
-        desc: "Ready to work with a trusted mobile app development company in India? Partner with Mematdigi for custom mobile app development services that build secure, scalable, and high-performance mobile applications. From startup MVPs to enterprise apps, we create solutions designed to drive user engagement, business growth, and long-term success. ",
+        title: "Ready to Grow Your Business With Professional Video Optimization Services in India?",
+        desc: "Partner with Mematdigi for video optimization services in India that improve YouTube rankings, increase video visibility, and drive meaningful audience engagement. From YouTube SEO and metadata optimization to performance tracking, we help your videos generate measurable business growth.",
     },
     form: {
         subTitle: "Get a Call Now",
@@ -338,20 +320,19 @@ const contactData = {
         title: "Drop Us a",
         titleSpan: "Line.",
         selectOptions: [
-            { value: "0", optionName: "Choose an option" },
-            { value: "1", optionName: "iOS App Development" },
-            { value: "2", optionName: "Android App Development" },
-            { value: "3", optionName: "Cross-Platform App Development" },
-            { value: "4", optionName: "Flutter App Development" },
-            { value: "5", optionName: "React Native Development" },
-            { value: "6", optionName: "App Design & UI/UX" },
-            { value: "7", optionName: "Backend & API Development" },
+            { value: "0", optionName: "Choose a service" },
+            { value: "1", optionName: "YouTube SEO Services" },
+            { value: "2", optionName: "Video Keyword Research" },
+            { value: "3", optionName: "Video Metadata Optimization" },
+            { value: "4", optionName: "YouTube Thumbnail Optimization" },
+            { value: "5", optionName: "Video Performance Optimization" },
+            { value: "6", optionName: "Video Analytics & Reporting" },
         ],
     },
 };
 
 /* ============================================================
- *  SECTIONS
+ * SECTIONS
  * ========================================================== */
 
 const HeroSection = () => {
@@ -479,7 +460,6 @@ const HeroSection = () => {
                                             />
                                         </div>
 
-                                        {/* Mobile form me Business Type dropdown (Website URL input hata diya) */}
                                         <div className="form-group">
                                             <select
                                                 name="service"
@@ -674,14 +654,6 @@ const ServicesSection2 = () => {
                                         </div>
                                         <div className="service-content">
                                             <p className="desc">{item.desc}</p>
-                                            {/* <ul className="list-items">
-                                                {item.list.map((li, i) => (
-                                                    <li key={i}>
-                                                        <i className="tji-list"></i>
-                                                        {li}
-                                                    </li>
-                                                ))}
-                                            </ul> */}
                                         </div>
                                     </div>
                                 </div>
@@ -738,12 +710,9 @@ const FeaturesSection = () => {
     );
 };
 
-/* Reusable — pehle ye 2 baar copy-paste hua tha (dono highlight section
- * bilkul same the). Ab ek hi component hai, data prop ke through render hota hai. */
 const ScalableHighlightSection = ({ data }) => {
     return (
         <section className="services-section p-3 m-5 mb-5 border rounded-3 box-shadow">
-            {/* SCSS me defined decorative glows */}
             <span className="ss-glow ss-glow--orange" />
             <span className="ss-glow ss-glow--blue" />
 
@@ -787,7 +756,6 @@ const ScalableHighlightSection = ({ data }) => {
                                         />
                                     </svg>
                                 </div>
-                                {/* text ab icon ke BAHAR, uska sibling */}
                                 <span className="feature-text">{text}</span>
                             </div>
                         ))}
@@ -929,7 +897,6 @@ const FaqSection = () => {
 const ContactSection = () => {
     return (
         <section className="tj-contact-section section-gap">
-            {/* Scoped CSS to fix dark theme text visibility */}
             <style
                 dangerouslySetInnerHTML={{
                     __html: `
@@ -1064,7 +1031,7 @@ const ContactSection = () => {
     );
 };
 
-export default function MobileAppDevelopmentServices() {
+export default function VideoOptimizationServices() {
     return (
         <div>
             <BackToTop />

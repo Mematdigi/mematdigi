@@ -12,13 +12,13 @@ import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
 
 const heroData = {
     bgImage: "/images/hero/h9-hero-bg.webp",
-    eyebrow: "MOBILE APP DEVELOPMENT",
-    titlePre: "Mobile App Development Company in India That Builds",
-    titleHighlight: "Apps That Perform",
+    eyebrow: "ORM SERVICES",
+    titlePre: "Online Reputation Management Services in India That Protect and",
+    titleHighlight: "Build Your Brand",
     titlePost: "",
     desc: (
         <>
-            As a trusted mobile app development company in India, we deliver custom, scalable, high-performance apps for iOS, Android, Flutter, and React Native that enhance user experience and drive business growth.
+            As a trusted online reputation management company in India, we deliver services that protect your brand, improve trust, and strengthen your online presence for long-term growth.
         </>
     ),
     stats: [
@@ -27,13 +27,12 @@ const heroData = {
         { number: "15", suffix: "+", label: "Industries Served" },
         { number: "135", suffix: "+", label: "Projects Delivered" },
     ],
-    primaryCta: { text: "Get Free Consultation", url: "/contact-us" },
+    primaryCta: { text: "Get ORM Audit", url: "/contact-us" },
     form: {
         tag: "GET IN TOUCH",
-        title: "Request A Quote",
+        title: "Get Your Free ORM Audit",
         subtitle: "Fill out the form and our team will reach out within 24 hours.",
         // Mobile form fields = Name, Email, Phone, Business Type, Message.
-        // Website URL input hata kar Business Type dropdown wapas laaya.
         serviceOptions: [
             { value: "", label: "Business Type *" },
             { value: "startup", label: "Startup / Small Business" },
@@ -45,26 +44,26 @@ const heroData = {
 };
 
 const chooseData = {
-    subTitle: "COMMON APP DEVELOPMENT CHALLENGES",
+    subTitle: "COMMON ORM CHALLENGES",
     subIcon: "tji-box",
-    title: "Why Most Mobile Apps Fail to Deliver Business Results",
+    title: "One Negative Review Can Cost You Thousands in Lost Business",
     desc: "",
     banner: "/images/choose/h8-choose-bnner.webp",
     boxes: [
         {
             icon: "tji-innovative",
-            title: "Poor User Experience",
-            desc: "Many mobile apps fail because of slow performance, confusing navigation, and poor UI/UX design, leading users to abandon the app after only a few interactions.",
+            title: "Negative Reviews Damage Trust",
+            desc: "Unanswered negative reviews and poor ratings create a bad first impression, reducing customer confidence and influencing potential buyers before they ever contact your business.",
         },
         {
             icon: "tji-award",
-            title: "Lack of Scalability",
-            desc: "Apps built without a scalable architecture often struggle with increasing users, new features, and platform updates, creating performance issues that limit long-term business growth.",
+            title: "Poor Online Brand Visibility",
+            desc: "Outdated news, negative search results, and inconsistent brand information across platforms can damage your reputation and make it difficult for customers to trust your business.",
         },
         {
             icon: "tji-support",
-            title: "No Long-Term Support",
-            desc: "Building an app is only the beginning. Without regular updates, maintenance, security improvements, and post-launch support, even well-designed mobile apps quickly lose reliability and user trust.",
+            title: "No Reputation Management Strategy",
+            desc: "Without continuous monitoring, review management, and proactive reputation building, small issues can quickly become major problems that impact customer acquisition and long-term business growth.",
         },
     ],
 };
@@ -72,62 +71,62 @@ const chooseData = {
 const servicesData = {
     subTitle: "WHAT WE OFFER",
     subIcon: "tji-box",
-    title: "Our Mobile App Development Services for Businesses Across India",
-    desc: "From native iOS and Android to cross-platform apps, UI/UX design, and post-launch support - complete mobile app development services built to perform at every stage of growth.",
+    title: "Our ORM Services for Businesses Across India",
+    desc: "From review management and crisis control to brand monitoring and content suppression - complete ORM services built to protect and strengthen your online reputation.",
     moreUrl: "/services",
     items: [
         {
             icon: "tji-service-1",
-            title: "iOS App Development",
-            desc: "We build high-performance, App Store-ready iOS applications built for speed, security, and seamless user experience - designed to meet Apple's strict guidelines while delivering the business results your investment demands.",
+            title: "Review Management",
+            desc: "We monitor, respond to, and actively generate positive reviews across Google, industry platforms, and social media - turning your review profile into a trust-building asset rather than a liability.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "Android App Development",
-            desc: "India runs on Android. We build scalable, feature-rich Android apps that work flawlessly across devices, screen sizes, and OS versions - built for the market where your users actually are.",
+            title: "Crisis Management",
+            desc: "When a reputation crisis hits, speed and strategy matter. Our crisis management services provide rapid response protocols, message control, and damage containment to protect your brand when it matters most.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "Cross-Platform App Development",
-            desc: "Build once, deploy everywhere. Our cross platform app development services use Flutter and React Native to deliver native-quality experiences on both iOS and Android - at a fraction of the time and cost of building two separate apps.",
+            title: "Corporate Reputation Management",
+            desc: "We protect and build long-term corporate reputation through proactive monitoring, stakeholder communication strategy, and consistent positive brand presence across every channel that influences how your company is perceived.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "Flutter App Development",
-            desc: "Flutter is the future of cross-platform mobile development. We build beautiful, high-performance Flutter apps with a single codebase that feels completely native on both iOS and Android - fast to build, easy to maintain, and smooth to use.",
+            title: "Google Reputation Management",
+            desc: "Search results form first impressions instantly. Our Google reputation management services work to push positive, brand-controlled content above negative mentions - controlling what people see first when they search your name.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "React Native Development",
-            desc: "React Native gives you the speed of cross-platform development with near-native performance. Our React Native team builds robust, scalable mobile applications for businesses that need to move fast without compromising on quality or user experience.",
+            title: "Brand Monitoring",
+            desc: "We continuously monitor mentions of your brand across the web, social media, and review platforms - catching reputation threats early, before they escalate into something that requires crisis management.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "App Design & UI/UX",
-            desc: "Great apps start with great design. Our mobile UI/UX design team creates intuitive, conversion-focused interfaces that guide users naturally through your app - reducing drop-off, improving retention, and making every interaction feel effortless.",
+            title: "Negative Content Suppression",
+            desc: "Through strategic content creation and SEO, we suppress negative content from page one search results - without violating platform policies - pushing it down while positive, authentic content rises to the top.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "Backend & API Development",
-            desc: "The best mobile apps are powered by the best backends. We build secure, scalable backend systems and API integrations that handle real-world traffic, real-time data, and complex business logic - without breaking under pressure.",
+            title: "Social Media Reputation Management",
+            desc: "We monitor and manage your brand's reputation across social media platforms - handling negative comments, managing public perception during sensitive moments, and ensuring your social presence reflects your brand accurately.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "App Testing & QA",
-            desc: "Every app we build goes through rigorous testing across devices, OS versions, and real-world usage scenarios before a single user ever touches it. Our QA process catches what development misses - so your launch is clean, your reviews are positive, and your users stay.",
+            title: "Wikipedia & Knowledge Panel Management",
+            desc: "We help establish and manage accurate Wikipedia presence and Google Knowledge Panels - authoritative information sources that significantly shape how search engines and users perceive your brand or business.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "App Maintenance & Deployment",
-            desc: "Launch day is just the beginning. We manage app store deployment, handle OS update compatibility, push feature updates, and provide ongoing technical support - so your mobile app development company in India relationship does not end when the project does.",
+            title: "CEO & Personal Reputation Management",
+            desc: "Leadership reputation directly impacts business reputation. We manage personal online presence for executives and founders - building thought leadership while protecting against personal reputation risks that could affect the company.",
             url: "/services",
         },
     ],
@@ -135,7 +134,7 @@ const servicesData = {
 
 const solutionsData = {
     subTitle: "WHO WE SERVE",
-    title: "Mobile App Development Solutions for Every Business Type",
+    title: "ORM Services for Every Business Type in India",
     moreText: "More Services",
     moreUrl: "/services",
     items: [
@@ -143,21 +142,21 @@ const solutionsData = {
             icon: "tji-service-1",
             title: "Startups & Small Businesses",
             url: "/services",
-            desc: "Your app idea deserves a development partner that treats it like their own. Our mobile app development company in India works with startups to build lean, focused MVPs that validate your concept fast - without the enterprise price tag. We help you launch smart, gather real user feedback, and iterate quickly toward product-market fit.",
+            desc: "A handful of negative reviews can devastate a young business before it has built enough positive presence to balance them out. Our ORM services in India for startups focus on building a strong review foundation fast, monitoring brand mentions proactively, and establishing the reputation infrastructure that protects your business as it scales.",
             list: ["Expansion Strategies", "Operational Efficiency", "Competitive Edge"],
         },
         {
             icon: "tji-service-1",
             title: "D2C & Ecommerce Brands",
             url: "/services",
-            desc: "Mobile commerce is where D2C growth happens. We build ecommerce apps that make buying frictionless - fast product browsing, seamless checkout, push notification campaigns, and loyalty features that drive repeat purchases and customer lifetime value for brands serious about mobile-first growth.",
+            desc: "Customer reviews directly drive or destroy ecommerce conversion rates. Our online reputation management agency works with D2C brands to manage review generation, respond to customer complaints before they escalate publicly, and build the kind of trust signals that turn browsers into confident buyers.",
             list: ["Expansion Strategies", "Operational Efficiency", "Competitive Edge"],
         },
         {
             icon: "tji-service-1",
             title: "B2B & Enterprise Companies",
             url: "/services",
-            desc: "Enterprise app development demands a different level of security, scalability, and integration capability. We build B2B mobile applications - from internal workflow tools and CRM apps to customer-facing platforms - that integrate with your existing tech stack and scale as your organization grows.",
+            desc: "Enterprise reputation extends beyond customer reviews into media coverage, employee sentiment, executive presence, and stakeholder perception. We deliver comprehensive corporate reputation management that protects brand equity across every audience that influences enterprise business outcomes.",
             list: ["Expansion Strategies", "Operational Efficiency", "Competitive Edge"],
         },
         // Aur solutions add karne ho to yahan object push kar do ⬇️
@@ -167,103 +166,103 @@ const solutionsData = {
 const featuresData = {
     subTitle: "INDUSTRIES WE SERVE",
     subIcon: "tji-box",
-    title: "Industries We Build Mobile Apps For Across India",
+    title: "Industries We Serve With Our Online Reputation Management Services",
     items: [
         {
             id: 1,
             icon: "tji-innovative",
             title: "Healthcare",
-            desc: "Patient engagement apps, appointment booking, teleconsultation platforms, and health tracking solutions built with security and compliance at the core",
+            desc: "Patient review management and trust-building ORM strategies for clinics and hospitals where reputation directly drives appointment bookings",
         },
         {
             id: 2,
             icon: "tji-award",
             title: "Real Estate",
-            desc: "Property listing apps, virtual tour features, lead management tools, and broker portals that modernize the real estate buying and renting experience",
+            desc: "Reputation management for developers and agents where client trust and project credibility directly impact sales and lead generation",
         },
         {
             id: 3,
             icon: "tji-team",
             title: "Education",
-            desc: "Learning management systems, student engagement apps, live class platforms, and edtech solutions that make education more accessible and interactive",
+            desc: "Institutional reputation building for schools and colleges where parent and student trust significantly influences enrollment decisions",
         },
         {
             id: 4,
             icon: "tji-support",
             title: "Ecommerce",
-            desc: "High-converting mobile shopping apps with seamless checkout, product discovery, push notifications, and loyalty features that drive revenue growth",
+            desc: "Review management and reputation protection for online stores where customer trust signals directly impact conversion rates",
         },
         {
             id: 5,
             icon: "tji-support",
             title: "Finance & Fintech",
-            desc: "Secure banking apps, payment solutions, investment platforms, and financial management tools built with enterprise-grade security standards",
+            desc: "Compliance-aware reputation management for financial brands where trust and credibility are non-negotiable for customer acquisition",
         },
         {
             id: 6,
             icon: "tji-support",
             title: "SaaS & Technology",
-            desc: "Mobile companions for SaaS products, internal business tools, and customer-facing technology applications built to scale with your platform",
+            desc: "Review platform management and brand monitoring for tech companies where reputation influences enterprise buying decisions",
         },
     ],
 };
 
 const scalableHighlightData = {
     eye: 'BUSINESS CHALLENGES',
-    title: "Mobile App Challenges Every Business in India Faces -",
+    title: "Reputation Challenges Every Business in India Faces -",
     titleSpan: "And How We Fix Them",
     paragraphs: [
-        "Most businesses that come to us have already been through one failed app development experience. They hired a mobile app development company in India based on the lowest quote, received a product that barely worked, and were left without support when it inevitably broke. These are not edge cases - they are what happens when you choose the wrong development partner. As a leading mobile app development company trusted by 100+ businesses, we have rebuilt broken apps, rescued abandoned projects, and delivered first-time-right solutions for clients across every industry.",
+        "Most businesses that come to us are already dealing with a reputation problem that has been building for months. A string of negative reviews nobody responded to. A competitor leaving fake complaints. Old negative press still ranking on page one. They tried to handle it themselves, made it worse, and finally realized they needed professional ORM services in India. As a trusted ORM agency in India working with 100+ businesses, we have seen every version of a damaged online reputation - and we know exactly how to rebuild it strategically.",
     ],
     features: [
-        "Apps that crash on launch - because testing was skipped to cut costs and meet a rushed deadline",
-        "No post-launch support - leaving businesses unable to fix bugs or release updates after delivery",
-        "Poor UI/UX design - creating apps users find confusing, frustrating, and abandon after one session",
-        "No backend scalability - apps that work for 100 users but collapse under real traffic load",
-        "No app store optimization - apps built but never discoverable in the App Store or Google Play",
-        "Source code ownership issues - developers who retain code access and use it as leverage post-delivery",
+        "Unanswered negative reviews piling up - sending the message that customer complaints do not matter to your business",
+        "Fake or malicious reviews from competitors - damaging your rating with content that should never have been published",
+        "Old negative press still ranking high - controlling the first impression every new customer or partner forms about you",
+        "No crisis response plan in place - leaving businesses scrambling when a reputation issue suddenly goes public",
+        "Inconsistent brand presence across platforms - creating confusion about who you actually are and what you stand for",
+        "No proactive monitoring system - meaning reputation threats are discovered only after the damage has already spread",
     ],
 };
 
 const servicesData9 = {
     subTitle: "OUR PROCESS",
-    title: "How We Deliver Your Mobile App Development Project",
+    title: "How We Deliver Our ORM Services in India",
     moreText: "More services",
     moreUrl: "/services",
     items: [
         {
             id: 1,
             icon: "tji-innovative",
-            title: "Discovery & Requirement Analysis",
-            desc: "We start by understanding your business goals, your users, and your technical requirements in detail. Every decision made from here - platform choice, technology stack, feature prioritization - is grounded in what your app actually needs to succeed, not what is easiest to build.",
+            title: "Reputation Audit & Analysis",
+            desc: "We start with a comprehensive audit of your current online reputation - reviews, search results, social mentions, and press coverage - identifying exactly where the damage is and what is driving it before we build a single strategy.",
             url: "/services",
         },
         {
             id: 2,
             icon: "tji-award",
-            title: "UI/UX Design & Prototyping",
-            desc: "Before a single line of code is written, we design every screen and prototype the full user journey. You see exactly how your app will look and feel, how users will navigate it, and how key actions will work - all before development begins.",
+            title: "Strategy & Action Plan",
+            desc: "Based on the audit, we build a custom ORM action plan - covering review management, content suppression, brand monitoring, and crisis protocols if needed - all tailored to the specific reputation challenges your business faces.",
             url: "/services",
         },
         {
             id: 3,
             icon: "tji-team",
-            title: "App Development & Testing",
-            desc: "Our development team builds your app with clean, scalable code - following mobile app development best practices for performance, security, and maintainability. Every feature is tested continuously throughout development, not just at the end.",
+            title: "Review & Content Management",
+            desc: "We actively manage your review profile across all relevant platforms - responding professionally to negative reviews, encouraging satisfied customers to share their experience, and building the positive content that strengthens your corporate reputation management efforts.",
             url: "/services",
         },
         {
             id: 4,
             icon: "tji-support",
-            title: "Launch & App Store Deployment",
-            desc: "We handle the complete App Store and Google Play submission process - optimizing your listing, preparing screenshots and descriptions, and managing the review process so your app launches cleanly and reaches users from day one.",
+            title: "Negative Suppression & Brand Building",
+            desc: "We work to suppress harmful content from page one search results through strategic, ethical content creation and SEO - while simultaneously building authentic positive content that reflects your brand accurately and builds long-term trust.",
             url: "/services",
         },
         {
             id: 5,
             icon: "tji-support",
-            title: "Post-Launch Support & Maintenance",
-            desc: "After launch, we monitor performance, fix issues fast, push OS compatibility updates, and release new features on a structured roadmap. Our mobile app development services do not end at delivery - we are your long-term technology partner.",
+            title: "Monitoring & Ongoing Reporting",
+            desc: "Continuous brand monitoring catches new reputation threats before they escalate. You receive clear monthly reports showing review trends, sentiment changes, and search result improvements - full transparency into how our online reputation management services are protecting your brand.",
             url: "/services",
         },
     ],
@@ -272,55 +271,55 @@ const servicesData9 = {
 const scalableHighlightData2 = {
     eye: 'WHY CHOOSE US',
     title: "Why Choose Mematdigi as Your ",
-    titleSpan: "Mobile App Development Company in India",
+    titleSpan: "ORM Agency in India",
     paragraphs: [
-        "Choosing the right mobile app development company in India is one of the most important decisions your business will make. A bad choice costs you time, money, and opportunity. At Mematdigi, we have built our reputation as a leading mobile app development company by doing what most development companies do not - staying involved, staying accountable, and staying focused on your business results long after the project is delivered. Whether you need a startup MVP, a cross-platform app for a growing D2C brand, or enterprise app development for a complex B2B workflow - our team brings the same commitment to quality, transparency, and performance to every engagement.",
-        "When you work with the app developers at Mematdigi, you get more than a development team - you get a mobile app development company in India that treats your product like their own. From the first discovery call to ongoing post-launch maintenance, we are the mobile app development partner that Indian businesses trust to build apps that actually perform.",
+        "At Mematdigi, we have built our reputation as a trusted ORM agency in India by treating online reputation management as a continuous business priority - not a one-time fix applied only after damage has already been done. We are not the orm agency that disappears after a quick suppression campaign. We are the online reputation management agency that builds lasting reputation infrastructure - proactive monitoring, consistent review management, and crisis-ready protocols that protect your brand around the clock. As one of the best ORM services in India, we combine ethical SEO suppression techniques with genuine reputation building, because lasting reputation protection comes from both.",
+        "Whether you are a startup dealing with your first negative review or an enterprise managing a complex, multi-platform reputation challenge - Mematdigi delivers the best ORM services in India with the urgency a damaged reputation demands and the long-term strategy a strong reputation requires. Your reputation shapes every business decision a potential customer makes about you before they ever speak to your team.",
     ],
     features: [
-        "Mobile app development company in India with 135+ apps delivered across 15+ industries",
-        "Best mobile app development company for startups - lean MVPs built fast, built right, built to validate",
-        "Hire mobile app developer in India - dedicated developers assigned to your project from day one to launch",
-        "Custom mobile app development - every app built from scratch around your users, your goals, and your business model",
-        "Enterprise app development - secure, scalable, integrated solutions built for the complexity of real enterprise environments",
-        "Hire mobile app developers in India - a full team including designers, developers, QA engineers, and a project manager under one roof",
+        "Online reputation management services in India - comprehensive ORM coverage across reviews, search, social media, and press",
+        "ORM agency in India with proactive monitoring - catching reputation threats early, before they require crisis management",
+        "Crisis management services - rapid response protocols ready to deploy the moment your reputation faces a real threat",
+        "Corporate reputation management for enterprises - protecting brand equity across every stakeholder audience that matters",
+        "ORM company in India with transparent reporting - clear monthly visibility into exactly how your reputation is improving",
+        "ORM online reputation management built for the long term - not quick fixes that leave you vulnerable again in six months",
     ],
 };
 
 const faqData = {
     subTitle: "FAQs",
     subIcon: "tji-box",
-    title: "Frequently Asked Questions About Mobile App Development in India",
+    title: "Frequently Asked Questions About ORM Services in India",
     phone: { display: "1-888-452-1505", tel: "18884521505" },
     items: [
         {
-            title: "How much does mobile app development cost in India? ",
-            desc: "No fixed answer here - it really depends on what you're building. A basic app might cost ₹3-5 lakhs. Add a payment gateway, admin panel, real-time chat, and suddenly you're looking at ₹15-30 lakhs. We've seen both. Share what you have in mind and we'll give you a realistic number, not a ballpark pulled from thin air.",
+            title: "What are online reputation management services? ",
+            desc: "Online reputation management services involve monitoring, managing, and improving how your brand appears online - across reviews, search results, social media, and press coverage. At Mematdigi, our online reputation management services in India combine proactive monitoring, review management, and strategic content to build and protect your brand's digital reputation.",
             initActive: true,
         },
         {
-            title: "Should I build an Android or iOS app first? ",
-            desc: "Where are your users? That's the only question that matters. If they're in India, Android - no debate, it owns the market here. If you're going after users in the US or Europe, or targeting people who spend money on apps, start with iOS. Can't decide or the budget is tight? Build once for both with Flutter or React Native. Works well for most businesses.",
+            title: "How much do ORM services cost in India? ",
+            desc: "ORM services in India typically range from ₹15,000 to ₹1,00,000+ per month depending on the severity of the reputation challenge, the platforms involved, and whether crisis management is required. As a transparent ORM company in India, Mematdigi prices based on your specific reputation needs, not a fixed package.",
             initActive: false,
         },
         {
-            title: "Do you provide app maintenance after launch? ",
-            desc: "Launch day is actually just the beginning. Apps break. OS updates happen. Users find bugs you never imagined. We stay involved after go-live - fixing issues, pushing updates, keeping things running. Think of it less like a service and more like having a team on call.",
+            title: "How long does it take to repair online reputation? ",
+            desc: "Reputation repair timelines vary based on severity. Minor review management improvements can show results within weeks. More serious orm online reputation management cases - suppressing negative press or recovering from a crisis - typically take 3–6 months. We provide the best ORM services in India with honest timelines based on your specific situation.",
             initActive: false,
         },
         {
-            title: "Is cross-platform app development as good as native? ",
-            desc: "For 90% of apps out there - yes, genuinely. Most users won't feel any difference. Where it gets complicated is if your app needs to do something very hardware-specific, like advanced camera processing or real-time sensor data. That's when native start making sense. We'll be upfront with you about which one your project actually needs.",
+            title: "Can you remove negative reviews and content from Google? ",
+            desc: "We cannot guarantee removal of legitimate reviews, but our Google reputation management services use ethical strategies to flag policy-violating content, respond professionally to negative reviews, and build positive content that suppresses harmful results. Our online reputation management agency focuses on what is actually achievable and effective.",
             initActive: false,
         },
         {
-            title: "Do you sign an NDA before starting the project? ",
-            desc: "Always, before we even get into details. A lot of founders are nervous about sharing their ideas - that's fair. We sign an NDA first, then talk. Your concept stays yours and goes nowhere outside this conversation.",
+            title: "Do you offer crisis management services? ",
+            desc: "Yes. Our crisis management services include rapid response protocols, message control strategies, and damage containment plans designed to protect your brand when a reputation crisis emerges. Combined with ongoing corporate reputation management, we help businesses respond effectively and recover faster from reputation threats.",
             initActive: false,
         },
         {
-            title: "Will I own the source code after the project?",
-            desc: "Yes - completely. Once we're done and payment is settled, the code is handed over to you. No monthly fees to \"keep access,\" no vendor lock-in. We've heard enough horror stories from clients burned by other agencies to make this a hard rule for us.",
+            title: "Do you offer ORM services for small businesses and startups?",
+            desc: "Yes. Our ORM agency in India works with businesses of every size - including startups and small businesses that need an affordable orm agency to establish a strong reputation foundation early. We scale our online reputation management services to match your budget and the specific reputation challenges your business faces.",
             initActive: false,
         },
     ],
@@ -329,8 +328,8 @@ const faqData = {
 const contactData = {
     left: {
         subTitle: "CONTACT US NOW",
-        title: "Ready to Build Your Mobile App With India's Leading App Development Company?",
-        desc: "Ready to work with a trusted mobile app development company in India? Partner with Mematdigi for custom mobile app development services that build secure, scalable, and high-performance mobile applications. From startup MVPs to enterprise apps, we create solutions designed to drive user engagement, business growth, and long-term success. ",
+        title: "Ready to Protect Your Brand With India's Best ORM Services?",
+        desc: "Ready to partner with a trusted online reputation management company in India? Mematdigi delivers professional online reputation management services that protect your brand, strengthen customer trust, and improve your online presence through proactive monitoring, review management, and long-term reputation building strategies.",
     },
     form: {
         subTitle: "Get a Call Now",
@@ -339,13 +338,13 @@ const contactData = {
         titleSpan: "Line.",
         selectOptions: [
             { value: "0", optionName: "Choose an option" },
-            { value: "1", optionName: "iOS App Development" },
-            { value: "2", optionName: "Android App Development" },
-            { value: "3", optionName: "Cross-Platform App Development" },
-            { value: "4", optionName: "Flutter App Development" },
-            { value: "5", optionName: "React Native Development" },
-            { value: "6", optionName: "App Design & UI/UX" },
-            { value: "7", optionName: "Backend & API Development" },
+            { value: "1", optionName: "Review Management" },
+            { value: "2", optionName: "Crisis Management" },
+            { value: "3", optionName: "Corporate Reputation Management" },
+            { value: "4", optionName: "Google Reputation Management" },
+            { value: "5", optionName: "Brand Monitoring" },
+            { value: "6", optionName: "Negative Content Suppression" },
+            { value: "7", optionName: "Social Media Reputation Management" },
         ],
     },
 };
@@ -1064,7 +1063,7 @@ const ContactSection = () => {
     );
 };
 
-export default function MobileAppDevelopmentServices() {
+export default function OrmServices() {
     return (
         <div>
             <BackToTop />

@@ -10,21 +10,6 @@ import Header from "@/components/layout/header/Header";
 import BackToTop from "@/components/shared/others/BackToTop";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
 
-/* ============================================================
- *  PAGE: PPC SERVICES
- *  URL          : https://www.mematdigi.com/ppc-services
- *  Meta Title   : Best PPC Services India | Hire Memat Digi PPC Expert
- *  Meta Desc    : Get expert PPC services in India from Memat Digi. We build
- *                 high-converting campaigns that cut CPC and maximize ROI.
- *                 Request a call today!
- *  Primary KW   : PPC services in India
- *  (Ye 'use client' component hai — meta tags page.js / generateMetadata
- *   me set karo, yahan sirf reference ke liye likha hai.)
- *
- *  Saara content yahin se manage karo, JSX clean rahega. Chaaho to
- *  ise alag data.js file me move karke yahan import kar lo.
- * ========================================================== */
-
 const heroData = {
     bgImage: "/images/hero/h9-hero-bg.webp",
     eyebrow: "PPC SERVICES",

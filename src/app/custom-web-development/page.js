@@ -12,13 +12,13 @@ import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
 
 const heroData = {
     bgImage: "/images/hero/h9-hero-bg.webp",
-    eyebrow: "MOBILE APP DEVELOPMENT",
-    titlePre: "Mobile App Development Company in India That Builds",
-    titleHighlight: "Apps That Perform",
+    eyebrow: "CUSTOM WEB DEVELOPMENT",
+    titlePre: "Best Custom Web Development Company in India That",
+    titleHighlight: "Builds Scalable Digital Solutions",
     titlePost: "",
     desc: (
         <>
-            As a trusted mobile app development company in India, we deliver custom, scalable, high-performance apps for iOS, Android, Flutter, and React Native that enhance user experience and drive business growth.
+            As a trusted custom web development company in India, we deliver custom web development services that build secure, scalable, and high-performance digital solutions. From custom web applications and ecommerce platforms to PHP, WordPress, and CMS development, we create tailored solutions that support long-term business growth.
         </>
     ),
     stats: [
@@ -30,10 +30,9 @@ const heroData = {
     primaryCta: { text: "Get Free Consultation", url: "/contact-us" },
     form: {
         tag: "GET IN TOUCH",
-        title: "Request A Quote",
+        title: "Get Your Free Consultation",
         subtitle: "Fill out the form and our team will reach out within 24 hours.",
         // Mobile form fields = Name, Email, Phone, Business Type, Message.
-        // Website URL input hata kar Business Type dropdown wapas laaya.
         serviceOptions: [
             { value: "", label: "Business Type *" },
             { value: "startup", label: "Startup / Small Business" },
@@ -45,26 +44,26 @@ const heroData = {
 };
 
 const chooseData = {
-    subTitle: "COMMON APP DEVELOPMENT CHALLENGES",
+    subTitle: "COMMON CHALLENGES",
     subIcon: "tji-box",
-    title: "Why Most Mobile Apps Fail to Deliver Business Results",
+    title: "Why Generic Web Solutions Limit Business Growth",
     desc: "",
     banner: "/images/choose/h8-choose-bnner.webp",
     boxes: [
         {
             icon: "tji-innovative",
-            title: "Poor User Experience",
-            desc: "Many mobile apps fail because of slow performance, confusing navigation, and poor UI/UX design, leading users to abandon the app after only a few interactions.",
+            title: "Limited Scalability",
+            desc: "Template websites and off-the-shelf software often struggle as your business grows. Limited customization, performance issues, and rigid functionality prevent your digital platform from supporting long-term business expansion.",
         },
         {
             icon: "tji-award",
-            title: "Lack of Scalability",
-            desc: "Apps built without a scalable architecture often struggle with increasing users, new features, and platform updates, creating performance issues that limit long-term business growth.",
+            title: "Poor Business Integration",
+            desc: "Generic solutions rarely integrate smoothly with CRMs, ERPs, payment gateways, or internal workflows, forcing businesses to rely on manual processes and costly workarounds that reduce efficiency.",
         },
         {
             icon: "tji-support",
-            title: "No Long-Term Support",
-            desc: "Building an app is only the beginning. Without regular updates, maintenance, security improvements, and post-launch support, even well-designed mobile apps quickly lose reliability and user trust.",
+            title: "Lack of Flexibility",
+            desc: "Every business has unique requirements, but template-based platforms offer limited customization. Without custom web development, businesses often compromise on features, user experience, and future scalability.",
         },
     ],
 };
@@ -72,62 +71,44 @@ const chooseData = {
 const servicesData = {
     subTitle: "WHAT WE OFFER",
     subIcon: "tji-box",
-    title: "Our Mobile App Development Services for Businesses Across India",
-    desc: "From native iOS and Android to cross-platform apps, UI/UX design, and post-launch support - complete mobile app development services built to perform at every stage of growth.",
+    title: "Our Custom Web Development Services for Businesses Across India",
+    desc: "From custom web applications and ecommerce platforms to PHP, WordPress, and CMS solutions - everything your business needs built exactly the way you need it.",
     moreUrl: "/services",
     items: [
         {
             icon: "tji-service-1",
-            title: "iOS App Development",
-            desc: "We build high-performance, App Store-ready iOS applications built for speed, security, and seamless user experience - designed to meet Apple's strict guidelines while delivering the business results your investment demands.",
+            title: "Custom Web Application Development",
+            desc: "We build fully custom web applications from the ground up - scalable architecture, clean code, and intuitive interfaces designed around your specific business logic, workflows, and user requirements.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "Android App Development",
-            desc: "India runs on Android. We build scalable, feature-rich Android apps that work flawlessly across devices, screen sizes, and OS versions - built for the market where your users actually are.",
+            title: "Custom Ecommerce Website Development",
+            desc: "We build high-performance custom ecommerce websites that go beyond what any template platform can offer - custom checkout flows, product configurators, inventory systems, and conversion optimization built for your specific business model.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "Cross-Platform App Development",
-            desc: "Build once, deploy everywhere. Our cross platform app development services use Flutter and React Native to deliver native-quality experiences on both iOS and Android - at a fraction of the time and cost of building two separate apps.",
+            title: "Custom PHP Development",
+            desc: "We build robust, scalable web solutions using PHP - from custom portals and dashboards to complex backend systems that handle high traffic, sensitive data, and business-critical operations reliably.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "Flutter App Development",
-            desc: "Flutter is the future of cross-platform mobile development. We build beautiful, high-performance Flutter apps with a single codebase that feels completely native on both iOS and Android - fast to build, easy to maintain, and smooth to use.",
+            title: "Custom WordPress Development",
+            desc: "Beyond themes and plugins - we build fully custom WordPress websites and applications with bespoke functionality, custom post types, and purpose-built features that make WordPress work exactly the way your business needs it to.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "React Native Development",
-            desc: "React Native gives you the speed of cross-platform development with near-native performance. Our React Native team builds robust, scalable mobile applications for businesses that need to move fast without compromising on quality or user experience.",
+            title: "Custom CMS Development",
+            desc: "We build custom content management systems tailored to how your team actually works - intuitive admin interfaces, custom content types, and workflow tools that make managing your digital presence genuinely effortless.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "App Design & UI/UX",
-            desc: "Great apps start with great design. Our mobile UI/UX design team creates intuitive, conversion-focused interfaces that guide users naturally through your app - reducing drop-off, improving retention, and making every interaction feel effortless.",
-            url: "/services",
-        },
-        {
-            icon: "tji-service-1",
-            title: "Backend & API Development",
-            desc: "The best mobile apps are powered by the best backends. We build secure, scalable backend systems and API integrations that handle real-world traffic, real-time data, and complex business logic - without breaking under pressure.",
-            url: "/services",
-        },
-        {
-            icon: "tji-service-1",
-            title: "App Testing & QA",
-            desc: "Every app we build goes through rigorous testing across devices, OS versions, and real-world usage scenarios before a single user ever touches it. Our QA process catches what development misses - so your launch is clean, your reviews are positive, and your users stay.",
-            url: "/services",
-        },
-        {
-            icon: "tji-service-1",
-            title: "App Maintenance & Deployment",
-            desc: "Launch day is just the beginning. We manage app store deployment, handle OS update compatibility, push feature updates, and provide ongoing technical support - so your mobile app development company in India relationship does not end when the project does.",
+            title: "Custom UI/UX Design",
+            desc: "Every custom web development project we deliver starts with design that puts the user first - intuitive navigation, conversion-focused layouts, and interfaces that make complex functionality feel simple and natural to use.",
             url: "/services",
         },
     ],
@@ -135,7 +116,7 @@ const servicesData = {
 
 const solutionsData = {
     subTitle: "WHO WE SERVE",
-    title: "Mobile App Development Solutions for Every Business Type",
+    title: "Custom Web Development Solutions for Every Business Type",
     moreText: "More Services",
     moreUrl: "/services",
     items: [
@@ -143,21 +124,21 @@ const solutionsData = {
             icon: "tji-service-1",
             title: "Startups & Small Businesses",
             url: "/services",
-            desc: "Your app idea deserves a development partner that treats it like their own. Our mobile app development company in India works with startups to build lean, focused MVPs that validate your concept fast - without the enterprise price tag. We help you launch smart, gather real user feedback, and iterate quickly toward product-market fit.",
+            desc: "Starting with custom web development gives your business a foundation that scales with you - no hitting platform limits at 10,000 users, no expensive migrations when you outgrow a template. Our custom web development company in India works with startups to build lean, focused solutions that do exactly what your business needs now and are architected to handle what it will need next.",
             list: ["Expansion Strategies", "Operational Efficiency", "Competitive Edge"],
         },
         {
             icon: "tji-service-1",
             title: "D2C & Ecommerce Brands",
             url: "/services",
-            desc: "Mobile commerce is where D2C growth happens. We build ecommerce apps that make buying frictionless - fast product browsing, seamless checkout, push notification campaigns, and loyalty features that drive repeat purchases and customer lifetime value for brands serious about mobile-first growth.",
+            desc: "Custom ecommerce web development gives D2C brands capabilities that no template platform can match - custom product configurators, loyalty systems, subscription models, and checkout flows built around how your customers actually buy. We build the custom ecommerce website development in India that gives your brand a genuine competitive advantage over competitors running generic Shopify or WooCommerce stores.",
             list: ["Expansion Strategies", "Operational Efficiency", "Competitive Edge"],
         },
         {
             icon: "tji-service-1",
             title: "B2B & Enterprise Companies",
             url: "/services",
-            desc: "Enterprise app development demands a different level of security, scalability, and integration capability. We build B2B mobile applications - from internal workflow tools and CRM apps to customer-facing platforms - that integrate with your existing tech stack and scale as your organization grows.",
+            desc: "Enterprise requirements - complex integrations, role-based access, multi-tenant architecture, and compliance-aware data handling - demand a custom web application development company with genuine technical depth. We build B2B web applications and enterprise platforms that integrate with your existing tech stack and scale with your organization without breaking under real business load.",
             list: ["Expansion Strategies", "Operational Efficiency", "Competitive Edge"],
         },
         // Aur solutions add karne ho to yahan object push kar do ⬇️
@@ -167,67 +148,67 @@ const solutionsData = {
 const featuresData = {
     subTitle: "INDUSTRIES WE SERVE",
     subIcon: "tji-box",
-    title: "Industries We Build Mobile Apps For Across India",
+    title: "Industries We Serve With Our Custom Web Development Services",
     items: [
         {
             id: 1,
             icon: "tji-innovative",
             title: "Healthcare",
-            desc: "Patient engagement apps, appointment booking, teleconsultation platforms, and health tracking solutions built with security and compliance at the core",
+            desc: "Custom patient portals, appointment systems, and healthcare management platforms built with security and compliance requirements at the core",
         },
         {
             id: 2,
             icon: "tji-award",
             title: "Real Estate",
-            desc: "Property listing apps, virtual tour features, lead management tools, and broker portals that modernize the real estate buying and renting experience",
+            desc: "Custom property listing platforms, CRM integrations, and agent portals that handle complex inventory and lead management for real estate businesses",
         },
         {
             id: 3,
             icon: "tji-team",
             title: "Education",
-            desc: "Learning management systems, student engagement apps, live class platforms, and edtech solutions that make education more accessible and interactive",
+            desc: "Custom learning management systems, student portals, and edtech platforms that deliver personalized educational experiences at scale",
         },
         {
             id: 4,
             icon: "tji-support",
             title: "Ecommerce",
-            desc: "High-converting mobile shopping apps with seamless checkout, product discovery, push notifications, and loyalty features that drive revenue growth",
+            desc: "Custom ecommerce website development india solutions for online stores that need capabilities beyond what any off-the-shelf platform can offer",
         },
         {
             id: 5,
             icon: "tji-support",
             title: "Finance & Fintech",
-            desc: "Secure banking apps, payment solutions, investment platforms, and financial management tools built with enterprise-grade security standards",
+            desc: "Secure, compliant custom web applications for financial services - payment platforms, portfolio tools, and client portals built to regulatory standards",
         },
         {
             id: 6,
             icon: "tji-support",
             title: "SaaS & Technology",
-            desc: "Mobile companions for SaaS products, internal business tools, and customer-facing technology applications built to scale with your platform",
+            desc: "Custom web application development for technology companies building SaaS products, internal tools, and customer-facing platforms that need to scale",
         },
     ],
 };
 
 const scalableHighlightData = {
     eye: 'BUSINESS CHALLENGES',
-    title: "Mobile App Challenges Every Business in India Faces -",
+    title: "Custom Web Development Challenges Every Business Faces -",
     titleSpan: "And How We Fix Them",
     paragraphs: [
-        "Most businesses that come to us have already been through one failed app development experience. They hired a mobile app development company in India based on the lowest quote, received a product that barely worked, and were left without support when it inevitably broke. These are not edge cases - they are what happens when you choose the wrong development partner. As a leading mobile app development company trusted by 100+ businesses, we have rebuilt broken apps, rescued abandoned projects, and delivered first-time-right solutions for clients across every industry.",
+        "Most businesses that come to us for custom web development have already been through at least one failed attempt - either a template solution that could not scale, a development agency that disappeared after delivery, or a custom build that was never properly documented and cannot be maintained without the original developer. As a trusted custom web development company in India working with 100+ businesses, we have solved every version of these problems and we build every project specifically to avoid them.",
     ],
     features: [
-        "Apps that crash on launch - because testing was skipped to cut costs and meet a rushed deadline",
-        "No post-launch support - leaving businesses unable to fix bugs or release updates after delivery",
-        "Poor UI/UX design - creating apps users find confusing, frustrating, and abandon after one session",
-        "No backend scalability - apps that work for 100 users but collapse under real traffic load",
-        "No app store optimization - apps built but never discoverable in the App Store or Google Play",
-        "Source code ownership issues - developers who retain code access and use it as leverage post-delivery",
+        "Scalability limits hitting at the worst moment - generic platforms that collapse under real traffic or transaction volume when growth arrives",
+        "Integration failures with existing systems - off-the-shelf solutions that cannot connect to your CRM, ERP, or payment infrastructure without expensive custom workarounds",
+        "Vendor lock-in preventing growth - platforms that hold your data and your functionality hostage behind monthly fees and proprietary systems",
+        "Poor performance damaging user experience - slow load times and unreliable uptime from shared infrastructure that was never built for your specific load",
+        "Security vulnerabilities in generic code - template-based solutions with publicly known exploits that make your business a target for attacks",
+        "No post-launch support from the development team - code delivered and abandoned with no documentation, no handover, and no one to call when something breaks",
     ],
 };
 
 const servicesData9 = {
     subTitle: "OUR PROCESS",
-    title: "How We Deliver Your Mobile App Development Project",
+    title: "How We Deliver Your Custom Web Development Project",
     moreText: "More services",
     moreUrl: "/services",
     items: [
@@ -235,35 +216,35 @@ const servicesData9 = {
             id: 1,
             icon: "tji-innovative",
             title: "Discovery & Requirement Analysis",
-            desc: "We start by understanding your business goals, your users, and your technical requirements in detail. Every decision made from here - platform choice, technology stack, feature prioritization - is grounded in what your app actually needs to succeed, not what is easiest to build.",
+            desc: "We start by understanding your business completely - your users, your workflows, your integrations, and your growth goals. Every technical decision made from this point is grounded in what your custom web development project actually needs to succeed, not what is easiest to build.",
             url: "/services",
         },
         {
             id: 2,
             icon: "tji-award",
             title: "UI/UX Design & Prototyping",
-            desc: "Before a single line of code is written, we design every screen and prototype the full user journey. You see exactly how your app will look and feel, how users will navigate it, and how key actions will work - all before development begins.",
+            desc: "Before a single line of code is written, we design and prototype every user interface and workflow. You see exactly how your solution will look and function - approving every screen and interaction before development begins so there are no surprises in the final product.",
             url: "/services",
         },
         {
             id: 3,
             icon: "tji-team",
-            title: "App Development & Testing",
-            desc: "Our development team builds your app with clean, scalable code - following mobile app development best practices for performance, security, and maintainability. Every feature is tested continuously throughout development, not just at the end.",
+            title: "Custom Development & Testing",
+            desc: "Our custom web application development team builds your solution with clean, documented, scalable code - tested continuously throughout development across real devices, real browsers, and real usage scenarios so quality issues are caught during build, not after launch.",
             url: "/services",
         },
         {
             id: 4,
             icon: "tji-support",
-            title: "Launch & App Store Deployment",
-            desc: "We handle the complete App Store and Google Play submission process - optimizing your listing, preparing screenshots and descriptions, and managing the review process so your app launches cleanly and reaches users from day one.",
+            title: "Launch & Deployment",
+            desc: "We manage the complete deployment process - server configuration, security hardening, performance optimization, and final testing in the production environment before go-live. Your custom web development project launches clean, secure, and fully operational from day one.",
             url: "/services",
         },
         {
             id: 5,
             icon: "tji-support",
-            title: "Post-Launch Support & Maintenance",
-            desc: "After launch, we monitor performance, fix issues fast, push OS compatibility updates, and release new features on a structured roadmap. Our mobile app development services do not end at delivery - we are your long-term technology partner.",
+            title: "Post-Launch Support & Optimization",
+            desc: "We stay involved after launch - monitoring performance, fixing issues fast, releasing feature updates, and providing the ongoing technical support that keeps your custom web solution performing at its best as your business grows and your requirements evolve.",
             url: "/services",
         },
     ],
@@ -272,55 +253,55 @@ const servicesData9 = {
 const scalableHighlightData2 = {
     eye: 'WHY CHOOSE US',
     title: "Why Choose Mematdigi as Your ",
-    titleSpan: "Mobile App Development Company in India",
+    titleSpan: "Custom Web Development Company in India",
     paragraphs: [
-        "Choosing the right mobile app development company in India is one of the most important decisions your business will make. A bad choice costs you time, money, and opportunity. At Mematdigi, we have built our reputation as a leading mobile app development company by doing what most development companies do not - staying involved, staying accountable, and staying focused on your business results long after the project is delivered. Whether you need a startup MVP, a cross-platform app for a growing D2C brand, or enterprise app development for a complex B2B workflow - our team brings the same commitment to quality, transparency, and performance to every engagement.",
-        "When you work with the app developers at Mematdigi, you get more than a development team - you get a mobile app development company in India that treats your product like their own. From the first discovery call to ongoing post-launch maintenance, we are the mobile app development partner that Indian businesses trust to build apps that actually perform.",
+        "At Mematdigi, we have built our reputation as the trusted custom web development company in India businesses choose when they need more than a template can offer. We are not the agency that builds custom web development projects and disappears after delivery. We are the custom web application development company that takes full ownership - from the first requirement discussion to ongoing post-launch support - treating every project with the same care we would give our own product. Our custom web development services cover every technology, every industry, and every scale - from startup MVPs built with custom web application development services to enterprise platforms requiring the depth of a dedicated custom web software development team.",
+        "Whether you are a startup that needs a custom web application development company to build your first product right or an enterprise that needs a specialist custom web development company in India to replace a failing legacy system - Mematdigi delivers the custom web development that your business cannot afford to get wrong. Clean code, scalable architecture, complete documentation, and a development partner that stays accountable long after the project is delivered.",
     ],
     features: [
-        "Mobile app development company in India with 135+ apps delivered across 15+ industries",
-        "Best mobile app development company for startups - lean MVPs built fast, built right, built to validate",
-        "Hire mobile app developer in India - dedicated developers assigned to your project from day one to launch",
-        "Custom mobile app development - every app built from scratch around your users, your goals, and your business model",
-        "Enterprise app development - secure, scalable, integrated solutions built for the complexity of real enterprise environments",
-        "Hire mobile app developers in India - a full team including designers, developers, QA engineers, and a project manager under one roof",
+        "Custom web development company in India with 135+ projects delivered across 15+ industries",
+        "Custom web application development - scalable, secure, fully documented code built to perform under real business load",
+        "Custom web app development services - from concept and design through development, launch, and ongoing support",
+        "Custom website development - tailored digital presence built around your brand, your users, and your conversion goals",
+        "Custom ecommerce website development India - beyond template limitations, built for your specific business model and customer journey",
+        "Custom web development services with complete transparency - clear timelines, fixed pricing, and no scope creep surprises",
     ],
 };
 
 const faqData = {
     subTitle: "FAQs",
     subIcon: "tji-box",
-    title: "Frequently Asked Questions About Mobile App Development in India",
+    title: "Frequently Asked Questions About Custom Web Development in India",
     phone: { display: "1-888-452-1505", tel: "18884521505" },
     items: [
         {
-            title: "How much does mobile app development cost in India? ",
-            desc: "No fixed answer here - it really depends on what you're building. A basic app might cost ₹3-5 lakhs. Add a payment gateway, admin panel, real-time chat, and suddenly you're looking at ₹15-30 lakhs. We've seen both. Share what you have in mind and we'll give you a realistic number, not a ballpark pulled from thin air.",
+            title: "What is custom web development and why does my business need it? ",
+            desc: "Custom web development means building a website or web application from scratch - designed specifically around your business requirements rather than adapted from a template. Businesses need custom web development when their workflows, integrations, or growth requirements exceed what any off-the-shelf solution can handle. Our custom web development company in India builds solutions that fit your business exactly.",
             initActive: true,
         },
         {
-            title: "Should I build an Android or iOS app first? ",
-            desc: "Where are your users? That's the only question that matters. If they're in India, Android - no debate, it owns the market here. If you're going after users in the US or Europe, or targeting people who spend money on apps, start with iOS. Can't decide or the budget is tight? Build once for both with Flutter or React Native. Works well for most businesses.",
+            title: "How much does custom web application development cost in India? ",
+            desc: "Custom web application development costs in India typically range from ₹2,00,000 to ₹20,00,000+ depending on complexity, features, and integrations required. At Mematdigi, our custom web development services are priced transparently - you receive a detailed breakdown before any work begins, with no hidden costs and no scope creep surprises after the project starts.",
             initActive: false,
         },
         {
-            title: "Do you provide app maintenance after launch? ",
-            desc: "Launch day is actually just the beginning. Apps break. OS updates happen. Users find bugs you never imagined. We stay involved after go-live - fixing issues, pushing updates, keeping things running. Think of it less like a service and more like having a team on call.",
+            title: "Do you offer custom ecommerce website development in India? ",
+            desc: "Yes - custom ecommerce website development india is one of our most in-demand services. We build fully custom online stores with bespoke checkout flows, product configurators, loyalty systems, and backend integrations that no template ecommerce platform can replicate. Our custom ecommerce web development is built around your specific business model and customer journey.",
             initActive: false,
         },
         {
-            title: "Is cross-platform app development as good as native? ",
-            desc: "For 90% of apps out there - yes, genuinely. Most users won't feel any difference. Where it gets complicated is if your app needs to do something very hardware-specific, like advanced camera processing or real-time sensor data. That's when native start making sense. We'll be upfront with you about which one your project actually needs.",
+            title: "Do you build custom PHP and WordPress websites? ",
+            desc: "Yes. Our custom php website development service builds robust, scalable backend systems and web applications using PHP - ideal for businesses that need high performance and complete control. Our custom wordpress website development goes far beyond themes - building bespoke functionality, custom post types, and purpose-built features for businesses that need WordPress to do more.",
             initActive: false,
         },
         {
-            title: "Do you sign an NDA before starting the project? ",
-            desc: "Always, before we even get into details. A lot of founders are nervous about sharing their ideas - that's fair. We sign an NDA first, then talk. Your concept stays yours and goes nowhere outside this conversation.",
+            title: "How long does custom web development take? ",
+            desc: "Timelines depend on project scope. A focused custom website development project typically takes 4–8 weeks. A complex custom web application development project may take 3–6 months. As a trusted custom web development company in India, we provide a detailed project timeline at the start of every engagement so you always know exactly when to expect each milestone and final delivery.",
             initActive: false,
         },
         {
-            title: "Will I own the source code after the project?",
-            desc: "Yes - completely. Once we're done and payment is settled, the code is handed over to you. No monthly fees to \"keep access,\" no vendor lock-in. We've heard enough horror stories from clients burned by other agencies to make this a hard rule for us.",
+            title: "Do you offer post-launch support for custom web projects?",
+            desc: "Yes - always. Our custom web software development projects include structured post-launch support covering bug fixes, performance monitoring, security updates, and feature additions. Unlike agencies that deliver and disappear, our custom web app development services include ongoing technical support that keeps your solution performing as your business grows and your requirements evolve.",
             initActive: false,
         },
     ],
@@ -329,8 +310,8 @@ const faqData = {
 const contactData = {
     left: {
         subTitle: "CONTACT US NOW",
-        title: "Ready to Build Your Mobile App With India's Leading App Development Company?",
-        desc: "Ready to work with a trusted mobile app development company in India? Partner with Mematdigi for custom mobile app development services that build secure, scalable, and high-performance mobile applications. From startup MVPs to enterprise apps, we create solutions designed to drive user engagement, business growth, and long-term success. ",
+        title: "Ready to Build Your Custom Web Solution With India's Top Web Development Company?",
+        desc: "Ready to partner with a trusted custom web development company in India? Mematdigi delivers custom web development services that build secure, scalable, and high-performance digital solutions. From custom web applications to enterprise platforms, we create technology that supports business growth, operational efficiency, and long-term success.",
     },
     form: {
         subTitle: "Get a Call Now",
@@ -339,13 +320,12 @@ const contactData = {
         titleSpan: "Line.",
         selectOptions: [
             { value: "0", optionName: "Choose an option" },
-            { value: "1", optionName: "iOS App Development" },
-            { value: "2", optionName: "Android App Development" },
-            { value: "3", optionName: "Cross-Platform App Development" },
-            { value: "4", optionName: "Flutter App Development" },
-            { value: "5", optionName: "React Native Development" },
-            { value: "6", optionName: "App Design & UI/UX" },
-            { value: "7", optionName: "Backend & API Development" },
+            { value: "1", optionName: "Custom Web Application Development" },
+            { value: "2", optionName: "Custom Ecommerce Website Development" },
+            { value: "3", optionName: "Custom PHP Development" },
+            { value: "4", optionName: "Custom WordPress Development" },
+            { value: "5", optionName: "Custom CMS Development" },
+            { value: "6", optionName: "Custom UI/UX Design" },
         ],
     },
 };
@@ -1064,7 +1044,7 @@ const ContactSection = () => {
     );
 };
 
-export default function MobileAppDevelopmentServices() {
+export default function CustomWebDevelopmentServices() {
     return (
         <div>
             <BackToTop />

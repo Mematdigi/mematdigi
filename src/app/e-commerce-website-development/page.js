@@ -12,13 +12,13 @@ import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
 
 const heroData = {
     bgImage: "/images/hero/h9-hero-bg.webp",
-    eyebrow: "MOBILE APP DEVELOPMENT",
-    titlePre: "Mobile App Development Company in India That Builds",
-    titleHighlight: "Apps That Perform",
+    eyebrow: "ECOMMERCE WEBSITE DEVELOPMENT",
+    titlePre: "Best Ecommerce Website Development Company in India That",
+    titleHighlight: "Turns Visitors Into Customers",
     titlePost: "",
     desc: (
         <>
-            As a trusted mobile app development company in India, we deliver custom, scalable, high-performance apps for iOS, Android, Flutter, and React Native that enhance user experience and drive business growth.
+            As a trusted ecommerce website development company in India, we build secure, scalable, and conversion-focused online stores that help businesses grow faster. From custom ecommerce website development and marketplace solutions to payment gateway integration and mobile commerce, we create shopping experiences designed to increase sales and long-term business success.
         </>
     ),
     stats: [
@@ -30,10 +30,9 @@ const heroData = {
     primaryCta: { text: "Get Free Consultation", url: "/contact-us" },
     form: {
         tag: "GET IN TOUCH",
-        title: "Request A Quote",
+        title: "Get Your Free Consultation",
         subtitle: "Fill out the form and our team will reach out within 24 hours.",
         // Mobile form fields = Name, Email, Phone, Business Type, Message.
-        // Website URL input hata kar Business Type dropdown wapas laaya.
         serviceOptions: [
             { value: "", label: "Business Type *" },
             { value: "startup", label: "Startup / Small Business" },
@@ -45,26 +44,26 @@ const heroData = {
 };
 
 const chooseData = {
-    subTitle: "COMMON APP DEVELOPMENT CHALLENGES",
+    subTitle: "COMMON CHALLENGES",
     subIcon: "tji-box",
-    title: "Why Most Mobile Apps Fail to Deliver Business Results",
+    title: "Why Most Ecommerce Stores Struggle to Turn Visitors Into Customers",
     desc: "",
     banner: "/images/choose/h8-choose-bnner.webp",
     boxes: [
         {
             icon: "tji-innovative",
-            title: "Poor User Experience",
-            desc: "Many mobile apps fail because of slow performance, confusing navigation, and poor UI/UX design, leading users to abandon the app after only a few interactions.",
+            title: "Poor Shopping Experience",
+            desc: "Slow-loading pages, confusing navigation, and lengthy checkout processes frustrate customers, increase cart abandonment, and prevent your online store from converting visitors into paying customers.",
         },
         {
             icon: "tji-award",
-            title: "Lack of Scalability",
-            desc: "Apps built without a scalable architecture often struggle with increasing users, new features, and platform updates, creating performance issues that limit long-term business growth.",
+            title: "Limited Ecommerce Capabilities",
+            desc: "Many ecommerce platforms lack the flexibility to support custom features, seamless integrations, and business-specific functionality, making it difficult to scale and deliver exceptional customer experiences.",
         },
         {
             icon: "tji-support",
-            title: "No Long-Term Support",
-            desc: "Building an app is only the beginning. Without regular updates, maintenance, security improvements, and post-launch support, even well-designed mobile apps quickly lose reliability and user trust.",
+            title: "Low Conversion Performance",
+            desc: "Traffic alone does not generate revenue. Without conversion-focused design, optimized product pages, trust signals, and streamlined checkout experiences, even high-traffic ecommerce websites struggle to achieve consistent sales growth.",
         },
     ],
 };
@@ -72,62 +71,62 @@ const chooseData = {
 const servicesData = {
     subTitle: "WHAT WE OFFER",
     subIcon: "tji-box",
-    title: "Our Mobile App Development Services for Businesses Across India",
-    desc: "From native iOS and Android to cross-platform apps, UI/UX design, and post-launch support - complete mobile app development services built to perform at every stage of growth.",
+    title: "Our Ecommerce Website Development Services for Businesses Across India",
+    desc: "From custom ecommerce stores and marketplace platforms to mobile apps, payment integrations, and ongoing support - everything your ecommerce business needs to launch, scale, and grow is built under one roof.",
     moreUrl: "/services",
     items: [
         {
             icon: "tji-service-1",
-            title: "iOS App Development",
-            desc: "We build high-performance, App Store-ready iOS applications built for speed, security, and seamless user experience - designed to meet Apple's strict guidelines while delivering the business results your investment demands.",
+            title: "Custom Ecommerce Website Development",
+            desc: "We build fully custom ecommerce websites tailored to your products, your customers, and your business model - scalable architecture, conversion-focused design, and complete flexibility that no off-the-shelf platform can match.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "Android App Development",
-            desc: "India runs on Android. We build scalable, feature-rich Android apps that work flawlessly across devices, screen sizes, and OS versions - built for the market where your users actually are.",
+            title: "Shopping Cart Development",
+            desc: "We create secure, user-friendly shopping cart systems with streamlined checkout experiences designed to reduce friction, build buyer confidence, and improve conversion rates at the most critical stage of the purchase journey.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "Cross-Platform App Development",
-            desc: "Build once, deploy everywhere. Our cross platform app development services use Flutter and React Native to deliver native-quality experiences on both iOS and Android - at a fraction of the time and cost of building two separate apps.",
+            title: "Payment Gateway Integration",
+            desc: "We integrate trusted payment gateways - Razorpay, PayU, Stripe, CCAvenue, and more - with multiple payment options that deliver fast, secure, and reliable online transactions for every customer and every order.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "Flutter App Development",
-            desc: "Flutter is the future of cross-platform mobile development. We build beautiful, high-performance Flutter apps with a single codebase that feels completely native on both iOS and Android - fast to build, easy to maintain, and smooth to use.",
+            title: "Multi-Vendor Marketplace Development",
+            desc: "We develop scalable marketplace platforms with vendor management, commission systems, order tracking, dispute resolution, and advanced administration features - built for businesses that want to become the platform, not just sell on one.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "React Native Development",
-            desc: "React Native gives you the speed of cross-platform development with near-native performance. Our React Native team builds robust, scalable mobile applications for businesses that need to move fast without compromising on quality or user experience.",
+            title: "Ecommerce Mobile App Development",
+            desc: "We build Android, iOS, and cross-platform ecommerce applications that deliver seamless shopping experiences across every device - push notifications, one-tap checkout, and app-exclusive features that drive mobile revenue.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "App Design & UI/UX",
-            desc: "Great apps start with great design. Our mobile UI/UX design team creates intuitive, conversion-focused interfaces that guide users naturally through your app - reducing drop-off, improving retention, and making every interaction feel effortless.",
+            title: "Product & Catalog Management Solutions",
+            desc: "We build advanced catalog management systems that handle large product inventories with smart filtering, search functionality, variant management, and category optimization - making it easy to manage thousands of SKUs without losing control.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "Backend & API Development",
-            desc: "The best mobile apps are powered by the best backends. We build secure, scalable backend systems and API integrations that handle real-world traffic, real-time data, and complex business logic - without breaking under pressure.",
+            title: "Order & Inventory Management Systems",
+            desc: "We automate order processing, inventory tracking, shipping management, and returns handling - reducing manual work, preventing stockouts, and giving your operations team real-time visibility into every order at every stage.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "App Testing & QA",
-            desc: "Every app we build goes through rigorous testing across devices, OS versions, and real-world usage scenarios before a single user ever touches it. Our QA process catches what development misses - so your launch is clean, your reviews are positive, and your users stay.",
+            title: "Ecommerce Migration Services",
+            desc: "We migrate your online store from any existing platform - Magento, WooCommerce, Shopify, or custom - securely and without losing data, order history, customer records, or the SEO performance your store has already built.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "App Maintenance & Deployment",
-            desc: "Launch day is just the beginning. We manage app store deployment, handle OS update compatibility, push feature updates, and provide ongoing technical support - so your mobile app development company in India relationship does not end when the project does.",
+            title: "API & Third-Party Integrations",
+            desc: "We connect your ecommerce website with CRM, ERP, shipping providers, accounting software, marketing tools, and any other business application your operations depend on - eliminating manual data transfer and building a connected commerce ecosystem.",
             url: "/services",
         },
     ],
@@ -135,7 +134,7 @@ const servicesData = {
 
 const solutionsData = {
     subTitle: "WHO WE SERVE",
-    title: "Mobile App Development Solutions for Every Business Type",
+    title: "Ecommerce Website Development Solutions for Every Business",
     moreText: "More Services",
     moreUrl: "/services",
     items: [
@@ -143,21 +142,21 @@ const solutionsData = {
             icon: "tji-service-1",
             title: "Startups & Small Businesses",
             url: "/services",
-            desc: "Your app idea deserves a development partner that treats it like their own. Our mobile app development company in India works with startups to build lean, focused MVPs that validate your concept fast - without the enterprise price tag. We help you launch smart, gather real user feedback, and iterate quickly toward product-market fit.",
+            desc: "Launching an online store as a new business means every rupee of development budget needs to work hard. Our ecommerce website development company in India works with startups to build scalable, conversion-focused online stores that grow alongside the business - without the overhead of enterprise development costs or the limitations of generic template platforms that become problems the moment you start to grow.",
             list: ["Expansion Strategies", "Operational Efficiency", "Competitive Edge"],
         },
         {
             icon: "tji-service-1",
-            title: "D2C & Ecommerce Brands",
+            title: "D2C & Retail Brands",
             url: "/services",
-            desc: "Mobile commerce is where D2C growth happens. We build ecommerce apps that make buying frictionless - fast product browsing, seamless checkout, push notification campaigns, and loyalty features that drive repeat purchases and customer lifetime value for brands serious about mobile-first growth.",
+            desc: "D2C ecommerce success depends on owning the customer relationship from discovery to repeat purchase. Our custom ecommerce development services build the shopping experiences that improve first-order conversion, encourage repeat buying, and give your brand complete control over how customers experience your products - without the constraints of marketplace dependency or platform limitations.",
             list: ["Expansion Strategies", "Operational Efficiency", "Competitive Edge"],
         },
         {
             icon: "tji-service-1",
-            title: "B2B & Enterprise Companies",
+            title: "Manufacturers & Wholesale Businesses",
             url: "/services",
-            desc: "Enterprise app development demands a different level of security, scalability, and integration capability. We build B2B mobile applications - from internal workflow tools and CRM apps to customer-facing platforms - that integrate with your existing tech stack and scale as your organization grows.",
+            desc: "B2B ecommerce has completely different requirements - bulk ordering, customer-specific pricing, distributor portals, and credit management systems that no standard ecommerce platform handles out of the box. Our ecommerce development services for manufacturers and wholesalers build the custom functionality your B2B operations actually need to sell efficiently at scale.",
             list: ["Expansion Strategies", "Operational Efficiency", "Competitive Edge"],
         },
         // Aur solutions add karne ho to yahan object push kar do ⬇️
@@ -167,103 +166,103 @@ const solutionsData = {
 const featuresData = {
     subTitle: "INDUSTRIES WE SERVE",
     subIcon: "tji-box",
-    title: "Industries We Build Mobile Apps For Across India",
+    title: "Industries We Serve With Ecommerce Website Development",
     items: [
         {
             id: 1,
             icon: "tji-innovative",
-            title: "Healthcare",
-            desc: "Patient engagement apps, appointment booking, teleconsultation platforms, and health tracking solutions built with security and compliance at the core",
+            title: "Fashion & Apparel",
+            desc: "Size guide integration, lookbook features, collection launches, and high-volume seasonal sale infrastructure for fashion ecommerce brands",
         },
         {
             id: 2,
             icon: "tji-award",
-            title: "Real Estate",
-            desc: "Property listing apps, virtual tour features, lead management tools, and broker portals that modernize the real estate buying and renting experience",
+            title: "Electronics & Gadgets",
+            desc: "Comparison tools, detailed specification pages, warranty management, and high-trust checkout experiences for big-ticket electronics purchases",
         },
         {
             id: 3,
             icon: "tji-team",
-            title: "Education",
-            desc: "Learning management systems, student engagement apps, live class platforms, and edtech solutions that make education more accessible and interactive",
+            title: "Healthcare & Pharmacy",
+            desc: "Prescription management, regulated product compliance, secure patient data handling, and trust-building design for healthcare ecommerce",
         },
         {
             id: 4,
             icon: "tji-support",
-            title: "Ecommerce",
-            desc: "High-converting mobile shopping apps with seamless checkout, product discovery, push notifications, and loyalty features that drive revenue growth",
+            title: "Beauty & Cosmetics",
+            desc: "Shade finder tools, bundle builders, subscription models, and influencer integration for beauty brands selling direct to consumer",
         },
         {
             id: 5,
             icon: "tji-support",
-            title: "Finance & Fintech",
-            desc: "Secure banking apps, payment solutions, investment platforms, and financial management tools built with enterprise-grade security standards",
+            title: "Furniture & Home Decor",
+            desc: "Room visualization features, custom order management, delivery scheduling, and high-value product presentation for home ecommerce",
         },
         {
             id: 6,
             icon: "tji-support",
-            title: "SaaS & Technology",
-            desc: "Mobile companions for SaaS products, internal business tools, and customer-facing technology applications built to scale with your platform",
+            title: "Food & Grocery",
+            desc: "Subscription ordering, delivery slot management, perishable inventory systems, and fast checkout for food and grocery ecommerce businesses",
         },
     ],
 };
 
 const scalableHighlightData = {
     eye: 'BUSINESS CHALLENGES',
-    title: "Mobile App Challenges Every Business in India Faces -",
-    titleSpan: "And How We Fix Them",
+    title: "Your Ecommerce Website Should Generate Sales -",
+    titleSpan: "Not Just Traffic",
     paragraphs: [
-        "Most businesses that come to us have already been through one failed app development experience. They hired a mobile app development company in India based on the lowest quote, received a product that barely worked, and were left without support when it inevitably broke. These are not edge cases - they are what happens when you choose the wrong development partner. As a leading mobile app development company trusted by 100+ businesses, we have rebuilt broken apps, rescued abandoned projects, and delivered first-time-right solutions for clients across every industry.",
+        "Most ecommerce businesses that come to us have already invested in a website that is not performing the way it should. They are getting sessions but not sales, running ads that drive traffic to pages that do not convert, and working with platforms that cannot be customized to fix the specific problems hurting their revenue. Having delivered ecommerce solutions for 100+ businesses, we have diagnosed and fixed every version of an underperforming ecommerce store - and we know exactly what it takes to build one that genuinely sells.",
     ],
     features: [
-        "Apps that crash on launch - because testing was skipped to cut costs and meet a rushed deadline",
-        "No post-launch support - leaving businesses unable to fix bugs or release updates after delivery",
-        "Poor UI/UX design - creating apps users find confusing, frustrating, and abandon after one session",
-        "No backend scalability - apps that work for 100 users but collapse under real traffic load",
-        "No app store optimization - apps built but never discoverable in the App Store or Google Play",
-        "Source code ownership issues - developers who retain code access and use it as leverage post-delivery",
+        "Low conversion rates despite healthy traffic - because product pages, checkout flow, and trust signals were never optimized for the buying decision",
+        "High cart abandonment with no recovery strategy - losing revenue at the final stage with no automated system to bring shoppers back",
+        "Slow website performance destroying user experience - pages that take more than three seconds to load losing over half their potential buyers before the content appears",
+        "Poor mobile shopping experience - a checkout flow designed for desktop that is unusable on the smartphones where most Indian shoppers actually browse and buy",
+        "Payment integration failures creating friction - limited payment options and unreliable gateway performance causing drop-offs at the moment of highest intent",
+        "Inventory and order management chaos - manual processes that cannot scale, causing overselling, delayed fulfillment, and customer experience failures at volume",
     ],
 };
 
 const servicesData9 = {
     subTitle: "OUR PROCESS",
-    title: "How We Deliver Your Mobile App Development Project",
+    title: "How We Build High-Performance Ecommerce Websites",
     moreText: "More services",
     moreUrl: "/services",
     items: [
         {
             id: 1,
             icon: "tji-innovative",
-            title: "Discovery & Requirement Analysis",
-            desc: "We start by understanding your business goals, your users, and your technical requirements in detail. Every decision made from here - platform choice, technology stack, feature prioritization - is grounded in what your app actually needs to succeed, not what is easiest to build.",
+            title: "Business Discovery",
+            desc: "We start by understanding your products, your customers, your competitors, and your business goals in detail - so every decision made throughout the project is grounded in what your ecommerce website actually needs to succeed, not what is easiest or fastest to build.",
             url: "/services",
         },
         {
             id: 2,
             icon: "tji-award",
-            title: "UI/UX Design & Prototyping",
-            desc: "Before a single line of code is written, we design every screen and prototype the full user journey. You see exactly how your app will look and feel, how users will navigate it, and how key actions will work - all before development begins.",
+            title: "Ecommerce Planning",
+            desc: "We create the complete store architecture - customer journey mapping, feature prioritization, technology stack selection, and integration planning - giving you a clear picture of exactly what will be built, how it will work, and why every decision was made before development begins.",
             url: "/services",
         },
         {
             id: 3,
             icon: "tji-team",
-            title: "App Development & Testing",
-            desc: "Our development team builds your app with clean, scalable code - following mobile app development best practices for performance, security, and maintainability. Every feature is tested continuously throughout development, not just at the end.",
+            title: "Design & Development",
+            desc: "Our ecommerce website development services team builds your store with conversion-focused design and clean, scalable code - every product page, checkout flow, and admin feature built and tested continuously throughout development to ensure quality before launch.",
             url: "/services",
         },
         {
             id: 4,
             icon: "tji-support",
-            title: "Launch & App Store Deployment",
-            desc: "We handle the complete App Store and Google Play submission process - optimizing your listing, preparing screenshots and descriptions, and managing the review process so your app launches cleanly and reaches users from day one.",
+            title: "Testing & Launch",
+            desc: "We test every element before go-live - payment processing, performance under load, mobile responsiveness, security, and cross-browser compatibility. Your ecommerce website launches with everything working correctly from the very first customer visit.",
             url: "/services",
         },
         {
             id: 5,
             icon: "tji-support",
-            title: "Post-Launch Support & Maintenance",
-            desc: "After launch, we monitor performance, fix issues fast, push OS compatibility updates, and release new features on a structured roadmap. Our mobile app development services do not end at delivery - we are your long-term technology partner.",
+            title: "Continuous Support",
+            desc: "We stay involved after launch - monitoring performance, fixing issues fast, releasing feature updates, and providing the ongoing technical support that keeps your online store performing and growing as your business scales.",
             url: "/services",
         },
     ],
@@ -272,55 +271,55 @@ const servicesData9 = {
 const scalableHighlightData2 = {
     eye: 'WHY CHOOSE US',
     title: "Why Choose Mematdigi as Your ",
-    titleSpan: "Mobile App Development Company in India",
+    titleSpan: "Ecommerce Website Development Company in India",
     paragraphs: [
-        "Choosing the right mobile app development company in India is one of the most important decisions your business will make. A bad choice costs you time, money, and opportunity. At Mematdigi, we have built our reputation as a leading mobile app development company by doing what most development companies do not - staying involved, staying accountable, and staying focused on your business results long after the project is delivered. Whether you need a startup MVP, a cross-platform app for a growing D2C brand, or enterprise app development for a complex B2B workflow - our team brings the same commitment to quality, transparency, and performance to every engagement.",
-        "When you work with the app developers at Mematdigi, you get more than a development team - you get a mobile app development company in India that treats your product like their own. From the first discovery call to ongoing post-launch maintenance, we are the mobile app development partner that Indian businesses trust to build apps that actually perform.",
+        "At Mematdigi, we built our reputation as the trusted ecommerce website development company in India by focusing on what actually matters - building online stores that sell. We are not the ecommerce development company that builds to a brief and invoices on delivery. We are the ecommerce website development partner that stays invested in your results - optimizing, improving, and supporting your store as your business grows and your requirements evolve. As a full-service ecommerce website development company in India, our custom ecommerce development capabilities cover every platform, every integration, and every business model - from D2C and marketplace to B2B and wholesale.",
+        "Whether you are a startup that needs an ecommerce website development company in india to build your first online store right or an enterprise that needs a specialist ecommerce development company india to rebuild a failing platform - Mematdigi delivers the ecommerce website development services that turn your online store into your most reliable sales channel. Custom ecommerce website development india built for performance, conversion, and the kind of long-term scalability your business growth demands.",
     ],
     features: [
-        "Mobile app development company in India with 135+ apps delivered across 15+ industries",
-        "Best mobile app development company for startups - lean MVPs built fast, built right, built to validate",
-        "Hire mobile app developer in India - dedicated developers assigned to your project from day one to launch",
-        "Custom mobile app development - every app built from scratch around your users, your goals, and your business model",
-        "Enterprise app development - secure, scalable, integrated solutions built for the complexity of real enterprise environments",
-        "Hire mobile app developers in India - a full team including designers, developers, QA engineers, and a project manager under one roof",
+        "Ecommerce website development company in india with 135+ stores built across fashion, electronics, healthcare, food, and more",
+        "Custom ecommerce development - every store built from scratch around your specific products, customers, and business model",
+        "Ecommerce development services covering the complete build - design, development, integration, testing, launch, and ongoing support",
+        "Hire ecommerce developer - dedicated developers assigned to your project who stay accountable from brief through post-launch",
+        "Ecommerce app development services - mobile commerce solutions that extend your store to every device your customers shop on",
+        "Ecommerce website developer in india with full-stack capabilities - frontend, backend, integrations, and performance optimization under one roof",
     ],
 };
 
 const faqData = {
     subTitle: "FAQs",
     subIcon: "tji-box",
-    title: "Frequently Asked Questions About Mobile App Development in India",
+    title: "Frequently Asked Questions About Ecommerce Website Development",
     phone: { display: "1-888-452-1505", tel: "18884521505" },
     items: [
         {
-            title: "How much does mobile app development cost in India? ",
-            desc: "No fixed answer here - it really depends on what you're building. A basic app might cost ₹3-5 lakhs. Add a payment gateway, admin panel, real-time chat, and suddenly you're looking at ₹15-30 lakhs. We've seen both. Share what you have in mind and we'll give you a realistic number, not a ballpark pulled from thin air.",
+            title: "How long does it take to build an ecommerce website? ",
+            desc: "A standard ecommerce website development project typically takes 6–12 weeks depending on complexity, number of products, and custom features required. A custom ecommerce development project with marketplace functionality, complex integrations, or large catalog management may take 3–6 months. Our ecommerce website development company in india provides a detailed timeline at the start of every project.",
             initActive: true,
         },
         {
-            title: "Should I build an Android or iOS app first? ",
-            desc: "Where are your users? That's the only question that matters. If they're in India, Android - no debate, it owns the market here. If you're going after users in the US or Europe, or targeting people who spend money on apps, start with iOS. Can't decide or the budget is tight? Build once for both with Flutter or React Native. Works well for most businesses.",
+            title: "Which ecommerce platform is best for my business? ",
+            desc: "The right platform depends entirely on your business model, product catalog, and growth ambitions. For businesses with specific requirements that generic platforms cannot meet, custom ecommerce website development india gives you complete flexibility. For simpler requirements, WooCommerce or Shopify may work. Our ecommerce website developer in india will recommend the right approach after understanding your specific needs.",
             initActive: false,
         },
         {
-            title: "Do you provide app maintenance after launch? ",
-            desc: "Launch day is actually just the beginning. Apps break. OS updates happen. Users find bugs you never imagined. We stay involved after go-live - fixing issues, pushing updates, keeping things running. Think of it less like a service and more like having a team on call.",
+            title: "Can you migrate my existing online store? ",
+            desc: "Yes - our ecommerce migration services handle complete store migrations from any platform securely, preserving all product data, customer records, order history, and existing SEO performance. We have migrated stores from Magento, WooCommerce, Shopify, and custom platforms without downtime or data loss.",
             initActive: false,
         },
         {
-            title: "Is cross-platform app development as good as native? ",
-            desc: "For 90% of apps out there - yes, genuinely. Most users won't feel any difference. Where it gets complicated is if your app needs to do something very hardware-specific, like advanced camera processing or real-time sensor data. That's when native start making sense. We'll be upfront with you about which one your project actually needs.",
+            title: "Will my ecommerce website be mobile-friendly? ",
+            desc: "Yes - every ecommerce website we build is fully responsive and mobile-optimized by default. With the majority of Indian ecommerce traffic coming from mobile devices, our ecommerce development services prioritize mobile shopping experience, fast mobile load times, and touch-optimized checkout flows that convert mobile shoppers at the same rate as desktop.",
             initActive: false,
         },
         {
-            title: "Do you sign an NDA before starting the project? ",
-            desc: "Always, before we even get into details. A lot of founders are nervous about sharing their ideas - that's fair. We sign an NDA first, then talk. Your concept stays yours and goes nowhere outside this conversation.",
+            title: "Can you integrate payment gateways and shipping providers? ",
+            desc: "Yes. We integrate all major Indian and international payment gateways - Razorpay, PayU, CCAvenue, Stripe, and more - alongside leading shipping providers and logistics platforms. Our API and third-party integration capabilities connect your ecommerce website with every tool your business operations depend on.",
             initActive: false,
         },
         {
-            title: "Will I own the source code after the project?",
-            desc: "Yes - completely. Once we're done and payment is settled, the code is handed over to you. No monthly fees to \"keep access,\" no vendor lock-in. We've heard enough horror stories from clients burned by other agencies to make this a hard rule for us.",
+            title: "Do you provide post-launch maintenance and support?",
+            desc: "Yes - always. Every ecommerce website development company in India project we deliver includes structured post-launch support covering performance monitoring, security updates, bug fixes, and feature additions. We stay involved as your long-term ecommerce development partner - not just the team that built the initial version.",
             initActive: false,
         },
     ],
@@ -329,8 +328,8 @@ const faqData = {
 const contactData = {
     left: {
         subTitle: "CONTACT US NOW",
-        title: "Ready to Build Your Mobile App With India's Leading App Development Company?",
-        desc: "Ready to work with a trusted mobile app development company in India? Partner with Mematdigi for custom mobile app development services that build secure, scalable, and high-performance mobile applications. From startup MVPs to enterprise apps, we create solutions designed to drive user engagement, business growth, and long-term success. ",
+        title: "Ready to Build a High-Performing Ecommerce Website for Your Business?",
+        desc: "Ready to partner with a trusted ecommerce website development company in India? Mematdigi delivers custom ecommerce website development services that build secure, scalable, and conversion-focused online stores. From startups to enterprise businesses, we create ecommerce solutions designed to increase sales, improve customer experiences, and support long-term business growth.",
     },
     form: {
         subTitle: "Get a Call Now",
@@ -339,13 +338,13 @@ const contactData = {
         titleSpan: "Line.",
         selectOptions: [
             { value: "0", optionName: "Choose an option" },
-            { value: "1", optionName: "iOS App Development" },
-            { value: "2", optionName: "Android App Development" },
-            { value: "3", optionName: "Cross-Platform App Development" },
-            { value: "4", optionName: "Flutter App Development" },
-            { value: "5", optionName: "React Native Development" },
-            { value: "6", optionName: "App Design & UI/UX" },
-            { value: "7", optionName: "Backend & API Development" },
+            { value: "1", optionName: "Custom Ecommerce Website Development" },
+            { value: "2", optionName: "Shopping Cart Development" },
+            { value: "3", optionName: "Payment Gateway Integration" },
+            { value: "4", optionName: "Multi-Vendor Marketplace Development" },
+            { value: "5", optionName: "Ecommerce Mobile App Development" },
+            { value: "6", optionName: "Ecommerce Migration Services" },
+            { value: "7", optionName: "API & Third-Party Integrations" },
         ],
     },
 };
@@ -1064,7 +1063,7 @@ const ContactSection = () => {
     );
 };
 
-export default function MobileAppDevelopmentServices() {
+export default function EcommerceWebsiteDevelopmentServices() {
     return (
         <div>
             <BackToTop />

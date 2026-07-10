@@ -10,12 +10,6 @@ import Header from "@/components/layout/header/Header";
 import BackToTop from "@/components/shared/others/BackToTop";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
 
-/* ============================================================
- *  PAGE DATA  — saara content yahin se manage karo,
- *  JSX clean rahega. Chahe to ise alag data.js file me
- *  move kar sakte ho aur yahan import kar lo.
- * ========================================================== */
-
 const heroData = {
     bgImage: "/images/hero/h9-hero-bg.webp",
     eyebrow: "DIGITAL MARKETING SERVICES",

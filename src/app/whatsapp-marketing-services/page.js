@@ -12,13 +12,13 @@ import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
 
 const heroData = {
     bgImage: "/images/hero/h9-hero-bg.webp",
-    eyebrow: "MOBILE APP DEVELOPMENT",
-    titlePre: "Mobile App Development Company in India That Builds",
-    titleHighlight: "Apps That Perform",
+    eyebrow: "WHATSAPP MARKETING COMPANY",
+    titlePre: "Best WhatsApp Marketing Company in India That Drives Real",
+    titleHighlight: "Customer Engagement",
     titlePost: "",
     desc: (
         <>
-            As a trusted mobile app development company in India, we deliver custom, scalable, high-performance apps for iOS, Android, Flutter, and React Native that enhance user experience and drive business growth.
+            As a trusted WhatsApp marketing company in India, we help businesses build meaningful customer relationships through automation, bulk messaging, broadcast campaigns, and WhatsApp Business API solutions. Our result-driven WhatsApp marketing services increase engagement, generate qualified leads, and turn conversations into measurable business growth.
         </>
     ),
     stats: [
@@ -30,10 +30,8 @@ const heroData = {
     primaryCta: { text: "Get Free Consultation", url: "/contact-us" },
     form: {
         tag: "GET IN TOUCH",
-        title: "Request A Quote",
+        title: "Get Your Free Consultation",
         subtitle: "Fill out the form and our team will reach out within 24 hours.",
-        // Mobile form fields = Name, Email, Phone, Business Type, Message.
-        // Website URL input hata kar Business Type dropdown wapas laaya.
         serviceOptions: [
             { value: "", label: "Business Type *" },
             { value: "startup", label: "Startup / Small Business" },
@@ -45,26 +43,26 @@ const heroData = {
 };
 
 const chooseData = {
-    subTitle: "COMMON APP DEVELOPMENT CHALLENGES",
+    subTitle: "COMMON CHALLENGES",
     subIcon: "tji-box",
-    title: "Why Most Mobile Apps Fail to Deliver Business Results",
+    title: "Why Most Businesses Are Leaving WhatsApp Revenue on the Table",
     desc: "",
     banner: "/images/choose/h8-choose-bnner.webp",
     boxes: [
         {
             icon: "tji-innovative",
-            title: "Poor User Experience",
-            desc: "Many mobile apps fail because of slow performance, confusing navigation, and poor UI/UX design, leading users to abandon the app after only a few interactions.",
+            title: "Poor Customer Engagement",
+            desc: "Sending generic promotional messages without audience segmentation leads to low response rates, poor customer experiences, and missed opportunities to build meaningful conversations that convert into sales.",
         },
         {
             icon: "tji-award",
-            title: "Lack of Scalability",
-            desc: "Apps built without a scalable architecture often struggle with increasing users, new features, and platform updates, creating performance issues that limit long-term business growth.",
+            title: "Lack of Automation & Scalability",
+            desc: "Managing customer conversations manually slows business growth. Without WhatsApp automation, chatbots, and Business API integration, businesses struggle to handle increasing inquiries efficiently.",
         },
         {
             icon: "tji-support",
-            title: "No Long-Term Support",
-            desc: "Building an app is only the beginning. Without regular updates, maintenance, security improvements, and post-launch support, even well-designed mobile apps quickly lose reliability and user trust.",
+            title: "Ineffective Campaign Performance",
+            desc: "Many businesses send WhatsApp campaigns without a clear strategy, performance tracking, or compliance. This results in poor engagement, lower conversions, and the risk of damaging sender reputation through ineffective messaging.",
         },
     ],
 };
@@ -72,62 +70,44 @@ const chooseData = {
 const servicesData = {
     subTitle: "WHAT WE OFFER",
     subIcon: "tji-box",
-    title: "Our Mobile App Development Services for Businesses Across India",
-    desc: "From native iOS and Android to cross-platform apps, UI/UX design, and post-launch support - complete mobile app development services built to perform at every stage of growth.",
+    title: "Our WhatsApp Marketing Services for Businesses Across India",
+    desc: "From bulk WhatsApp campaigns and automation to chatbot development, API setup, and broadcast management - complete WhatsApp marketing solutions built to drive engagement and revenue.",
     moreUrl: "/services",
     items: [
         {
             icon: "tji-service-1",
-            title: "iOS App Development",
-            desc: "We build high-performance, App Store-ready iOS applications built for speed, security, and seamless user experience - designed to meet Apple's strict guidelines while delivering the business results your investment demands.",
+            title: "WhatsApp Campaign Management",
+            desc: "End-to-end WhatsApp marketing campaign management - strategy, message creation, audience targeting, sending, and performance analysis - all managed by our WhatsApp marketing agency team for maximum impact and minimum friction.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "Android App Development",
-            desc: "India runs on Android. We build scalable, feature-rich Android apps that work flawlessly across devices, screen sizes, and OS versions - built for the market where your users actually are.",
+            title: "WhatsApp Automation",
+            desc: "We build WhatsApp automation workflows that send the right message to the right customer at the right moment - welcome sequences, abandoned cart reminders, order updates, and re-engagement flows that run without manual intervention.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "Cross-Platform App Development",
-            desc: "Build once, deploy everywhere. Our cross platform app development services use Flutter and React Native to deliver native-quality experiences on both iOS and Android - at a fraction of the time and cost of building two separate apps.",
+            title: "Bulk WhatsApp Marketing",
+            desc: "Reach thousands of customers instantly with our bulk WhatsApp marketing services - segmented broadcast lists, personalized messaging at scale, rich media messaging, and compliance-first delivery that protects your sender reputation.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "Flutter App Development",
-            desc: "Flutter is the future of cross-platform mobile development. We build beautiful, high-performance Flutter apps with a single codebase that feels completely native on both iOS and Android - fast to build, easy to maintain, and smooth to use.",
+            title: "WhatsApp Business API Setup",
+            desc: "We set up and configure the WhatsApp Business API for businesses that need to communicate at scale - enabling automated messaging, CRM integration, chatbot deployment, and multi-agent customer support through a single verified business number.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "React Native Development",
-            desc: "React Native gives you the speed of cross-platform development with near-native performance. Our React Native team builds robust, scalable mobile applications for businesses that need to move fast without compromising on quality or user experience.",
+            title: "WhatsApp Chatbot Development",
+            desc: "We build intelligent WhatsApp chatbots that handle customer inquiries, qualify leads, process orders, and provide instant support - 24 hours a day, 7 days a week, without adding headcount to your customer service team.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "App Design & UI/UX",
-            desc: "Great apps start with great design. Our mobile UI/UX design team creates intuitive, conversion-focused interfaces that guide users naturally through your app - reducing drop-off, improving retention, and making every interaction feel effortless.",
-            url: "/services",
-        },
-        {
-            icon: "tji-service-1",
-            title: "Backend & API Development",
-            desc: "The best mobile apps are powered by the best backends. We build secure, scalable backend systems and API integrations that handle real-world traffic, real-time data, and complex business logic - without breaking under pressure.",
-            url: "/services",
-        },
-        {
-            icon: "tji-service-1",
-            title: "App Testing & QA",
-            desc: "Every app we build goes through rigorous testing across devices, OS versions, and real-world usage scenarios before a single user ever touches it. Our QA process catches what development misses - so your launch is clean, your reviews are positive, and your users stay.",
-            url: "/services",
-        },
-        {
-            icon: "tji-service-1",
-            title: "App Maintenance & Deployment",
-            desc: "Launch day is just the beginning. We manage app store deployment, handle OS update compatibility, push feature updates, and provide ongoing technical support - so your mobile app development company in India relationship does not end when the project does.",
+            title: "Broadcast & List Management",
+            desc: "We build, segment, and manage your WhatsApp broadcast lists - organizing your audience by behavior, purchase history, location, and engagement level so every message reaches the people most likely to respond and convert.",
             url: "/services",
         },
     ],
@@ -135,7 +115,7 @@ const servicesData = {
 
 const solutionsData = {
     subTitle: "WHO WE SERVE",
-    title: "Mobile App Development Solutions for Every Business Type",
+    title: "WhatsApp Marketing Solutions for Every Business Type",
     moreText: "More Services",
     moreUrl: "/services",
     items: [
@@ -143,127 +123,126 @@ const solutionsData = {
             icon: "tji-service-1",
             title: "Startups & Small Businesses",
             url: "/services",
-            desc: "Your app idea deserves a development partner that treats it like their own. Our mobile app development company in India works with startups to build lean, focused MVPs that validate your concept fast - without the enterprise price tag. We help you launch smart, gather real user feedback, and iterate quickly toward product-market fit.",
+            desc: "WhatsApp marketing in India gives startups direct access to customers without the cost of large-scale paid advertising. Our WhatsApp marketing company in India works with small businesses to build lean, high-impact WhatsApp programs - automated follow-ups, personalized messaging, and broadcast campaigns that generate leads and sales from a channel your customers already use every day.",
             list: ["Expansion Strategies", "Operational Efficiency", "Competitive Edge"],
         },
         {
             icon: "tji-service-1",
             title: "D2C & Ecommerce Brands",
             url: "/services",
-            desc: "Mobile commerce is where D2C growth happens. We build ecommerce apps that make buying frictionless - fast product browsing, seamless checkout, push notification campaigns, and loyalty features that drive repeat purchases and customer lifetime value for brands serious about mobile-first growth.",
+            desc: "For D2C brands, WhatsApp is the highest-engagement retention channel available. Our bulk WhatsApp marketing services build the abandoned cart recovery sequences, order update notifications, product launch announcements, and loyalty campaigns that keep your customers buying from you - not your competitors - through the most personal digital channel they have.",
             list: ["Expansion Strategies", "Operational Efficiency", "Competitive Edge"],
         },
         {
             icon: "tji-service-1",
             title: "B2B & Enterprise Companies",
             url: "/services",
-            desc: "Enterprise app development demands a different level of security, scalability, and integration capability. We build B2B mobile applications - from internal workflow tools and CRM apps to customer-facing platforms - that integrate with your existing tech stack and scale as your organization grows.",
+            desc: "B2B WhatsApp marketing requires a completely different approach - lead qualification, appointment setting, proposal follow-ups, and account-based messaging that moves complex sales cycles forward. Our WhatsApp marketing agency builds the automation sequences and chatbot workflows that keep B2B conversations active at scale without requiring your sales team to manage every interaction manually.",
             list: ["Expansion Strategies", "Operational Efficiency", "Competitive Edge"],
         },
-        // Aur solutions add karne ho to yahan object push kar do ⬇️
     ],
 };
 
 const featuresData = {
     subTitle: "INDUSTRIES WE SERVE",
     subIcon: "tji-box",
-    title: "Industries We Build Mobile Apps For Across India",
+    title: "Industries We Serve With Our WhatsApp Marketing Services in India",
     items: [
         {
             id: 1,
             icon: "tji-innovative",
             title: "Healthcare",
-            desc: "Patient engagement apps, appointment booking, teleconsultation platforms, and health tracking solutions built with security and compliance at the core",
+            desc: "Appointment reminders, health tips, prescription alerts, and patient re-engagement campaigns that reduce no-shows and build patient loyalty.",
         },
         {
             id: 2,
             icon: "tji-award",
             title: "Real Estate",
-            desc: "Property listing apps, virtual tour features, lead management tools, and broker portals that modernize the real estate buying and renting experience",
+            desc: "Property alerts, site visit scheduling, follow-up automation, and broker communication tools that keep buyers engaged through long consideration cycles.",
         },
         {
             id: 3,
             icon: "tji-team",
             title: "Education",
-            desc: "Learning management systems, student engagement apps, live class platforms, and edtech solutions that make education more accessible and interactive",
+            desc: "Admission inquiry handling, course updates, fee reminders, and student engagement campaigns for schools, colleges, and edtech platforms.",
         },
         {
             id: 4,
             icon: "tji-support",
             title: "Ecommerce",
-            desc: "High-converting mobile shopping apps with seamless checkout, product discovery, push notifications, and loyalty features that drive revenue growth",
+            desc: "Abandoned cart recovery, order tracking, product launch broadcasts, and loyalty campaigns that drive repeat purchases through WhatsApp.",
         },
         {
             id: 5,
             icon: "tji-support",
             title: "Finance & Fintech",
-            desc: "Secure banking apps, payment solutions, investment platforms, and financial management tools built with enterprise-grade security standards",
+            desc: "Lead nurturing, document collection automation, policy renewal reminders, and customer support workflows for financial services brands.",
         },
         {
             id: 6,
             icon: "tji-support",
             title: "SaaS & Technology",
-            desc: "Mobile companions for SaaS products, internal business tools, and customer-facing technology applications built to scale with your platform",
+            desc: "Trial activation sequences, onboarding messages, feature announcements, and churn prevention campaigns for SaaS businesses using WhatsApp.",
         },
     ],
 };
 
 const scalableHighlightData = {
     eye: 'BUSINESS CHALLENGES',
-    title: "Mobile App Challenges Every Business in India Faces -",
+    title: "WhatsApp Marketing Challenges Every Business in India Faces -",
     titleSpan: "And How We Fix Them",
     paragraphs: [
-        "Most businesses that come to us have already been through one failed app development experience. They hired a mobile app development company in India based on the lowest quote, received a product that barely worked, and were left without support when it inevitably broke. These are not edge cases - they are what happens when you choose the wrong development partner. As a leading mobile app development company trusted by 100+ businesses, we have rebuilt broken apps, rescued abandoned projects, and delivered first-time-right solutions for clients across every industry.",
+        "Most businesses that come to us for WhatsApp marketing in India are either sending unstructured bulk messages that damage their sender reputation or have no WhatsApp marketing strategy at all. They know their customers are on WhatsApp. They know the open rates are far higher than email. But they do not know how to build a compliant, scalable, automated WhatsApp marketing program that generates real revenue without the risk of getting their number blocked. As a trusted WhatsApp marketing company in India working with 100+ businesses, we have solved every version of this problem.",
     ],
     features: [
-        "Apps that crash on launch - because testing was skipped to cut costs and meet a rushed deadline",
-        "No post-launch support - leaving businesses unable to fix bugs or release updates after delivery",
-        "Poor UI/UX design - creating apps users find confusing, frustrating, and abandon after one session",
-        "No backend scalability - apps that work for 100 users but collapse under real traffic load",
-        "No app store optimization - apps built but never discoverable in the App Store or Google Play",
-        "Source code ownership issues - developers who retain code access and use it as leverage post-delivery",
+        "WhatsApp number getting blocked - because messages were sent without proper opt-in management and compliance protocols",
+        "No automation in place - meaning every customer interaction requires manual effort that does not scale as the business grows",
+        "Generic broadcast messages with no segmentation - sending the same message to every contact regardless of where they are in the buying journey",
+        "No rich media messaging strategy - missing the engagement uplift that images, videos, catalogs, and interactive buttons deliver over plain text",
+        "WhatsApp Business API not set up - limiting the business to basic WhatsApp functionality without the automation and integration capabilities that drive real results",
+        "No campaign analytics - making it impossible to know which messages are performing, which audiences are converting, and where the strategy needs to improve",
     ],
 };
 
 const servicesData9 = {
     subTitle: "OUR PROCESS",
-    title: "How We Deliver Your Mobile App Development Project",
+    title: "How We Deliver Our WhatsApp Marketing Services",
     moreText: "More services",
     moreUrl: "/services",
     items: [
         {
             id: 1,
             icon: "tji-innovative",
-            title: "Discovery & Requirement Analysis",
-            desc: "We start by understanding your business goals, your users, and your technical requirements in detail. Every decision made from here - platform choice, technology stack, feature prioritization - is grounded in what your app actually needs to succeed, not what is easiest to build.",
+            title: "Audit & Strategy Development",
+            desc: "We start by auditing your existing WhatsApp presence, audience, and communication history - then build a complete WhatsApp marketing strategy covering campaign types, automation workflows, audience segmentation, and messaging frameworks aligned to your specific business goals.",
             url: "/services",
         },
         {
             id: 2,
             icon: "tji-award",
-            title: "UI/UX Design & Prototyping",
-            desc: "Before a single line of code is written, we design every screen and prototype the full user journey. You see exactly how your app will look and feel, how users will navigate it, and how key actions will work - all before development begins.",
+            title: "WhatsApp Business API Setup",
+            desc: "We configure and verify your WhatsApp Business API account - setting up the technical infrastructure for automated messaging, broadcast list management, chatbot integration, and CRM connectivity that makes professional WhatsApp marketing in India possible at scale.",
             url: "/services",
         },
         {
             id: 3,
             icon: "tji-team",
-            title: "App Development & Testing",
-            desc: "Our development team builds your app with clean, scalable code - following mobile app development best practices for performance, security, and maintainability. Every feature is tested continuously throughout development, not just at the end.",
+            title: "Audience Building & Segmentation",
+            desc: "We build and segment your WhatsApp contact lists - organizing your audience by behavior, purchase history, location, and engagement level so every campaign delivers personalized messaging to the contacts most likely to respond and convert.",
             url: "/services",
         },
         {
             id: 4,
             icon: "tji-support",
-            title: "Launch & App Store Deployment",
-            desc: "We handle the complete App Store and Google Play submission process - optimizing your listing, preparing screenshots and descriptions, and managing the review process so your app launches cleanly and reaches users from day one.",
+            title: "Campaign Execution & Automation",
+            desc: "We create, schedule, and deploy your WhatsApp campaigns and automation sequences - bulk WhatsApp marketing services for broadcasts, triggered automation for behavioral messages, and chatbot workflows for instant customer response across every touchpoint.",
             url: "/services",
         },
         {
             id: 5,
             icon: "tji-support",
-            title: "Post-Launch Support & Maintenance",
-            desc: "After launch, we monitor performance, fix issues fast, push OS compatibility updates, and release new features on a structured roadmap. Our mobile app development services do not end at delivery - we are your long-term technology partner.",
+            title: "Analytics, Reporting & Optimization",
+            desc: "Monthly performance reports covering message delivery rates, open rates, response rates, conversion rates, and campaign ROI - clear, plain-language reporting that shows exactly how our WhatsApp marketing solutions are contributing to your business growth.",
             url: "/services",
         },
     ],
@@ -272,55 +251,55 @@ const servicesData9 = {
 const scalableHighlightData2 = {
     eye: 'WHY CHOOSE US',
     title: "Why Choose Mematdigi as Your ",
-    titleSpan: "Mobile App Development Company in India",
+    titleSpan: "WhatsApp Marketing Company in India",
     paragraphs: [
-        "Choosing the right mobile app development company in India is one of the most important decisions your business will make. A bad choice costs you time, money, and opportunity. At Mematdigi, we have built our reputation as a leading mobile app development company by doing what most development companies do not - staying involved, staying accountable, and staying focused on your business results long after the project is delivered. Whether you need a startup MVP, a cross-platform app for a growing D2C brand, or enterprise app development for a complex B2B workflow - our team brings the same commitment to quality, transparency, and performance to every engagement.",
-        "When you work with the app developers at Mematdigi, you get more than a development team - you get a mobile app development company in India that treats your product like their own. From the first discovery call to ongoing post-launch maintenance, we are the mobile app development partner that Indian businesses trust to build apps that actually perform.",
+        "At Mematdigi, we have built our reputation as the best WhatsApp marketing agency in India by treating WhatsApp as what it actually is - the highest-engagement direct marketing channel available to any business in India, when it is used correctly. We are not the WhatsApp marketing company that sends bulk messages to purchased lists and reports on delivery counts. We are the WhatsApp marketing company in India that builds compliant, automated, conversion-focused WhatsApp programs - with the strategy, the technology, and the execution to turn your WhatsApp presence into a consistent revenue channel that compounds over time.",
+        "Whether you are a startup that needs a WhatsApp marketing company in India to build your first automated customer communication program or an enterprise that needs a specialist WhatsApp marketing agency to manage complex multi-segment campaigns at scale - Mematdigi delivers the WhatsApp marketing services india businesses trust to drive real engagement, real conversations, and real revenue through India's most-used messaging platform.",
     ],
     features: [
-        "Mobile app development company in India with 135+ apps delivered across 15+ industries",
-        "Best mobile app development company for startups - lean MVPs built fast, built right, built to validate",
-        "Hire mobile app developer in India - dedicated developers assigned to your project from day one to launch",
-        "Custom mobile app development - every app built from scratch around your users, your goals, and your business model",
-        "Enterprise app development - secure, scalable, integrated solutions built for the complexity of real enterprise environments",
-        "Hire mobile app developers in India - a full team including designers, developers, QA engineers, and a project manager under one roof",
+        "WhatsApp marketing in India - 100+ businesses reached and engaged through strategic, compliant WhatsApp campaigns",
+        "Best WhatsApp marketing agency - full-service delivery covering strategy, API setup, automation, content, and reporting",
+        "Bulk WhatsApp marketing services - segmented broadcasts that reach thousands of customers with personalized messaging at scale",
+        "WhatsApp marketing company in India with automation expertise - behavioral triggers, drip sequences, and chatbot workflows that run without manual effort",
+        "WhatsApp marketing solutions built for compliance - opt-in management, sender reputation protection, and platform policy adherence at every step",
+        "WhatsApp marketing services in India with transparent reporting - clear monthly visibility into campaign performance, engagement rates, and revenue generated",
     ],
 };
 
 const faqData = {
     subTitle: "FAQs",
     subIcon: "tji-box",
-    title: "Frequently Asked Questions About Mobile App Development in India",
+    title: "Frequently Asked Questions About WhatsApp Marketing Services in India",
     phone: { display: "1-888-452-1505", tel: "18884521505" },
     items: [
         {
-            title: "How much does mobile app development cost in India? ",
-            desc: "No fixed answer here - it really depends on what you're building. A basic app might cost ₹3-5 lakhs. Add a payment gateway, admin panel, real-time chat, and suddenly you're looking at ₹15-30 lakhs. We've seen both. Share what you have in mind and we'll give you a realistic number, not a ballpark pulled from thin air.",
+            title: "What is WhatsApp marketing and how does it work for businesses?",
+            desc: "WhatsApp marketing in India involves using WhatsApp to communicate with customers through promotional messages, automated sequences, chatbots, and broadcast campaigns. Businesses use WhatsApp marketing services to send product updates, promotional offers, order notifications, and customer support - through a channel with significantly higher open rates than email or SMS.",
             initActive: true,
         },
         {
-            title: "Should I build an Android or iOS app first? ",
-            desc: "Where are your users? That's the only question that matters. If they're in India, Android - no debate, it owns the market here. If you're going after users in the US or Europe, or targeting people who spend money on apps, start with iOS. Can't decide or the budget is tight? Build once for both with Flutter or React Native. Works well for most businesses.",
+            title: "How much do WhatsApp marketing services cost in India?",
+            desc: "WhatsApp marketing services india typically range from ₹5,000 to ₹30,000+ per month depending on message volume, automation complexity, and whether WhatsApp Business API setup is included. As a transparent WhatsApp marketing company in India, Mematdigi prices are based on your specific requirements - no hidden fees, no post-signup surprises.",
             initActive: false,
         },
         {
-            title: "Do you provide app maintenance after launch? ",
-            desc: "Launch day is actually just the beginning. Apps break. OS updates happen. Users find bugs you never imagined. We stay involved after go-live - fixing issues, pushing updates, keeping things running. Think of it less like a service and more like having a team on call.",
+            title: "Is bulk WhatsApp marketing legal in India?",
+            desc: "Yes - when done correctly with proper opt-in management and WhatsApp Business API compliance. Our bulk WhatsApp marketing services are built around platform policy compliance - using verified business accounts, managing opt-ins properly, and maintaining the sender reputation that keeps your number active and your messages delivering.",
             initActive: false,
         },
         {
-            title: "Is cross-platform app development as good as native? ",
-            desc: "For 90% of apps out there - yes, genuinely. Most users won't feel any difference. Where it gets complicated is if your app needs to do something very hardware-specific, like advanced camera processing or real-time sensor data. That's when native start making sense. We'll be upfront with you about which one your project actually needs.",
+            title: "What is the WhatsApp Business API and do I need it?",
+            desc: "The WhatsApp Business API is the platform that enables automated messaging, bulk WhatsApp services, CRM integration, and chatbot deployment at scale. If your business needs to communicate with more than a few hundred customers regularly, the API is essential. Our WhatsApp marketing agency handles the complete setup and verification process for every client.",
             initActive: false,
         },
         {
-            title: "Do you sign an NDA before starting the project? ",
-            desc: "Always, before we even get into details. A lot of founders are nervous about sharing their ideas - that's fair. We sign an NDA first, then talk. Your concept stays yours and goes nowhere outside this conversation.",
+            title: "How is WhatsApp marketing different from email marketing?",
+            desc: "WhatsApp marketing delivers significantly higher open rates - typically 90%+ compared to 20-30% for email - because messages arrive in the same inbox customers use for personal conversations. WhatsApp marketing solutions also support rich media messaging, interactive buttons, and real-time two-way conversation that email cannot replicate.",
             initActive: false,
         },
         {
-            title: "Will I own the source code after the project?",
-            desc: "Yes - completely. Once we're done and payment is settled, the code is handed over to you. No monthly fees to \"keep access,\" no vendor lock-in. We've heard enough horror stories from clients burned by other agencies to make this a hard rule for us.",
+            title: "How long does it take to see results from WhatsApp marketing?",
+            desc: "WhatsApp campaigns can show immediate results - broadcast campaigns typically generate responses within hours of sending. Automation workflows and chatbot systems take 2-4 weeks to set up and optimize. As a trusted WhatsApp marketing company india, we set realistic expectations and show you performance data from the first campaign we run together.",
             initActive: false,
         },
     ],
@@ -329,8 +308,8 @@ const faqData = {
 const contactData = {
     left: {
         subTitle: "CONTACT US NOW",
-        title: "Ready to Build Your Mobile App With India's Leading App Development Company?",
-        desc: "Ready to work with a trusted mobile app development company in India? Partner with Mematdigi for custom mobile app development services that build secure, scalable, and high-performance mobile applications. From startup MVPs to enterprise apps, we create solutions designed to drive user engagement, business growth, and long-term success. ",
+        title: "Ready to Grow Your Business With India's Best WhatsApp Marketing Company?",
+        desc: "Partner with Mematdigi, a trusted WhatsApp marketing company in India, to build automated, conversion-focused customer communication that drives higher engagement, stronger relationships, and measurable business growth. From bulk WhatsApp campaigns to Business API solutions, we help your business turn every conversation into an opportunity.",
     },
     form: {
         subTitle: "Get a Call Now",
@@ -338,20 +317,19 @@ const contactData = {
         title: "Drop Us a",
         titleSpan: "Line.",
         selectOptions: [
-            { value: "0", optionName: "Choose an option" },
-            { value: "1", optionName: "iOS App Development" },
-            { value: "2", optionName: "Android App Development" },
-            { value: "3", optionName: "Cross-Platform App Development" },
-            { value: "4", optionName: "Flutter App Development" },
-            { value: "5", optionName: "React Native Development" },
-            { value: "6", optionName: "App Design & UI/UX" },
-            { value: "7", optionName: "Backend & API Development" },
+            { value: "0", optionName: "Choose a service" },
+            { value: "1", optionName: "WhatsApp Campaign Management" },
+            { value: "2", optionName: "WhatsApp Automation" },
+            { value: "3", optionName: "Bulk WhatsApp Marketing" },
+            { value: "4", optionName: "WhatsApp Business API Setup" },
+            { value: "5", optionName: "WhatsApp Chatbot Development" },
+            { value: "6", optionName: "Broadcast & List Management" },
         ],
     },
 };
 
 /* ============================================================
- *  SECTIONS
+ * SECTIONS
  * ========================================================== */
 
 const HeroSection = () => {
@@ -479,7 +457,6 @@ const HeroSection = () => {
                                             />
                                         </div>
 
-                                        {/* Mobile form me Business Type dropdown (Website URL input hata diya) */}
                                         <div className="form-group">
                                             <select
                                                 name="service"
@@ -674,14 +651,6 @@ const ServicesSection2 = () => {
                                         </div>
                                         <div className="service-content">
                                             <p className="desc">{item.desc}</p>
-                                            {/* <ul className="list-items">
-                                                {item.list.map((li, i) => (
-                                                    <li key={i}>
-                                                        <i className="tji-list"></i>
-                                                        {li}
-                                                    </li>
-                                                ))}
-                                            </ul> */}
                                         </div>
                                     </div>
                                 </div>
@@ -738,12 +707,9 @@ const FeaturesSection = () => {
     );
 };
 
-/* Reusable — pehle ye 2 baar copy-paste hua tha (dono highlight section
- * bilkul same the). Ab ek hi component hai, data prop ke through render hota hai. */
 const ScalableHighlightSection = ({ data }) => {
     return (
         <section className="services-section p-3 m-5 mb-5 border rounded-3 box-shadow">
-            {/* SCSS me defined decorative glows */}
             <span className="ss-glow ss-glow--orange" />
             <span className="ss-glow ss-glow--blue" />
 
@@ -787,7 +753,6 @@ const ScalableHighlightSection = ({ data }) => {
                                         />
                                     </svg>
                                 </div>
-                                {/* text ab icon ke BAHAR, uska sibling */}
                                 <span className="feature-text">{text}</span>
                             </div>
                         ))}
@@ -929,7 +894,6 @@ const FaqSection = () => {
 const ContactSection = () => {
     return (
         <section className="tj-contact-section section-gap">
-            {/* Scoped CSS to fix dark theme text visibility */}
             <style
                 dangerouslySetInnerHTML={{
                     __html: `
@@ -1064,7 +1028,7 @@ const ContactSection = () => {
     );
 };
 
-export default function MobileAppDevelopmentServices() {
+export default function WhatsaapMarketingServices() {
     return (
         <div>
             <BackToTop />
