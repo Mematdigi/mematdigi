@@ -229,48 +229,126 @@
 		]
 	},
 	{
-		"id": 3,
-		"name": "Services",
-		"path": "/services",
-		"submenu": [
-			{
-				"id": 1,
-				"name": "Business Strategy Development",
-				"icon": "tji-service-1",
-				"path": "/services/1"
-			},
-			{
-				"id": 2,
-				"name": "Customer Experience Solutions",
-				"icon": "tji-service-2",
-				"path": "/services/2"
-			},
-			{
-				"id": 3,
-				"name": "Sustainability and ESG Consulting",
-				"icon": "tji-service-3",
-				"path": "/services/3"
-			},
-			{
-				"id": 4,
-				"name": "Training and Development Programs",
-				"icon": "tji-service-4",
-				"path": "/services/4"
-			},
-			{
-				"id": 5,
-				"name": "IT Support & Maintenance",
-				"icon": "tji-service-5",
-				"path": "/services/5"
-			},
-			{
-				"id": 6,
-				"name": "Marketing Strategy & Campaigns",
-				"icon": "tji-service-6",
-				"path": "/services/6"
-			}
-		]
-	},
+  "id": 3,
+  "name": "Services",
+  "path": "/services",
+  "submenu": [
+    {
+      "id": 1,
+      "name": "Web Development",
+      "path": "",
+      "submenu": [
+        {
+          "id": 101,
+          "name": "Website Development",
+          "path": "/website-development-services"
+        },
+        {
+          "id": 102,
+          "name": "Custom Web Development",
+          "path": "/custom-web-development"
+        },
+        {
+          "id": 103,
+          "name": "Ecommerce Website Development",
+          "path": "/e-commerce-website-development"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Digital Marketing",
+      "path": "",
+      "submenu": [
+        {
+          "id": 201,
+          "name": "Digital Marketing Services",
+          "path": "/digital-marketing-services"
+        },
+        {
+          "id": 202,
+          "name": "SEO Services",
+          "path": "/seo-services"
+        },
+        {
+          "id": 203,
+          "name": "PPC Services",
+          "path": "/ppc-services"
+        },
+        {
+          "id": 204,
+          "name": "SMO Services",
+          "path": "/smo-services"
+        },
+        {
+          "id": 205,
+          "name": "Content Marketing",
+          "path": "/content-marketing-services"
+        },
+        {
+          "id": 206,
+          "name": "Email Marketing",
+          "path": "/email-marketing-services"
+        },
+        {
+          "id": 207,
+          "name": "WhatsApp Marketing",
+          "path": "/whatsapp-marketing-services"
+        },
+        {
+          "id": 208,
+          "name": "SMS Marketing",
+          "path": "/sms-marketing-services"
+        },
+        {
+          "id": 209,
+          "name": "ORM",
+          "path": "/orm-services"
+        },
+        {
+          "id": 210,
+          "name": "Video Optimization",
+          "path": "/video-optimization-services"
+        },
+        {
+          "id": 211,
+          "name": "Ecommerce Marketing",
+          "path": "/e-commerce-marketing-services"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "PR Agency",
+      "path": "/public-relations-services"
+    },
+    {
+      "id": 4,
+      "name": "Mobile App Development",
+      "path": "/mobile-application-development-services"
+    },
+    {
+      "id": 5,
+      "name": "3D Animation Company",
+      "path": "/3d-animation-services"
+    },
+    {
+      "id": 6,
+      "name": "IT Consulting",
+      "path": "/it-consulting-company"
+    },
+    {
+      "id": 7,
+      "name": "AR Development",
+      "path": "/ar-development-company"
+    },
+    {
+      "id": 8,
+      "name": "VR Development",
+      "path": "/vr-development-company"
+    }
+  ]
+},
 	{
 		"id": 4,
 		"name": "Portfolio",

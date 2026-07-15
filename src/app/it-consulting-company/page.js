@@ -12,13 +12,13 @@ import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
 
 const heroData = {
     bgImage: "/images/hero/h9-hero-bg.webp",
-    eyebrow: "SMS MARKETING SERVICES",
-    titlePre: "Best SMS Marketing Services in India to Boost Customer Engagement, Reach and",
-    titleHighlight: "Conversions",
-    titlePost: "",
+    eyebrow: "IT CONSULTING COMPANY",
+    titlePre: "Best IT Consulting Company in India for",
+    titleHighlight: "Digital Transformation",
+    titlePost: "and Business Growth",
     desc: (
         <>
-            As a trusted provider of SMS marketing services in India, we help businesses reach customers instantly through bulk SMS campaigns, promotional messaging, transactional SMS, and automation. Our data-driven SMS marketing solutions improve customer engagement, increase conversions, and drive measurable business growth.
+            As a trusted IT consulting company in India, we help businesses align technology with long-term growth through strategic IT consulting, cloud solutions, software consulting, digital transformation, and business automation. Our experts design scalable technology strategies that improve operational efficiency, reduce costs, modernize infrastructure, and create the foundation for sustainable business success.
         </>
     ),
     stats: [
@@ -30,16 +30,13 @@ const heroData = {
     primaryCta: { text: "Get Free Consultation", url: "/contact-us" },
     form: {
         tag: "GET IN TOUCH",
-        title: "Get Free Consultation",
+        title: "Request A Quote",
         subtitle: "Fill out the form and our team will reach out within 24 hours.",
         serviceOptions: [
-            { value: "", label: "Select Services *" },
-            { value: "bulk-sms", label: "Bulk SMS Marketing" },
-            { value: "promotional-sms", label: "Promotional SMS" },
-            { value: "transactional-sms", label: "Transactional SMS" },
-            { value: "campaign-management", label: "SMS Campaign Management" },
-            { value: "automation", label: "SMS Automation Services" },
-            { value: "analytics", label: "SMS Analytics & Reporting" },
+            { value: "", label: "Business Type *" },
+            { value: "startup", label: "Startup / Small Business" },
+            { value: "sme", label: "Growing SME" },
+            { value: "enterprise", label: "Enterprise / Large Organization" },
             { value: "other", label: "Other" },
         ],
     },
@@ -48,24 +45,24 @@ const heroData = {
 const chooseData = {
     subTitle: "COMMON CHALLENGES",
     subIcon: "tji-box",
-    title: "Why Your Business Is Missing Opportunities Without an Effective SMS Marketing Strategy",
+    title: "Why Businesses Struggle Without the Right IT Consulting Partner",
     desc: "",
     banner: "/images/choose/h8-choose-bnner.webp",
     boxes: [
         {
             icon: "tji-innovative",
-            title: "Poor Audience Targeting",
-            desc: "Sending the same SMS to every customer without proper segmentation leads to low engagement, poor response rates, and missed opportunities to deliver relevant messages that encourage action.",
+            title: "Lack of a Clear IT Strategy",
+            desc: "Many businesses invest in multiple software platforms and technologies without a long-term roadmap. This creates disconnected systems, duplicate processes, higher operational costs, and technology that fails to support business growth.",
         },
         {
             icon: "tji-award",
-            title: "Lack of Automation & Personalization",
-            desc: "Manual campaigns and generic messaging make it difficult to engage customers consistently. Without SMS automation and personalized communication, businesses struggle to build lasting customer relationships at scale.",
+            title: "Outdated Technology Infrastructure",
+            desc: "Legacy systems, manual workflows, and aging IT infrastructure slow productivity, increase maintenance costs, and make it difficult for businesses to adapt to changing customer expectations and market demands.",
         },
         {
             icon: "tji-support",
-            title: "Low Campaign Performance",
-            desc: "Many businesses launch SMS campaigns without a clear strategy, performance tracking, or optimization. This results in weak conversions, wasted marketing spend, and limited return on investment despite high message delivery rates.",
+            title: "Poor Return on Technology Investments",
+            desc: "Technology alone does not improve business performance. Without strategic planning, proper implementation, system integration, and continuous optimization, businesses often spend heavily on IT without achieving measurable operational or financial improvements.",
         },
     ],
 };
@@ -73,44 +70,44 @@ const chooseData = {
 const servicesData = {
     subTitle: "WHAT WE OFFER",
     subIcon: "tji-box",
-    title: "Our SMS Marketing Services for Businesses Across India",
-    desc: 'Reach the right customers at the right time with data-driven SMS marketing solutions designed to improve engagement, drive conversions, and build lasting customer relationships at scale.',
+    title: "Our IT Consulting Services for Businesses Across India",
+    desc: "From IT strategy and software consulting to cloud solutions, digital transformation, and business process automation - complete IT consultancy services designed to make technology work for your business, not against it.",
     moreUrl: "/services",
     items: [
         {
             icon: "tji-service-1",
-            title: "Bulk SMS Marketing Services",
-            desc: "We manage high-volume bulk SMS campaigns with proper audience segmentation, message personalization, compliance management, and delivery optimization - reaching thousands of customers instantly without damaging your sender reputation.",
+            title: "IT Strategy Consulting",
+            desc: "We build clear, actionable IT strategies aligned to your business goals - defining the right technology roadmap, the right investment priorities, and the right implementation sequence to make your technology decisions pay off consistently and predictably.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "Promotional SMS Services",
-            desc: "We build and execute promotional SMS campaigns for offers, product launches, seasonal sales, and brand announcements - crafted with compelling copy, strategic timing, and audience targeting that maximizes response rates and campaign ROI.",
+            title: "Technology Consulting",
+            desc: "We help businesses evaluate, select, and implement the right technologies - from enterprise software and cloud platforms to automation tools and data systems - ensuring every technology investment is matched to a specific business outcome.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "Transactional SMS Services",
-            desc: "We set up and manage transactional SMS services for order confirmations, OTPs, shipping updates, appointment reminders, and account notifications - reliable, instant delivery that keeps customers informed and builds operational trust.",
+            title: "Software Consulting",
+            desc: "We provide expert software consulting for businesses navigating complex software decisions - custom versus off-the-shelf, vendor selection, integration planning, and migration strategy - so your software investments deliver the efficiency and scalability your business needs.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "SMS Campaign Management",
-            desc: "End-to-end SMS campaign management - strategy, content creation, audience segmentation, scheduling, delivery monitoring, and performance analysis - all managed by our SMS marketing agency team so your campaigns run smoothly and deliver results.",
+            title: "Cloud Consulting Services",
+            desc: "We help businesses plan and execute cloud adoption - from cloud readiness assessments and migration strategy to cloud architecture design and ongoing optimization - delivering the cost efficiency, scalability, and security that modern business operations demand.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "SMS Automation Services",
-            desc: "We build SMS automation workflows that send the right message at the right moment - welcome sequences, abandoned cart reminders, re-engagement campaigns, and behavioral triggers that run without manual intervention and improve customer lifecycle performance.",
+            title: "Digital Transformation Consulting",
+            desc: "We guide businesses through the full digital transformation journey - identifying the processes, systems, and capabilities that need to change, building the transformation roadmap, and managing the implementation so your business emerges genuinely more competitive and efficient.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "SMS Analytics & Reporting",
-            desc: "We track delivery rates, open rates, click-through rates, conversion rates, and campaign ROI - delivering clear monthly SMS analytics and reporting that shows exactly how your SMS marketing services in India are performing and where the next optimization opportunity is.",
+            title: "Business Process Automation Consulting",
+            desc: "We identify the manual, repetitive processes consuming your team's time and build the automation strategy - RPA, workflow tools, AI-assisted processes - that frees your people to focus on the work that actually drives business growth.",
             url: "/services",
         },
     ],
@@ -118,7 +115,7 @@ const servicesData = {
 
 const solutionsData = {
     subTitle: "WHO WE SERVE",
-    title: "SMS Marketing Solutions for Every Business Type",
+    title: "IT Consulting Solutions for Every Business Type",
     moreText: "More Services",
     moreUrl: "/services",
     items: [
@@ -126,21 +123,21 @@ const solutionsData = {
             icon: "tji-service-1",
             title: "Startups & Small Businesses",
             url: "/services",
-            desc: "SMS is one of the most cost-effective marketing channels available to a business with a limited budget - instant reach, high open rates, and no algorithm standing between your message and your customer. Our SMS marketing services in india for startups and small businesses build lean, high-impact campaigns that generate leads, promote offers, and build customer relationships from a channel that delivers results from the first send.",
+            desc: "The technology decisions you make in the early stages of your business have outsized consequences later. Our IT consulting company in india works with startups to build scalable technology foundations from the start - choosing the right software stack, avoiding costly vendor lock-in, and implementing the IT infrastructure that supports rapid growth without requiring expensive rebuilds when the business scales.",
             list: ["Expansion Strategies", "Operational Efficiency", "Competitive Edge"],
         },
         {
             icon: "tji-service-1",
-            title: "Ecommerce & Retail Brands",
+            title: "Growing SMEs",
             url: "/services",
-            desc: "For ecommerce brands, mobile SMS marketing is the fastest way to recover abandoned carts, announce flash sales, and drive repeat purchases from existing customers. Our SMS marketing agency builds the automation sequences and promotional campaigns that keep your customers engaged between purchases - increasing repeat purchase rate and customer lifetime value through the channel with the highest open rate of any digital touchpoint.",
+            desc: "Mid-sized businesses hit a technology inflection point - the systems that worked at fifty employees create bottlenecks at two hundred. Our IT consultancy services help growing SMEs modernize their technology stack, automate manual processes, adopt cloud infrastructure, and build the operational efficiency that allows the business to scale without proportionally scaling headcount or costs.",
             list: ["Expansion Strategies", "Operational Efficiency", "Competitive Edge"],
         },
         {
             icon: "tji-service-1",
-            title: "B2B & Enterprise Companies",
+            title: "Enterprises & Large Organizations",
             url: "/services",
-            desc: "Enterprise SMS solutions require a different level of scale, reliability, and integration. We build and manage B2B SMS programs that automate customer notifications, streamline appointment scheduling, support sales follow-up sequences, and deliver the kind of personalized SMS marketing that moves complex buying decisions forward at the speed enterprise businesses need.",
+            desc: "Enterprise technology consulting demands a different level of depth - legacy system modernization, multi-department digital transformation, complex integration architecture, and the kind of IT strategy consulting that balances innovation with operational continuity. Our enterprise IT consulting team brings the technical depth and business consulting experience to deliver transformation at scale without disrupting the operations the business depends on.",
             list: ["Expansion Strategies", "Operational Efficiency", "Competitive Edge"],
         },
     ],
@@ -149,102 +146,103 @@ const solutionsData = {
 const featuresData = {
     subTitle: "INDUSTRIES WE SERVE",
     subIcon: "tji-box",
-    title: "Industries We Help Grow With SMS Marketing Services",
+    title: "Industries We Help Transform Through IT Consulting Services",
     items: [
         {
             id: 1,
             icon: "tji-innovative",
-            title: "Ecommerce",
-            desc: "Abandoned cart recovery, order updates, flash sale announcements, and loyalty campaign SMS that drive repeat purchases and increase customer lifetime value.",
+            title: "Healthcare",
+            desc: "Clinical system modernization, patient data management, compliance-aware IT strategy, and digital transformation consulting for hospitals, clinics, and health networks",
         },
         {
             id: 2,
             icon: "tji-award",
-            title: "Healthcare",
-            desc: "Appointment reminders, health tips, prescription alerts, and patient re-engagement campaigns that reduce no-shows and improve clinic efficiency.",
+            title: "Manufacturing",
+            desc: "ERP implementation, production automation consulting, supply chain technology strategy, and IT infrastructure consulting for manufacturers across India",
         },
         {
             id: 3,
             icon: "tji-team",
             title: "Education",
-            desc: "Admission inquiry follow-ups, fee reminders, exam notifications, and student engagement campaigns that keep institutions connected with students and parents.",
+            desc: "Learning management system consulting, campus IT strategy, edtech platform advisory, and digital transformation consulting for schools, colleges, and educational institutions",
         },
         {
             id: 4,
             icon: "tji-support",
-            title: "Real Estate",
-            desc: "Property alert SMS, site visit scheduling, follow-up automation, and broker communication that keeps buyers engaged through long property decision cycles.",
+            title: "Retail & Ecommerce",
+            desc: "Retail technology consulting, ecommerce platform strategy, omnichannel integration, and business process automation for retail and online businesses",
         },
         {
             id: 5,
             icon: "tji-support",
             title: "Finance & Banking",
-            desc: "OTP delivery, account notifications, loan update SMS, and financial promotion campaigns that build customer trust and drive product awareness.",
+            desc: "Fintech consulting, core banking system modernization, compliance technology strategy, and IT security and risk consulting for financial services organizations",
         },
         {
             id: 6,
             icon: "tji-support",
-            title: "Restaurants & Hospitality",
-            desc: "Reservation confirmations, special offer promotions, loyalty reward SMS, and event announcements that drive footfall and repeat visits.",
+            title: "Logistics & Supply Chain",
+            desc: "Logistics technology consulting, warehouse management system advisory, supply chain automation, and IT strategy for logistics businesses across India",
         },
     ],
 };
 
 const scalableHighlightData = {
     eye: 'BUSINESS CHALLENGES',
-    title: "Common SMS Marketing Challenges Businesses Face -",
+    title: "Common IT Challenges Businesses Face -",
     titleSpan: "And How We Solve Them",
     paragraphs: [
-        "Most businesses that come to us for SMS marketing services in india are dealing with the same fundamental problem - they know SMS should be working and they cannot figure out why it is not. Campaigns that get delivered but not acted on. Messages that feel generic. Numbers that get reported as spam. No visibility into what is actually performing. As a trusted SMS marketing agency working with 100+ businesses across India, we have diagnosed and fixed every version of broken SMS marketing - and we know exactly what it takes to build a program that consistently delivers results.",
+        "Most businesses that come to us for IT consulting services in India are not struggling because of a lack of technology - they are struggling because of too much technology that was never properly integrated, never properly aligned to business goals, and never properly managed after implementation. As a trusted IT consulting company in india working with 100+ businesses across industries, we have diagnosed and solved every version of this problem - and we know exactly what it takes to turn a fragmented IT environment into a cohesive, efficient technology ecosystem that genuinely supports business growth.",
     ],
     features: [
-        "Low customer engagement despite high delivery rates - because messages are generic, poorly timed, and sent without any audience segmentation strategy",
-        "Poor campaign targeting reaching wrong audiences - sending the same message to your entire list regardless of where each customer is in their relationship with your business",
-        "Low conversion rates from promotional campaigns - because the offer, timing, and call to action were never optimized for the specific audience receiving the message",
-        "Inefficient manual messaging consuming team time - no SMS automation in place means every campaign requires manual effort that does not scale as the business grows",
-        "No campaign tracking or performance reporting - making it impossible to measure ROI, identify what is working, and improve results from one campaign to the next",
-        "Weak customer retention and follow-up strategy - losing customers between purchases because no re-engagement or loyalty SMS program exists to bring them back",
+        "Legacy systems slowing business operations - outdated infrastructure that cannot integrate with modern tools, creating manual workarounds that consume team time and introduce errors",
+        "Lack of technology strategy and planning - isolated software decisions made without a coherent IT strategy, resulting in disconnected systems that duplicate effort and prevent efficiency",
+        "High IT costs with poor ROI - technology spending that cannot be justified because no measurement framework connects IT investment to specific business outcomes",
+        "Manual business processes reducing productivity - repetitive workflows that should be automated consuming skilled employee time that should be directed at higher-value work",
+        "Cloud migration and infrastructure challenges - businesses that know they need to modernize but lack the IT infrastructure consulting expertise to plan and execute migration without operational disruption",
+        "Security, compliance, and technology scalability issues - IT environments that were never designed for the scale or regulatory requirements the business now faces",
     ],
 };
+
 const servicesData9 = {
     subTitle: "OUR PROCESS",
-    title: "Our SMS Marketing Process for Better Customer Engagement and Business Growth",
+    title: "Our IT Consulting Process for Business Growth",
     moreText: "More services",
     moreUrl: "/services",
     items: [
         {
             id: 1,
             icon: "tji-innovative",
-            title: "Business & Audience Analysis",
-            desc: "We start by understanding your business, your customers, your existing communication channels, and your specific SMS marketing goals - building a complete picture of your audience segments before a single message is written or campaign is planned.",
+            title: "Business & Technology Assessment",
+            desc: "We start with a comprehensive technology assessment - auditing your existing infrastructure, software, workflows, integrations, and IT spend against your business objectives to identify exactly where technology is supporting growth and where it is holding it back.",
             url: "/services",
         },
         {
             id: 2,
             icon: "tji-award",
-            title: "Campaign Strategy & SMS Content Planning",
-            desc: "We build your complete SMS marketing strategy - campaign types, messaging frameworks, audience segmentation approach, automation triggers, and sending schedule - all aligned to your business goals and the customer lifecycle stages that matter most.",
+            title: "IT Strategy & Roadmap Development",
+            desc: "We develop a clear technology roadmap aligned to your business goals and future scalability requirements - prioritizing the right investments, sequencing the right implementations, and building the business case for every technology decision in the plan.",
             url: "/services",
         },
         {
             id: 3,
             icon: "tji-team",
-            title: "SMS Campaign Setup & Automation",
-            desc: "We configure your SMS platform, build automation workflows, set up audience segments, and create all campaign content - ensuring every message is compliant, personalized, and timed for maximum engagement before the first campaign goes live.",
+            title: "Solution Planning & Architecture",
+            desc: "We recommend the right software, cloud, automation, and infrastructure solutions for your specific business context - evaluating vendors, designing integration architecture, and planning the implementation approach that minimizes disruption and maximizes adoption.",
             url: "/services",
         },
         {
             id: 4,
             icon: "tji-support",
-            title: "Campaign Launch & Delivery Monitoring",
-            desc: "We launch and monitor every campaign in real time - tracking delivery rates, identifying issues fast, and managing sender reputation to ensure your messages reach customers reliably and your SMS marketing services in india program stays compliant and effective.",
+            title: "Implementation & Technology Integration",
+            desc: "We manage or support the implementation of your technology solutions - ensuring security, performance, and integration quality are maintained throughout deployment, and that your team has the training and change management support they need to adopt new systems effectively.",
             url: "/services",
         },
         {
             id: 5,
             icon: "tji-support",
-            title: "Performance Analysis & Continuous Optimization",
-            desc: "Monthly performance reports covering delivery rates, response rates, conversion rates, and campaign ROI - plus specific optimizations implemented based on real data to improve results from every campaign cycle going forward.",
+            title: "Optimization, Support & Continuous Improvement",
+            desc: "We monitor system performance, identify optimization opportunities, and provide ongoing IT advisory services that ensure your technology environment keeps pace with your business as it grows - turning IT consulting from a one-time engagement into a long-term competitive advantage.",
             url: "/services",
         },
     ],
@@ -252,56 +250,56 @@ const servicesData9 = {
 
 const scalableHighlightData2 = {
     eye: 'WHY CHOOSE US',
-    title: "Why Choose Mematdigi for ",
-    titleSpan: "SMS Marketing Services in India",
+    title: "Why Choose Mematdigi as Your ",
+    titleSpan: "IT Consulting Company in India",
     paragraphs: [
-        "At Mematdigi, we have built our reputation as a trusted SMS marketing company in India by treating SMS as a strategic business communication channel - not a broadcast tool for sending the same message to everyone on a list. We are not the SMS marketing agency that sends bulk campaigns and reports on delivery counts. We are the SMS marketing services in India partner that builds proper audience segmentation, proper automation, proper personalized messaging, and proper analytics into every program we manage - because those are the elements that separate SMS campaigns that convert from SMS campaigns that get ignored.",
-        "Whether you are a startup that needs a cost-effective SMS marketing company india to build your first customer communication program or an enterprise that needs a specialist SMS marketing agency to manage complex automation and segmentation at scale - Mematdigi delivers the SMS marketing services in india that help your business reach more customers, retain them longer, and convert them more consistently through India's most direct digital communication channel.",
+        "At Mematdigi, we built our reputation as a trusted IT consulting company in india by treating technology as what it should be - a business enabler, not a business burden. We are not the IT consulting firm that recommends the most expensive solution or the one that generates the most implementation fees. We are the IT consultancy services partner that starts with your business objective, recommends the right technology to achieve it, and stays involved through implementation and beyond to ensure the investment actually delivers. Our technology consulting capabilities cover every dimension of modern business IT - from cloud consulting services and software consulting to digital transformation consulting and business process automation - all delivered by a team with genuine cross-industry expertise and a business-first approach to every engagement.",
+        "Whether you are a startup that needs an IT consulting company in india to build a scalable technology foundation from the ground up or an enterprise that needs specialist digital transformation consulting to modernize a complex, legacy IT environment - Mematdigi delivers the IT consulting services that make technology a genuine competitive advantage for your business. Transparent, business-aligned, and focused on the outcomes that actually drive sustainable growth.",
     ],
     features: [
-        "SMS marketing services in india with proven results across ecommerce, healthcare, education, real estate, and more",
-        "SMS marketing agency with full-service delivery - strategy, content, automation, delivery, and reporting under one roof",
-        "Transactional SMS services - reliable, instant delivery for OTPs, order updates, and customer notifications that build operational trust",
-        "Bulk SMS marketing services - high-volume campaigns with proper segmentation, personalization, and compliance management",
-        "SMS automation services - behavioral triggers and lifecycle sequences that engage customers at the right moment without manual effort",
-        "Enterprise SMS solutions - scalable infrastructure and dedicated support for businesses managing high-volume, multi-segment SMS communication",
+        "IT consulting company in India trusted by 100+ businesses across healthcare, manufacturing, education, retail, and finance",
+        "IT consultancy services covering the complete technology lifecycle - strategy, selection, implementation, and ongoing optimization",
+        "Technology consulting with business-first methodology - every recommendation grounded in your specific business context and growth objectives",
+        "Digital transformation consulting for businesses ready to modernize - phased, practical transformation that delivers results without disrupting operations",
+        "Cloud consulting services - cloud readiness assessment, migration strategy, architecture design, and ongoing optimization under one roof",
+        "Software consulting with vendor-neutral expertise - recommending the right solution for your business, not the solution with the best margins",
     ],
 };
 
 const faqData = {
     subTitle: "FAQs",
     subIcon: "tji-box",
-    title: "Frequently Asked Questions About SMS Marketing Services in India",
+    title: "Frequently Asked Questions About IT Consulting Services in India",
     phone: { display: "1-888-452-1505", tel: "18884521505" },
     items: [
         {
-            title: "What are SMS marketing services and how can they benefit my business?",
-            desc: "SMS marketing services in India involve using text messages to communicate with customers - promotional offers, transactional notifications, appointment reminders, and automated follow-up sequences. With open rates of up to 98%, SMS marketing delivers messages that actually get read. Our SMS marketing services help businesses improve customer engagement, increase conversions, and build stronger customer relationships through direct, personalized messaging.",
+            title: "What does an IT consulting company do?",
+            desc: "An IT consulting company in india helps businesses make better technology decisions - evaluating existing systems, developing IT strategies, recommending the right software and infrastructure, and guiding implementation to ensure technology investments deliver measurable business outcomes. At Mematdigi, our IT consulting services combine business consulting depth with technology expertise to build strategies that genuinely work for your specific business context.",
             initActive: true,
         },
         {
-            title: "What is the difference between promotional and transactional SMS?",
-            desc: "Promotional SMS services are used for marketing - offers, product launches, flash sales, and campaigns designed to drive purchases. Transactional SMS services are triggered by customer actions - order confirmations, OTPs, shipping updates, and appointment reminders. Both serve different purposes, and a complete SMS marketing strategy uses both types to communicate with customers throughout their journey.",
+            title: "How can IT consulting improve my business?",
+            desc: "Technology consulting improves your business by aligning IT investments to specific business outcomes - reducing operational costs through automation, improving efficiency through better-integrated systems, enabling faster growth through scalable infrastructure, and eliminating the manual workarounds and disconnected tools that slow every team down. Our business technology solutions approach ensures every technology decision is justified by a clear business return.",
             initActive: false,
         },
         {
-            title: "Do you provide bulk SMS marketing services for businesses?",
-            desc: "Yes - our bulk SMS marketing services are designed for businesses that need to reach large customer lists quickly and reliably. We manage audience segmentation, message personalization, compliance, and delivery optimization for high-volume mobile SMS marketing campaigns - ensuring your messages reach customers without damaging your sender reputation or violating platform policies.",
+            title: "Do you provide cloud consulting services?",
+            desc: "Yes. Our cloud consulting services cover the complete cloud journey - cloud readiness assessment, migration strategy, cloud architecture design, vendor selection, implementation support, and ongoing cloud optimization. Whether you are moving to AWS, Azure, Google Cloud, or a hybrid environment, our IT infrastructure consulting team builds the right cloud strategy for your specific business requirements and budget.",
             initActive: false,
         },
         {
-            title: "Can you automate SMS campaigns for customer engagement?",
-            desc: "Yes. Our SMS automation services build behavioral trigger campaigns - welcome messages, abandoned cart reminders, re-engagement sequences, and loyalty campaigns - that send automatically based on customer actions without any manual effort. Combined with strategic SMS campaign management, automation allows your business to communicate with customers at scale while maintaining the personalization that drives engagement.",
+            title: "Can you help with digital transformation?",
+            desc: "Yes - digital transformation consulting is one of our core offerings. We guide businesses through the full transformation journey - assessing current capabilities, identifying the highest-impact transformation opportunities, building a phased technology roadmap, and managing implementation so your business modernizes effectively without disrupting the operations it depends on every day.",
             initActive: false,
         },
         {
-            title: "Which industries benefit most from SMS marketing?",
-            desc: "SMS marketing delivers results across virtually every industry - ecommerce, healthcare, education, real estate, finance, and hospitality all see strong results from properly managed campaigns. Enterprise SMS solutions are particularly valuable for businesses with large customer bases and complex communication needs. Any business that needs to reach customers quickly, reliably, and cost-effectively can benefit from a strategic SMS lead generation and engagement program.",
+            title: "Which industries benefit from IT consulting?",
+            desc: "Every industry benefits from expert information technology consulting - but we have particular depth in healthcare, manufacturing, education, retail, finance, and logistics. Our enterprise IT consulting capabilities are especially valuable for organizations managing complex legacy environments, multi-system integration challenges, or large-scale digital transformation initiatives that require both technical expertise and business consulting depth.",
             initActive: false,
         },
         {
-            title: "Do you provide campaign reports and performance tracking?",
-            desc: "Yes. Every client receives detailed SMS analytics and reporting covering delivery rates, open rates, click-through rates, conversion rates, and campaign ROI - delivered monthly in plain language. Our SMS campaign management reporting gives you complete visibility into what is working, what needs improvement, and how your SMS marketing services in india investment is contributing to your business growth.",
+            title: "Do you provide ongoing support after implementation?",
+            desc: "Yes - always. Our IT advisory services extend well beyond initial implementation - monitoring system performance, identifying optimization opportunities, supporting your team as requirements evolve, and providing the continuous improvement guidance that ensures your technology environment keeps pace with your business growth. Our managed IT consulting approach treats every client relationship as a long-term partnership, not a one-time project.",
             initActive: false,
         },
     ],
@@ -310,22 +308,23 @@ const faqData = {
 const contactData = {
     left: {
         subTitle: "CONTACT US NOW",
-        title: "Ready to Grow Your Business With Professional SMS Marketing Services in India?",
-        desc: "Partner with Mematdigi for SMS marketing services in India that help you connect with customers instantly through targeted campaigns, automation, and personalized messaging. From bulk SMS to transactional notifications, we build communication strategies that increase engagement, improve conversions, and support long-term business growth.",
+        title: "Ready to Transform Your Business With a Trusted IT Consulting Company in India?",
+        desc: "Technology should help your business grow-not slow it down. Partner with Mematdigi for strategic IT consulting services that improve efficiency, modernize operations, and support long-term digital transformation. Whether you need cloud consulting, software consulting, business process automation, or enterprise technology solutions, our team delivers scalable solutions designed around your business goals.",
     },
     form: {
-        subTitle: "Get a Call Now",
+        subTitle: "Get Free Consultation",
         subIcon: "tji-box",
         title: "Drop Us a",
         titleSpan: "Line.",
         selectOptions: [
             { value: "0", optionName: "Choose an option" },
-            { value: "1", optionName: "Bulk SMS Marketing" },
-            { value: "2", optionName: "Promotional SMS" },
-            { value: "3", optionName: "Transactional SMS" },
-            { value: "4", optionName: "SMS Campaign Management" },
-            { value: "5", optionName: "SMS Automation Services" },
-            { value: "6", optionName: "SMS Analytics & Reporting" },
+            { value: "1", optionName: "IT Strategy Consulting" },
+            { value: "2", optionName: "Technology Consulting" },
+            { value: "3", optionName: "Software Consulting" },
+            { value: "4", optionName: "Cloud Consulting Services" },
+            { value: "5", optionName: "Digital Transformation Consulting" },
+            { value: "6", optionName: "Business Process Automation" },
+            { value: "7", optionName: "Other IT Solution" },
         ],
     },
 };
@@ -941,7 +940,7 @@ const ContactSection = () => {
                                 <p>{contactData.left.desc}</p>
                             </div>
                                     <div className="submit-btn">
-                                        <ButtonPrimary text={"Get a Call Now"} url={'/services'}/>
+                                        <ButtonPrimary text={"Get Free Consultation"} url={'/contact-us'}/>
                                     </div>
                         </div>
 
@@ -1030,7 +1029,7 @@ const ContactSection = () => {
     );
 };
 
-export default function SmsMarketingServices() {
+export default function ItConsultingServices() {
     return (
         <div>
             <BackToTop />

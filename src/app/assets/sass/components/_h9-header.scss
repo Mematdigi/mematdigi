@@ -4,85 +4,158 @@
 START: Theme Header CSS
 ----------------------------------------*/
 .h9-header {
-	&.header-absolute {
-		position: absolute;
-		top: 15px;
-		inset-inline-start: 0;
-		width: calc(100% - 30px);
-		z-index: 999;
-		background-color: transparent;
-		@media #{$md,$sm,$xs} {
-			padding: 15px 0;
-		}
-		@media #{$sm,$xs} {
-			width: calc(100% - 24px);
-		}
+  &.header-absolute {
+    position: absolute;
+    top: 15px;
+    inset-inline-start: 0;
+    width: calc(100% - 30px);
+    z-index: 999;
+    background-color: transparent;
+    @media #{$md,$sm,$xs} {
+      padding: 15px 0;
+    }
+    @media #{$sm,$xs} {
+      width: calc(100% - 24px);
+    }
 
-		.header-wrapper {
-			padding: 0 18px;
-			@media #{$xl,$lg,$md,$sm,$xs} {
-				padding: 0 8px;
-			}
-		}
+    .header-wrapper {
+      padding: 0 18px;
+      @media #{$xl,$lg,$md,$sm,$xs} {
+        padding: 0 8px;
+      }
+    }
 
-		.mainmenu {
-			> ul {
-				> li {
-					padding: 30px 0;
-					> a {
-						color: var(--tj-color-common-white);
-						border-radius: 50px;
-						border: 1px solid var(--tj-color-border-2);
-						padding: 5px 12px;
-					}
-					&.menu-item-has-children,
-					&.has-dropdown {
-						> a {
-							&::after {
-								display: none;
-							}
-						}
-					}
-					&:hover,
-					&.current-menu-ancestor {
-						> a {
-							border-color: var(--tj-color-common-white);
-						}
-					}
-				}
-			}
-		}
-		.header-search {
-			.search_close_btn,
-			.search {
-				color: var(--tj-color-grey-1);
-				background-color: transparent;
-				border: 1px solid var(--tj-color-border-2);
-			}
-		}
-		.search_popup {
-			background-color: rgba($color: var(--tj-color-theme-dark), $alpha: 0.3);
-			backdrop-filter: blur(15px);
-			height: 100vh;
-			.tj_search_wrapper {
-				min-height: 620px;
-				.search_form {
-					form {
-						.search_input {
-							.search-box {
-								input:not([type="submit"]):not([type="radio"]):not(
-										[type="checkbox"]
-									):not([type="search"]),
-								input[type="text"] {
-									background: var(--tj-color-common-white);
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
+    .mainmenu {
+      > ul {
+        > li {
+          padding: 30px 0;
+          position: relative;
+
+          > a {
+            color: var(--tj-color-common-white);
+            border-radius: 50px;
+            border: 1px solid var(--tj-color-border-2);
+            padding: 5px 12px;
+          }
+          &.menu-item-has-children,
+          &.has-dropdown {
+            > a {
+              &::after {
+                display: none;
+              }
+            }
+          }
+          &:hover,
+          &.current-menu-ancestor {
+            > a {
+              border-color: var(--tj-color-common-white);
+            }
+          }
+
+          /*----------------------------------------
+          START: 3rd-Level Nested Submenu CSS
+          ----------------------------------------*/
+          .mega-menu-service {
+            li.has-nested-submenu {
+              position: relative;
+
+              .nested-sub-menu {
+                display: none;
+                position: absolute;
+                left: 100%;
+                top: 0;
+                min-width: 260px;
+                background-color: var(--tj-color-common-white, #ffffff);
+                box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+                border-radius: 6px;
+                z-index: 999;
+                padding: 10px 0;
+                list-style: none;
+
+                li {
+                  padding: 0;
+                  display: block;
+
+                  a.nested-service-link {
+                    padding: 8px 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    color: var(--tj-color-theme-dark, #111111);
+                    border: none;
+                    border-radius: 0;
+                    transition: all 0.3s ease;
+
+                    .mega-menu-service-title {
+                      font-size: 14px;
+                      font-weight: 500;
+                    }
+
+                    .mega-menu-service-nav {
+                      font-size: 12px;
+                      opacity: 0;
+                      transform: translateX(-5px);
+                      transition: all 0.3s ease;
+                    }
+
+                    &:hover {
+                      color: var(--tj-color-theme-primary);
+                      background-color: rgba(0, 0, 0, 0.02);
+
+                      .mega-menu-service-nav {
+                        opacity: 1;
+                        transform: translateX(0);
+                      }
+                    }
+                  }
+                }
+              }
+
+              /* Show nested submenu on hover */
+              &:hover {
+                > .nested-sub-menu {
+                  display: block;
+                }
+              }
+            }
+          }
+          /* !END: 3rd-Level Nested Submenu CSS */
+        }
+      }
+    }
+
+    .header-search {
+      .search_close_btn,
+      .search {
+        color: var(--tj-color-grey-1);
+        background-color: transparent;
+        border: 1px solid var(--tj-color-border-2);
+      }
+    }
+
+    .search_popup {
+      background-color: rgba($color: var(--tj-color-theme-dark), $alpha: 0.3);
+      backdrop-filter: blur(15px);
+      height: 100vh;
+      .tj_search_wrapper {
+        min-height: 620px;
+        .search_form {
+          form {
+            .search_input {
+              .search-box {
+                input:not([type="submit"]):not([type="radio"]):not(
+                    [type="checkbox"]
+                  ):not([type="search"]),
+                input[type="text"] {
+                  background: var(--tj-color-common-white);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 /* !END: Theme Header CSS */

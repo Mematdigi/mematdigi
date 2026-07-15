@@ -12,13 +12,13 @@ import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
 
 const heroData = {
     bgImage: "/images/hero/h9-hero-bg.webp",
-    eyebrow: "SMS MARKETING SERVICES",
-    titlePre: "Best SMS Marketing Services in India to Boost Customer Engagement, Reach and",
-    titleHighlight: "Conversions",
-    titlePost: "",
+    eyebrow: "VR DEVELOPMENT COMPANY",
+    titlePre: "Best VR Development Company in India That Builds",
+    titleHighlight: "Immersive Virtual Reality",
+    titlePost: "Experiences",
     desc: (
         <>
-            As a trusted provider of SMS marketing services in India, we help businesses reach customers instantly through bulk SMS campaigns, promotional messaging, transactional SMS, and automation. Our data-driven SMS marketing solutions improve customer engagement, increase conversions, and drive measurable business growth.
+            As a trusted VR development company in India, we build immersive virtual reality solutions that help businesses improve training, customer engagement, product visualization, and operational efficiency. From custom VR app development and interactive simulations to consulting and enterprise VR solutions, we create innovative experiences that deliver measurable business outcomes.
         </>
     ),
     stats: [
@@ -30,16 +30,13 @@ const heroData = {
     primaryCta: { text: "Get Free Consultation", url: "/contact-us" },
     form: {
         tag: "GET IN TOUCH",
-        title: "Get Free Consultation",
+        title: "Request A Quote",
         subtitle: "Fill out the form and our team will reach out within 24 hours.",
         serviceOptions: [
-            { value: "", label: "Select Services *" },
-            { value: "bulk-sms", label: "Bulk SMS Marketing" },
-            { value: "promotional-sms", label: "Promotional SMS" },
-            { value: "transactional-sms", label: "Transactional SMS" },
-            { value: "campaign-management", label: "SMS Campaign Management" },
-            { value: "automation", label: "SMS Automation Services" },
-            { value: "analytics", label: "SMS Analytics & Reporting" },
+            { value: "", label: "Business Type *" },
+            { value: "startup", label: "Startup / Small Business" },
+            { value: "d2c", label: "D2C / Ecommerce Brand" },
+            { value: "b2b", label: "B2B / Enterprise" },
             { value: "other", label: "Other" },
         ],
     },
@@ -48,24 +45,24 @@ const heroData = {
 const chooseData = {
     subTitle: "COMMON CHALLENGES",
     subIcon: "tji-box",
-    title: "Why Your Business Is Missing Opportunities Without an Effective SMS Marketing Strategy",
+    title: "Why Most Businesses Are Missing the VR Opportunity",
     desc: "",
     banner: "/images/choose/h8-choose-bnner.webp",
     boxes: [
         {
             icon: "tji-innovative",
-            title: "Poor Audience Targeting",
-            desc: "Sending the same SMS to every customer without proper segmentation leads to low engagement, poor response rates, and missed opportunities to deliver relevant messages that encourage action.",
+            title: "Unclear VR Strategy",
+            desc: "Many businesses want to adopt virtual reality but lack a clear roadmap. Without identifying the right use cases, technology, and implementation strategy, VR investments often fail to deliver meaningful business outcomes.",
         },
         {
             icon: "tji-award",
-            title: "Lack of Automation & Personalization",
-            desc: "Manual campaigns and generic messaging make it difficult to engage customers consistently. Without SMS automation and personalized communication, businesses struggle to build lasting customer relationships at scale.",
+            title: "Limited Development Expertise",
+            desc: "Working with generic software developers instead of an experienced VR development company in India often results in poor user experiences, limited scalability, and virtual reality solutions that fail to solve real business challenges.",
         },
         {
             icon: "tji-support",
-            title: "Low Campaign Performance",
-            desc: "Many businesses launch SMS campaigns without a clear strategy, performance tracking, or optimization. This results in weak conversions, wasted marketing spend, and limited return on investment despite high message delivery rates.",
+            title: "High Development Costs & Complexity",
+            desc: "Businesses frequently assume VR development is too expensive or technically complex. Without the right development partner, projects become difficult to manage, exceed budgets, and fail to provide long-term value or measurable ROI.",
         },
     ],
 };
@@ -73,44 +70,44 @@ const chooseData = {
 const servicesData = {
     subTitle: "WHAT WE OFFER",
     subIcon: "tji-box",
-    title: "Our SMS Marketing Services for Businesses Across India",
-    desc: 'Reach the right customers at the right time with data-driven SMS marketing solutions designed to improve engagement, drive conversions, and build lasting customer relationships at scale.',
+    title: "Our VR Development Services for Businesses Across India",
+    desc: "From VR app development and custom immersive experiences to VR consulting and manufacturing solutions - complete virtual reality development services built to solve real business problems.",
     moreUrl: "/services",
     items: [
         {
             icon: "tji-service-1",
-            title: "Bulk SMS Marketing Services",
-            desc: "We manage high-volume bulk SMS campaigns with proper audience segmentation, message personalization, compliance management, and delivery optimization - reaching thousands of customers instantly without damaging your sender reputation.",
+            title: "VR App Development",
+            desc: "We build high-performance VR applications for business - training simulations, product demonstrations, virtual showrooms, and customer experience tools - developed by a specialist vr app development company team that understands how to make VR work for your specific use case.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "Promotional SMS Services",
-            desc: "We build and execute promotional SMS campaigns for offers, product launches, seasonal sales, and brand announcements - crafted with compelling copy, strategic timing, and audience targeting that maximizes response rates and campaign ROI.",
+            title: "VR Content Development",
+            desc: "Immersive VR experiences are only as powerful as the content inside them. Our vr content development service creates the 3D environments, interactive scenarios, and narrative experiences that make your VR application genuinely engaging and effective for your audience.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "Transactional SMS Services",
-            desc: "We set up and manage transactional SMS services for order confirmations, OTPs, shipping updates, appointment reminders, and account notifications - reliable, instant delivery that keeps customers informed and builds operational trust.",
+            title: "Custom VR Development",
+            desc: "No two businesses have the same VR requirements. Our custom vr development service builds fully bespoke virtual reality solutions from the ground up - designed around your specific industry, your specific users, and the specific business outcome you are trying to achieve.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "SMS Campaign Management",
-            desc: "End-to-end SMS campaign management - strategy, content creation, audience segmentation, scheduling, delivery monitoring, and performance analysis - all managed by our SMS marketing agency team so your campaigns run smoothly and deliver results.",
+            title: "VR Consulting Services",
+            desc: "Not sure where to start with VR or whether it is right for your business? Our vr consulting services help you define the right VR strategy - identifying the highest-impact use cases, the right technology approach, and the realistic investment required to achieve your business goals through virtual reality.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "SMS Automation Services",
-            desc: "We build SMS automation workflows that send the right message at the right moment - welcome sequences, abandoned cart reminders, re-engagement campaigns, and behavioral triggers that run without manual intervention and improve customer lifecycle performance.",
+            title: "VR for Manufacturing",
+            desc: "Training, safety simulation, equipment operation, and quality control - vr for manufacturing applications reduce training time, improve safety outcomes, and cut the cost of physical training infrastructure for manufacturers across India.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "SMS Analytics & Reporting",
-            desc: "We track delivery rates, open rates, click-through rates, conversion rates, and campaign ROI - delivering clear monthly SMS analytics and reporting that shows exactly how your SMS marketing services in India are performing and where the next optimization opportunity is.",
+            title: "VR Architecture & Real Estate Visualization",
+            desc: "Let clients and investors experience a building before it is built. Our VR architecture and real estate visualization solutions create immersive property walkthroughs that help developers sell faster, architects communicate design intent clearly, and buyers commit with confidence.",
             url: "/services",
         },
     ],
@@ -118,7 +115,7 @@ const servicesData = {
 
 const solutionsData = {
     subTitle: "WHO WE SERVE",
-    title: "SMS Marketing Solutions for Every Business Type",
+    title: "VR Development Solutions for Every Business Type",
     moreText: "More Services",
     moreUrl: "/services",
     items: [
@@ -126,21 +123,21 @@ const solutionsData = {
             icon: "tji-service-1",
             title: "Startups & Small Businesses",
             url: "/services",
-            desc: "SMS is one of the most cost-effective marketing channels available to a business with a limited budget - instant reach, high open rates, and no algorithm standing between your message and your customer. Our SMS marketing services in india for startups and small businesses build lean, high-impact campaigns that generate leads, promote offers, and build customer relationships from a channel that delivers results from the first send.",
+            desc: "VR is no longer exclusively for enterprise budgets. As a vr development company in india that works with businesses at every stage, we help startups build focused, high-impact VR experiences that create genuine competitive differentiation - whether that is a virtual product demonstration, an immersive brand experience, or a training tool that makes your small team perform like a much larger one.",
             list: ["Expansion Strategies", "Operational Efficiency", "Competitive Edge"],
         },
         {
             icon: "tji-service-1",
-            title: "Ecommerce & Retail Brands",
+            title: "D2C & Ecommerce Brands",
             url: "/services",
-            desc: "For ecommerce brands, mobile SMS marketing is the fastest way to recover abandoned carts, announce flash sales, and drive repeat purchases from existing customers. Our SMS marketing agency builds the automation sequences and promotional campaigns that keep your customers engaged between purchases - increasing repeat purchase rate and customer lifetime value through the channel with the highest open rate of any digital touchpoint.",
+            desc: "Virtual try-on experiences, 3D product visualization, and immersive brand experiences are reshaping how D2C customers discover and evaluate products. Our vr app development services help ecommerce brands create the kind of immersive shopping experiences that reduce purchase hesitation, cut return rates, and build the brand loyalty that repeat purchase depends on.",
             list: ["Expansion Strategies", "Operational Efficiency", "Competitive Edge"],
         },
         {
             icon: "tji-service-1",
             title: "B2B & Enterprise Companies",
             url: "/services",
-            desc: "Enterprise SMS solutions require a different level of scale, reliability, and integration. We build and manage B2B SMS programs that automate customer notifications, streamline appointment scheduling, support sales follow-up sequences, and deliver the kind of personalized SMS marketing that moves complex buying decisions forward at the speed enterprise businesses need.",
+            desc: "Enterprise VR applications - employee training, safety simulation, remote collaboration, and client presentation tools - deliver measurable ROI at scale. As one of the leading VR companies in India for enterprise clients, we build the complex, integrated VR solutions that large organizations need to transform how they train, sell, and operate across multiple locations and teams.",
             list: ["Expansion Strategies", "Operational Efficiency", "Competitive Edge"],
         },
     ],
@@ -149,102 +146,103 @@ const solutionsData = {
 const featuresData = {
     subTitle: "INDUSTRIES WE SERVE",
     subIcon: "tji-box",
-    title: "Industries We Help Grow With SMS Marketing Services",
+    title: "Industries We Serve With Our VR Development Services in India",
     items: [
         {
             id: 1,
             icon: "tji-innovative",
-            title: "Ecommerce",
-            desc: "Abandoned cart recovery, order updates, flash sale announcements, and loyalty campaign SMS that drive repeat purchases and increase customer lifetime value.",
+            title: "Healthcare",
+            desc: "Medical training simulations, surgical procedure visualization, patient education experiences, and therapy applications that improve clinical outcomes and training efficiency",
         },
         {
             id: 2,
             icon: "tji-award",
-            title: "Healthcare",
-            desc: "Appointment reminders, health tips, prescription alerts, and patient re-engagement campaigns that reduce no-shows and improve clinic efficiency.",
+            title: "Real Estate",
+            desc: "Immersive property walkthrough experiences, interior visualization tools, and virtual site visit applications that help developers sell projects before construction completes",
         },
         {
             id: 3,
             icon: "tji-team",
             title: "Education",
-            desc: "Admission inquiry follow-ups, fee reminders, exam notifications, and student engagement campaigns that keep institutions connected with students and parents.",
+            desc: "Immersive learning environments, virtual laboratory simulations, historical experience recreations, and interactive educational content that makes complex subjects genuinely engaging",
         },
         {
             id: 4,
             icon: "tji-support",
-            title: "Real Estate",
-            desc: "Property alert SMS, site visit scheduling, follow-up automation, and broker communication that keeps buyers engaged through long property decision cycles.",
+            title: "Manufacturing",
+            desc: "Equipment training simulations, safety procedure walkthroughs, quality control tools, and assembly process training that reduce errors and improve workforce competency",
         },
         {
             id: 5,
             icon: "tji-support",
-            title: "Finance & Banking",
-            desc: "OTP delivery, account notifications, loan update SMS, and financial promotion campaigns that build customer trust and drive product awareness.",
+            title: "Retail & Ecommerce",
+            desc: "Virtual showrooms, product visualization experiences, and immersive brand environments that improve purchase confidence and reduce return rates for online retailers",
         },
         {
             id: 6,
             icon: "tji-support",
-            title: "Restaurants & Hospitality",
-            desc: "Reservation confirmations, special offer promotions, loyalty reward SMS, and event announcements that drive footfall and repeat visits.",
+            title: "Architecture & Construction",
+            desc: "Design visualization tools, client presentation experiences, and construction planning simulations that improve communication and reduce costly design change requests",
         },
     ],
 };
 
 const scalableHighlightData = {
     eye: 'BUSINESS CHALLENGES',
-    title: "Common SMS Marketing Challenges Businesses Face -",
-    titleSpan: "And How We Solve Them",
+    title: "VR Development Challenges Every Business Faces -",
+    titleSpan: "And How We Fix Them",
     paragraphs: [
-        "Most businesses that come to us for SMS marketing services in india are dealing with the same fundamental problem - they know SMS should be working and they cannot figure out why it is not. Campaigns that get delivered but not acted on. Messages that feel generic. Numbers that get reported as spam. No visibility into what is actually performing. As a trusted SMS marketing agency working with 100+ businesses across India, we have diagnosed and fixed every version of broken SMS marketing - and we know exactly what it takes to build a program that consistently delivers results.",
+        "Most businesses that come to us for virtual reality development services have already spent time researching VR and walked away confused - by conflicting information about cost, by developers who could not explain how VR would solve their specific business problem, or by early VR experiences that were technically impressive but delivered no real business value. As a trusted vr development company in India working with businesses across healthcare, education, real estate, and manufacturing, we have helped every type of business navigate these exact challenges.",
     ],
     features: [
-        "Low customer engagement despite high delivery rates - because messages are generic, poorly timed, and sent without any audience segmentation strategy",
-        "Poor campaign targeting reaching wrong audiences - sending the same message to your entire list regardless of where each customer is in their relationship with your business",
-        "Low conversion rates from promotional campaigns - because the offer, timing, and call to action were never optimized for the specific audience receiving the message",
-        "Inefficient manual messaging consuming team time - no SMS automation in place means every campaign requires manual effort that does not scale as the business grows",
-        "No campaign tracking or performance reporting - making it impossible to measure ROI, identify what is working, and improve results from one campaign to the next",
-        "Weak customer retention and follow-up strategy - losing customers between purchases because no re-engagement or loyalty SMS program exists to bring them back",
+        "Assuming VR development cost is out of reach - without ever getting a realistic quote from a vr solutions company that understands lean, focused VR builds",
+        "Cannot find vr companies in india with real business application expertise - working with generic developers who build technically but cannot connect VR to business outcomes",
+        "Poor quality VR builds that users abandon quickly - experiences built without UX expertise, resulting in discomfort, confusion, and zero adoption",
+        "No post-launch support from the development team - VR applications that cannot be updated, improved, or maintained after the initial delivery",
+        "No clear VR strategy before development begins - investing in VR without a clear use case, target user, or success metric in place",
+        "Integration challenges with existing business systems - VR applications that cannot connect to LMS platforms, CRM systems, or operational tools already in use",
     ],
 };
+
 const servicesData9 = {
     subTitle: "OUR PROCESS",
-    title: "Our SMS Marketing Process for Better Customer Engagement and Business Growth",
+    title: "How We Deliver Your VR Development Project",
     moreText: "More services",
     moreUrl: "/services",
     items: [
         {
             id: 1,
             icon: "tji-innovative",
-            title: "Business & Audience Analysis",
-            desc: "We start by understanding your business, your customers, your existing communication channels, and your specific SMS marketing goals - building a complete picture of your audience segments before a single message is written or campaign is planned.",
+            title: "Discovery & VR Strategy Planning",
+            desc: "We start by understanding your business goals, your target users, and the specific problem your VR application needs to solve. Our vr consulting services approach ensures every technical decision is grounded in business value - not just technical possibility - before a single line of development begins.",
             url: "/services",
         },
         {
             id: 2,
             icon: "tji-award",
-            title: "Campaign Strategy & SMS Content Planning",
-            desc: "We build your complete SMS marketing strategy - campaign types, messaging frameworks, audience segmentation approach, automation triggers, and sending schedule - all aligned to your business goals and the customer lifecycle stages that matter most.",
+            title: "Concept Design & Storyboarding",
+            desc: "We design the complete VR experience - environment layout, user interaction flows, narrative structure, and content requirements - and present a detailed storyboard for your approval before development begins. You see exactly what will be built before any development investment is committed.",
             url: "/services",
         },
         {
             id: 3,
             icon: "tji-team",
-            title: "SMS Campaign Setup & Automation",
-            desc: "We configure your SMS platform, build automation workflows, set up audience segments, and create all campaign content - ensuring every message is compliant, personalized, and timed for maximum engagement before the first campaign goes live.",
+            title: "VR Development & Build",
+            desc: "Our vr app development company team builds your VR application with the technical precision and creative quality your experience demands - optimized for the target platform, tested for comfort and usability throughout development, and built to the performance standards that make VR genuinely enjoyable to use.",
             url: "/services",
         },
         {
             id: 4,
             icon: "tji-support",
-            title: "Campaign Launch & Delivery Monitoring",
-            desc: "We launch and monitor every campaign in real time - tracking delivery rates, identifying issues fast, and managing sender reputation to ensure your messages reach customers reliably and your SMS marketing services in india program stays compliant and effective.",
+            title: "Testing & Quality Assurance",
+            desc: "We test every element of your VR application - performance, comfort, interaction accuracy, content quality, and hardware compatibility - across real devices in real conditions. Issues are caught and fixed during development, not discovered by users after launch.",
             url: "/services",
         },
         {
             id: 5,
             icon: "tji-support",
-            title: "Performance Analysis & Continuous Optimization",
-            desc: "Monthly performance reports covering delivery rates, response rates, conversion rates, and campaign ROI - plus specific optimizations implemented based on real data to improve results from every campaign cycle going forward.",
+            title: "Launch & Post-Launch Support",
+            desc: "We manage the complete deployment of your virtual reality development services project and stay involved after launch - providing updates, content additions, performance optimization, and technical support that keeps your VR application effective as your business needs evolve.",
             url: "/services",
         },
     ],
@@ -252,56 +250,56 @@ const servicesData9 = {
 
 const scalableHighlightData2 = {
     eye: 'WHY CHOOSE US',
-    title: "Why Choose Mematdigi for ",
-    titleSpan: "SMS Marketing Services in India",
+    title: "Why Choose Mematdigi as Your ",
+    titleSpan: "VR Development Company in India",
     paragraphs: [
-        "At Mematdigi, we have built our reputation as a trusted SMS marketing company in India by treating SMS as a strategic business communication channel - not a broadcast tool for sending the same message to everyone on a list. We are not the SMS marketing agency that sends bulk campaigns and reports on delivery counts. We are the SMS marketing services in India partner that builds proper audience segmentation, proper automation, proper personalized messaging, and proper analytics into every program we manage - because those are the elements that separate SMS campaigns that convert from SMS campaigns that get ignored.",
-        "Whether you are a startup that needs a cost-effective SMS marketing company india to build your first customer communication program or an enterprise that needs a specialist SMS marketing agency to manage complex automation and segmentation at scale - Mematdigi delivers the SMS marketing services in india that help your business reach more customers, retain them longer, and convert them more consistently through India's most direct digital communication channel.",
+        "At Mematdigi, we have built our reputation as a trusted VR development company in India by doing what most VR developers do not - treating virtual reality as a business tool first and a technology showcase second. We are not the vr app development company that builds technically impressive experiences that no one uses. We are the virtual reality development company that starts with your business objective, designs the experience around your users, and measures success by whether the VR application actually delivers the outcome it was built for. As one of the leading VR companies in India working with businesses across industries, our custom vr development capabilities cover every platform, every use case, and every scale - from focused startup VR builds to complex enterprise virtual reality development services.",
+        "Whether you are a startup that needs a VR solutions company to build your first VR experience cost-effectively or an enterprise that needs a specialist virtual reality development company to deliver complex, integrated VR training or sales tools at scale - Mematdigi delivers the virtual reality development services that create real business impact. Not just impressive demos - working VR solutions that solve real problems and deliver measurable results for businesses across India.",
     ],
     features: [
-        "SMS marketing services in india with proven results across ecommerce, healthcare, education, real estate, and more",
-        "SMS marketing agency with full-service delivery - strategy, content, automation, delivery, and reporting under one roof",
-        "Transactional SMS services - reliable, instant delivery for OTPs, order updates, and customer notifications that build operational trust",
-        "Bulk SMS marketing services - high-volume campaigns with proper segmentation, personalization, and compliance management",
-        "SMS automation services - behavioral triggers and lifecycle sequences that engage customers at the right moment without manual effort",
-        "Enterprise SMS solutions - scalable infrastructure and dedicated support for businesses managing high-volume, multi-segment SMS communication",
+        "VR development company in India trusted by businesses across healthcare, real estate, education, and manufacturing",
+        "VR companies in India with genuine business application expertise - not just technical developers who build without business context",
+        "VR app development company with full in-house capabilities - design, development, content, testing, and post-launch support",
+        "Custom vr development built around your specific use case - no generic templates, no one-size-fits-all VR experiences",
+        "Hire vr developers from Mematdigi - dedicated specialists assigned to your project from discovery through delivery and beyond",
+        "VR consulting services before development begins - helping you define the right strategy, the right use case, and the right investment",
     ],
 };
 
 const faqData = {
     subTitle: "FAQs",
     subIcon: "tji-box",
-    title: "Frequently Asked Questions About SMS Marketing Services in India",
+    title: "Frequently Asked Questions About VR Development Services in India",
     phone: { display: "1-888-452-1505", tel: "18884521505" },
     items: [
         {
-            title: "What are SMS marketing services and how can they benefit my business?",
-            desc: "SMS marketing services in India involve using text messages to communicate with customers - promotional offers, transactional notifications, appointment reminders, and automated follow-up sequences. With open rates of up to 98%, SMS marketing delivers messages that actually get read. Our SMS marketing services help businesses improve customer engagement, increase conversions, and build stronger customer relationships through direct, personalized messaging.",
+            title: "What does a VR development company in India do?",
+            desc: "A VR development company in India builds virtual reality applications for business use cases - training simulations, product visualization, architectural walkthroughs, educational experiences, and immersive brand tools. At Mematdigi, our virtual reality development company approach starts with your business goal, not the technology - ensuring every VR experience we build delivers real, measurable business value.",
             initActive: true,
         },
         {
-            title: "What is the difference between promotional and transactional SMS?",
-            desc: "Promotional SMS services are used for marketing - offers, product launches, flash sales, and campaigns designed to drive purchases. Transactional SMS services are triggered by customer actions - order confirmations, OTPs, shipping updates, and appointment reminders. Both serve different purposes, and a complete SMS marketing strategy uses both types to communicate with customers throughout their journey.",
+            title: "How much does VR development cost in India?",
+            desc: "VR development cost in India depends entirely on the complexity of the experience, the platform, and the level of interactivity required. A focused VR training module might cost ₹2–5 lakhs. A complex multi-environment custom vr development project could range from ₹10–30 lakhs or more. We provide transparent, detailed quotes based on your specific brief - no vague estimates, no surprises after you commit.",
             initActive: false,
         },
         {
-            title: "Do you provide bulk SMS marketing services for businesses?",
-            desc: "Yes - our bulk SMS marketing services are designed for businesses that need to reach large customer lists quickly and reliably. We manage audience segmentation, message personalization, compliance, and delivery optimization for high-volume mobile SMS marketing campaigns - ensuring your messages reach customers without damaging your sender reputation or violating platform policies.",
+            title: "Do you offer custom VR development for specific business needs?",
+            desc: "Yes - custom vr development is our core offering. We build every VR experience from scratch around your specific industry, your specific users, and your specific business goal. As a trusted VR solutions company, we do not use generic VR templates - every element of the experience is designed and built to solve the exact problem your business needs VR to address.",
             initActive: false,
         },
         {
-            title: "Can you automate SMS campaigns for customer engagement?",
-            desc: "Yes. Our SMS automation services build behavioral trigger campaigns - welcome messages, abandoned cart reminders, re-engagement sequences, and loyalty campaigns - that send automatically based on customer actions without any manual effort. Combined with strategic SMS campaign management, automation allows your business to communicate with customers at scale while maintaining the personalization that drives engagement.",
+            title: "Can I hire dedicated VR developers from Mematdigi?",
+            desc: "Yes. When you hire vr developers from Mematdigi, you get dedicated specialists assigned exclusively to your project - communicating directly with your team, working within your preferred processes, and staying accountable throughout the entire development lifecycle. Our vr app development company model ensures you get senior VR talent without the overhead of full-time employment.",
             initActive: false,
         },
         {
-            title: "Which industries benefit most from SMS marketing?",
-            desc: "SMS marketing delivers results across virtually every industry - ecommerce, healthcare, education, real estate, finance, and hospitality all see strong results from properly managed campaigns. Enterprise SMS solutions are particularly valuable for businesses with large customer bases and complex communication needs. Any business that needs to reach customers quickly, reliably, and cost-effectively can benefit from a strategic SMS lead generation and engagement program.",
+            title: "What industries do you serve with VR development services?",
+            desc: "We deliver virtual reality development services across healthcare, real estate, education, manufacturing, retail, and architecture. Our vr for manufacturing solutions are particularly in demand - covering equipment training, safety simulations, and quality control applications that reduce training costs and improve workforce performance for manufacturers across India.",
             initActive: false,
         },
         {
-            title: "Do you provide campaign reports and performance tracking?",
-            desc: "Yes. Every client receives detailed SMS analytics and reporting covering delivery rates, open rates, click-through rates, conversion rates, and campaign ROI - delivered monthly in plain language. Our SMS campaign management reporting gives you complete visibility into what is working, what needs improvement, and how your SMS marketing services in india investment is contributing to your business growth.",
+            title: "Do you offer VR consulting services before development begins?",
+            desc: "Yes - always. Our vr consulting services help businesses define the right VR strategy before any development investment is made. We identify your highest-impact VR use case, recommend the right technology approach, provide realistic cost estimates, and help you build the business case for VR investment - so when development begins, every decision is aligned to a clear outcome.",
             initActive: false,
         },
     ],
@@ -310,22 +308,23 @@ const faqData = {
 const contactData = {
     left: {
         subTitle: "CONTACT US NOW",
-        title: "Ready to Grow Your Business With Professional SMS Marketing Services in India?",
-        desc: "Partner with Mematdigi for SMS marketing services in India that help you connect with customers instantly through targeted campaigns, automation, and personalized messaging. From bulk SMS to transactional notifications, we build communication strategies that increase engagement, improve conversions, and support long-term business growth.",
+        title: "Ready to Build Your VR Solution With India's Leading VR Development Company?",
+        desc: "Partner with Mematdigi, a trusted VR development company in India, to build custom virtual reality solutions that improve training, engagement, visualization, and business performance. From concept to deployment, we create immersive VR experiences designed to deliver measurable results and long-term growth.",
     },
     form: {
-        subTitle: "Get a Call Now",
+        subTitle: "Get Free Consultation",
         subIcon: "tji-box",
         title: "Drop Us a",
         titleSpan: "Line.",
         selectOptions: [
             { value: "0", optionName: "Choose an option" },
-            { value: "1", optionName: "Bulk SMS Marketing" },
-            { value: "2", optionName: "Promotional SMS" },
-            { value: "3", optionName: "Transactional SMS" },
-            { value: "4", optionName: "SMS Campaign Management" },
-            { value: "5", optionName: "SMS Automation Services" },
-            { value: "6", optionName: "SMS Analytics & Reporting" },
+            { value: "1", optionName: "VR App Development" },
+            { value: "2", optionName: "VR Content Development" },
+            { value: "3", optionName: "Custom VR Development" },
+            { value: "4", optionName: "VR Consulting Services" },
+            { value: "5", optionName: "VR for Manufacturing" },
+            { value: "6", optionName: "VR Architecture & Real Estate" },
+            { value: "7", optionName: "Other VR Solution" },
         ],
     },
 };
@@ -653,6 +652,14 @@ const ServicesSection2 = () => {
                                         </div>
                                         <div className="service-content">
                                             <p className="desc">{item.desc}</p>
+                                            {/* <ul className="list-items">
+                                                {item.list.map((li, i) => (
+                                                    <li key={i}>
+                                                        <i className="tji-list"></i>
+                                                        {li}
+                                                    </li>
+                                                ))}
+                                            </ul> */}
                                         </div>
                                     </div>
                                 </div>
@@ -941,7 +948,7 @@ const ContactSection = () => {
                                 <p>{contactData.left.desc}</p>
                             </div>
                                     <div className="submit-btn">
-                                        <ButtonPrimary text={"Get a Call Now"} url={'/services'}/>
+                                        <ButtonPrimary text={"Get Free Consultation"} url={'/contact-us'}/>
                                     </div>
                         </div>
 
@@ -1030,7 +1037,7 @@ const ContactSection = () => {
     );
 };
 
-export default function SmsMarketingServices() {
+export default function VrDevelopmentServices() {
     return (
         <div>
             <BackToTop />

@@ -12,13 +12,13 @@ import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
 
 const heroData = {
     bgImage: "/images/hero/h9-hero-bg.webp",
-    eyebrow: "SMS MARKETING SERVICES",
-    titlePre: "Best SMS Marketing Services in India to Boost Customer Engagement, Reach and",
-    titleHighlight: "Conversions",
-    titlePost: "",
+    eyebrow: "AR DEVELOPMENT COMPANY",
+    titlePre: "Best AR Development Company in India That Builds",
+    titleHighlight: "Powerful Augmented Reality",
+    titlePost: "Experiences",
     desc: (
         <>
-            As a trusted provider of SMS marketing services in India, we help businesses reach customers instantly through bulk SMS campaigns, promotional messaging, transactional SMS, and automation. Our data-driven SMS marketing solutions improve customer engagement, increase conversions, and drive measurable business growth.
+            As a trusted AR development company in India, we build immersive augmented reality solutions that help businesses improve customer engagement, training, product visualization, and operational efficiency. From custom AR app development and WebAR experiences to enterprise AR solutions and industry-specific applications, we create innovative experiences that deliver measurable business results.
         </>
     ),
     stats: [
@@ -30,16 +30,13 @@ const heroData = {
     primaryCta: { text: "Get Free Consultation", url: "/contact-us" },
     form: {
         tag: "GET IN TOUCH",
-        title: "Get Free Consultation",
+        title: "Request A Quote",
         subtitle: "Fill out the form and our team will reach out within 24 hours.",
         serviceOptions: [
-            { value: "", label: "Select Services *" },
-            { value: "bulk-sms", label: "Bulk SMS Marketing" },
-            { value: "promotional-sms", label: "Promotional SMS" },
-            { value: "transactional-sms", label: "Transactional SMS" },
-            { value: "campaign-management", label: "SMS Campaign Management" },
-            { value: "automation", label: "SMS Automation Services" },
-            { value: "analytics", label: "SMS Analytics & Reporting" },
+            { value: "", label: "Business Type *" },
+            { value: "startup", label: "Startup / Small Business" },
+            { value: "d2c", label: "D2C / Ecommerce Brand" },
+            { value: "b2b", label: "B2B / Enterprise" },
             { value: "other", label: "Other" },
         ],
     },
@@ -48,24 +45,24 @@ const heroData = {
 const chooseData = {
     subTitle: "COMMON CHALLENGES",
     subIcon: "tji-box",
-    title: "Why Your Business Is Missing Opportunities Without an Effective SMS Marketing Strategy",
+    title: "Why Most Businesses Are Not Getting Results From Augmented Reality",
     desc: "",
     banner: "/images/choose/h8-choose-bnner.webp",
     boxes: [
         {
             icon: "tji-innovative",
-            title: "Poor Audience Targeting",
-            desc: "Sending the same SMS to every customer without proper segmentation leads to low engagement, poor response rates, and missed opportunities to deliver relevant messages that encourage action.",
+            title: "Lack of a Clear AR Strategy",
+            desc: "Many businesses recognize the potential of augmented reality but struggle to identify the right use cases. Without a clear strategy, businesses often invest in AR experiences that fail to solve real problems or deliver measurable business outcomes.",
         },
         {
             icon: "tji-award",
-            title: "Lack of Automation & Personalization",
-            desc: "Manual campaigns and generic messaging make it difficult to engage customers consistently. Without SMS automation and personalized communication, businesses struggle to build lasting customer relationships at scale.",
+            title: "Limited Development Expertise",
+            desc: "Working with an inexperienced AR development company in India can result in poor user experiences, unreliable performance, and applications that lack scalability. Successful AR solutions require technical expertise combined with a deep understanding of business objectives.",
         },
         {
             icon: "tji-support",
-            title: "Low Campaign Performance",
-            desc: "Many businesses launch SMS campaigns without a clear strategy, performance tracking, or optimization. This results in weak conversions, wasted marketing spend, and limited return on investment despite high message delivery rates.",
+            title: "High Costs Without Measurable ROI",
+            desc: "Businesses often assume AR development is expensive because projects are built without proper planning. Choosing the right development partner ensures cost-effective solutions focused on customer engagement, operational efficiency, and long-term return on investment.",
         },
     ],
 };
@@ -73,44 +70,44 @@ const chooseData = {
 const servicesData = {
     subTitle: "WHAT WE OFFER",
     subIcon: "tji-box",
-    title: "Our SMS Marketing Services for Businesses Across India",
-    desc: 'Reach the right customers at the right time with data-driven SMS marketing solutions designed to improve engagement, drive conversions, and build lasting customer relationships at scale.',
+    title: "Our AR Development Services for Businesses Across India",
+    desc: "From AR app development and WebAR to custom augmented reality solutions and industry-specific applications - complete AR development services built to deliver real business impact.",
     moreUrl: "/services",
     items: [
         {
             icon: "tji-service-1",
-            title: "Bulk SMS Marketing Services",
-            desc: "We manage high-volume bulk SMS campaigns with proper audience segmentation, message personalization, compliance management, and delivery optimization - reaching thousands of customers instantly without damaging your sender reputation.",
+            title: "AR App Development",
+            desc: "We build high-performance augmented reality applications for iOS and Android - product visualization tools, training overlays, interactive marketing experiences, and customer-facing AR features that create genuine business value through immersive technology.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "Promotional SMS Services",
-            desc: "We build and execute promotional SMS campaigns for offers, product launches, seasonal sales, and brand announcements - crafted with compelling copy, strategic timing, and audience targeting that maximizes response rates and campaign ROI.",
+            title: "Custom AR Development",
+            desc: "Every business has different AR requirements. Our custom AR development service builds fully bespoke augmented reality solutions from the ground up - designed around your specific industry, your specific users, and the specific problem your business needs AR to solve.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "Transactional SMS Services",
-            desc: "We set up and manage transactional SMS services for order confirmations, OTPs, shipping updates, appointment reminders, and account notifications - reliable, instant delivery that keeps customers informed and builds operational trust.",
+            title: "WebAR Development",
+            desc: "No app download required. Our WebAR development service builds browser-based augmented reality experiences that customers access instantly through any smartphone - product try-ons, interactive packaging, location-based AR, and brand experiences delivered without friction.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "SMS Campaign Management",
-            desc: "End-to-end SMS campaign management - strategy, content creation, audience segmentation, scheduling, delivery monitoring, and performance analysis - all managed by our SMS marketing agency team so your campaigns run smoothly and deliver results.",
+            title: "AR Consulting Services",
+            desc: "Not sure where AR fits in your business or whether the investment is justified? Our AR consulting services help you define the right augmented reality strategy - identifying your highest-impact use cases, recommending the right technology approach, and providing realistic cost estimates before any development begins.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "SMS Automation Services",
-            desc: "We build SMS automation workflows that send the right message at the right moment - welcome sequences, abandoned cart reminders, re-engagement campaigns, and behavioral triggers that run without manual intervention and improve customer lifecycle performance.",
+            title: "AR for Education",
+            desc: "Immersive learning experiences, interactive textbook content, 3D concept visualization, and virtual laboratory simulations - our AR for education solutions make complex subjects genuinely engaging and improve learning outcomes for students across every age group and subject area.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "SMS Analytics & Reporting",
-            desc: "We track delivery rates, open rates, click-through rates, conversion rates, and campaign ROI - delivering clear monthly SMS analytics and reporting that shows exactly how your SMS marketing services in India are performing and where the next optimization opportunity is.",
+            title: "AR for Retail & Virtual Try-On",
+            desc: "Let customers try before they buy - virtually. Our AR for retail solutions include virtual try-on for fashion and beauty, 3D product placement for furniture and home decor, and interactive product demonstrations that reduce purchase hesitation and cut return rates for online and offline retailers.",
             url: "/services",
         },
     ],
@@ -118,7 +115,7 @@ const servicesData = {
 
 const solutionsData = {
     subTitle: "WHO WE SERVE",
-    title: "SMS Marketing Solutions for Every Business Type",
+    title: "AR Development Solutions for Every Business Type",
     moreText: "More Services",
     moreUrl: "/services",
     items: [
@@ -126,21 +123,21 @@ const solutionsData = {
             icon: "tji-service-1",
             title: "Startups & Small Businesses",
             url: "/services",
-            desc: "SMS is one of the most cost-effective marketing channels available to a business with a limited budget - instant reach, high open rates, and no algorithm standing between your message and your customer. Our SMS marketing services in india for startups and small businesses build lean, high-impact campaigns that generate leads, promote offers, and build customer relationships from a channel that delivers results from the first send.",
+            desc: "Augmented reality is no longer exclusively for enterprise budgets. As an ar development company in india that works with businesses at every stage, we help startups build focused, high-impact AR experiences that create genuine competitive differentiation - whether that is a WebAR product visualization, an interactive brand experience, or an AR tool that makes your small team deliver at a level that surprises much larger competitors.",
             list: ["Expansion Strategies", "Operational Efficiency", "Competitive Edge"],
         },
         {
             icon: "tji-service-1",
-            title: "Ecommerce & Retail Brands",
+            title: "D2C & Ecommerce Brands",
             url: "/services",
-            desc: "For ecommerce brands, mobile SMS marketing is the fastest way to recover abandoned carts, announce flash sales, and drive repeat purchases from existing customers. Our SMS marketing agency builds the automation sequences and promotional campaigns that keep your customers engaged between purchases - increasing repeat purchase rate and customer lifetime value through the channel with the highest open rate of any digital touchpoint.",
+            desc: "Virtual try-on, 3D product visualization, and AR-powered shopping experiences are reshaping how consumers discover and evaluate products online. Our AR app development company team helps D2C brands build the augmented reality shopping experiences that reduce the gap between online browsing and purchase confidence - cutting return rates and increasing conversion at the same time.",
             list: ["Expansion Strategies", "Operational Efficiency", "Competitive Edge"],
         },
         {
             icon: "tji-service-1",
             title: "B2B & Enterprise Companies",
             url: "/services",
-            desc: "Enterprise SMS solutions require a different level of scale, reliability, and integration. We build and manage B2B SMS programs that automate customer notifications, streamline appointment scheduling, support sales follow-up sequences, and deliver the kind of personalized SMS marketing that moves complex buying decisions forward at the speed enterprise businesses need.",
+            desc: "Enterprise AR applications - employee training overlays, equipment maintenance guidance, remote assistance tools, and client presentation experiences - deliver measurable efficiency gains at scale. As one of the leading AR companies in India for enterprise clients, we build the complex, integrated AR solutions that large organizations need to transform how they train, operate, and engage customers.",
             list: ["Expansion Strategies", "Operational Efficiency", "Competitive Edge"],
         },
     ],
@@ -149,102 +146,103 @@ const solutionsData = {
 const featuresData = {
     subTitle: "INDUSTRIES WE SERVE",
     subIcon: "tji-box",
-    title: "Industries We Help Grow With SMS Marketing Services",
+    title: "Industries We Serve With Our AR Development Services in India",
     items: [
         {
             id: 1,
             icon: "tji-innovative",
-            title: "Ecommerce",
-            desc: "Abandoned cart recovery, order updates, flash sale announcements, and loyalty campaign SMS that drive repeat purchases and increase customer lifetime value.",
+            title: "Education",
+            desc: "Interactive learning experiences, 3D concept visualization, and virtual laboratory simulations that improve engagement and learning outcomes across schools, colleges, and edtech platforms",
         },
         {
             id: 2,
             icon: "tji-award",
-            title: "Healthcare",
-            desc: "Appointment reminders, health tips, prescription alerts, and patient re-engagement campaigns that reduce no-shows and improve clinic efficiency.",
+            title: "Retail & Ecommerce",
+            desc: "Virtual try-on experiences, 3D product placement tools, and interactive shopping features that improve purchase confidence and reduce return rates for online and offline retailers",
         },
         {
             id: 3,
             icon: "tji-team",
-            title: "Education",
-            desc: "Admission inquiry follow-ups, fee reminders, exam notifications, and student engagement campaigns that keep institutions connected with students and parents.",
+            title: "Healthcare",
+            desc: "Medical training overlays, surgical procedure guidance, patient education tools, and anatomy visualization applications that improve clinical training and patient communication",
         },
         {
             id: 4,
             icon: "tji-support",
             title: "Real Estate",
-            desc: "Property alert SMS, site visit scheduling, follow-up automation, and broker communication that keeps buyers engaged through long property decision cycles.",
+            desc: "AR property visualization, interior design overlay tools, and virtual staging applications that help developers and agents sell properties faster with greater buyer confidence",
         },
         {
             id: 5,
             icon: "tji-support",
-            title: "Finance & Banking",
-            desc: "OTP delivery, account notifications, loan update SMS, and financial promotion campaigns that build customer trust and drive product awareness.",
+            title: "Manufacturing",
+            desc: "Assembly guidance overlays, equipment maintenance instructions, quality control tools, and safety procedure applications that reduce errors and improve workforce efficiency",
         },
         {
             id: 6,
             icon: "tji-support",
-            title: "Restaurants & Hospitality",
-            desc: "Reservation confirmations, special offer promotions, loyalty reward SMS, and event announcements that drive footfall and repeat visits.",
+            title: "Architecture & Construction",
+            desc: "Design visualization overlays, on-site AR reference tools, and client presentation experiences that improve communication and reduce costly design change requests",
         },
     ],
 };
 
 const scalableHighlightData = {
     eye: 'BUSINESS CHALLENGES',
-    title: "Common SMS Marketing Challenges Businesses Face -",
-    titleSpan: "And How We Solve Them",
+    title: "AR Development Challenges Every Business Faces -",
+    titleSpan: "And How We Fix Them",
     paragraphs: [
-        "Most businesses that come to us for SMS marketing services in india are dealing with the same fundamental problem - they know SMS should be working and they cannot figure out why it is not. Campaigns that get delivered but not acted on. Messages that feel generic. Numbers that get reported as spam. No visibility into what is actually performing. As a trusted SMS marketing agency working with 100+ businesses across India, we have diagnosed and fixed every version of broken SMS marketing - and we know exactly what it takes to build a program that consistently delivers results.",
+        "Most businesses that approach us for augmented reality development services have already spent significant time researching AR and come away with more questions than answers - about cost, about whether AR will actually solve their problem, and about how to find AR companies in India with genuine business application expertise rather than just technical capability. As a trusted AR development company working with businesses across education, retail, healthcare, and real estate, we have helped every type of business navigate these exact challenges.",
     ],
     features: [
-        "Low customer engagement despite high delivery rates - because messages are generic, poorly timed, and sent without any audience segmentation strategy",
-        "Poor campaign targeting reaching wrong audiences - sending the same message to your entire list regardless of where each customer is in their relationship with your business",
-        "Low conversion rates from promotional campaigns - because the offer, timing, and call to action were never optimized for the specific audience receiving the message",
-        "Inefficient manual messaging consuming team time - no SMS automation in place means every campaign requires manual effort that does not scale as the business grows",
-        "No campaign tracking or performance reporting - making it impossible to measure ROI, identify what is working, and improve results from one campaign to the next",
-        "Weak customer retention and follow-up strategy - losing customers between purchases because no re-engagement or loyalty SMS program exists to bring them back",
+        "Cannot find ar companies in india that understand business outcomes - working with technical developers who build impressive AR but cannot connect it to the business problem that needs solving",
+        "Assuming ar development cost is out of reach - without ever getting a realistic quote from an AR development company that builds lean, focused solutions for specific business use cases",
+        "Poor AR experiences that users abandon immediately - applications built without UX expertise that cause disorientation, confusion, and zero adoption regardless of technical quality",
+        "No clear AR strategy before development begins - investing in augmented reality development services without a defined use case, target user, or success metric in place",
+        "WebAR versus native app confusion - not knowing which approach is right for the specific use case and ending up with the wrong technology choice for the audience",
+        "No post-launch support from the development team - AR applications that cannot be updated, improved, or maintained after initial delivery as business requirements evolve",
     ],
 };
+
 const servicesData9 = {
     subTitle: "OUR PROCESS",
-    title: "Our SMS Marketing Process for Better Customer Engagement and Business Growth",
+    title: "How We Deliver Your AR Development Project",
     moreText: "More services",
     moreUrl: "/services",
     items: [
         {
             id: 1,
             icon: "tji-innovative",
-            title: "Business & Audience Analysis",
-            desc: "We start by understanding your business, your customers, your existing communication channels, and your specific SMS marketing goals - building a complete picture of your audience segments before a single message is written or campaign is planned.",
+            title: "Discovery & AR Strategy Planning",
+            desc: "We start with your business goals, your target users, and the specific problem your AR application needs to solve. Our AR consulting services approach ensures every technical decision is grounded in business value - defining the right use case, the right platform, and the right AR approach before development investment is committed.",
             url: "/services",
         },
         {
             id: 2,
             icon: "tji-award",
-            title: "Campaign Strategy & SMS Content Planning",
-            desc: "We build your complete SMS marketing strategy - campaign types, messaging frameworks, audience segmentation approach, automation triggers, and sending schedule - all aligned to your business goals and the customer lifecycle stages that matter most.",
+            title: "Concept Design & Prototyping",
+            desc: "We design the complete AR experience - interaction flows, environment design, content requirements, and user journey - and build a prototype for your review before full development begins. You see and experience what will be built before any significant development resource is invested.",
             url: "/services",
         },
         {
             id: 3,
             icon: "tji-team",
-            title: "SMS Campaign Setup & Automation",
-            desc: "We configure your SMS platform, build automation workflows, set up audience segments, and create all campaign content - ensuring every message is compliant, personalized, and timed for maximum engagement before the first campaign goes live.",
+            title: "AR Development & Build",
+            desc: "Our ar app development company team builds your augmented reality application with technical precision and creative quality - optimized for the target platform, tested for performance and usability throughout development, and built to the standards that make AR genuinely useful rather than just visually impressive.",
             url: "/services",
         },
         {
             id: 4,
             icon: "tji-support",
-            title: "Campaign Launch & Delivery Monitoring",
-            desc: "We launch and monitor every campaign in real time - tracking delivery rates, identifying issues fast, and managing sender reputation to ensure your messages reach customers reliably and your SMS marketing services in india program stays compliant and effective.",
+            title: "Testing & Quality Assurance",
+            desc: "We test every element of your AR application across real devices in real conditions - tracking accuracy, rendering performance, interaction reliability, and user comfort - catching and fixing every issue during development rather than discovering them after launch.",
             url: "/services",
         },
         {
             id: 5,
             icon: "tji-support",
-            title: "Performance Analysis & Continuous Optimization",
-            desc: "Monthly performance reports covering delivery rates, response rates, conversion rates, and campaign ROI - plus specific optimizations implemented based on real data to improve results from every campaign cycle going forward.",
+            title: "Launch & Post-Launch Support",
+            desc: "We manage the complete deployment of your AR development project and stay involved after launch - providing updates, content additions, performance optimization, and technical support that keeps your augmented reality application effective as your business needs grow and change.",
             url: "/services",
         },
     ],
@@ -252,56 +250,56 @@ const servicesData9 = {
 
 const scalableHighlightData2 = {
     eye: 'WHY CHOOSE US',
-    title: "Why Choose Mematdigi for ",
-    titleSpan: "SMS Marketing Services in India",
+    title: "Why Choose Mematdigi as Your ",
+    titleSpan: "AR Development Company in India",
     paragraphs: [
-        "At Mematdigi, we have built our reputation as a trusted SMS marketing company in India by treating SMS as a strategic business communication channel - not a broadcast tool for sending the same message to everyone on a list. We are not the SMS marketing agency that sends bulk campaigns and reports on delivery counts. We are the SMS marketing services in India partner that builds proper audience segmentation, proper automation, proper personalized messaging, and proper analytics into every program we manage - because those are the elements that separate SMS campaigns that convert from SMS campaigns that get ignored.",
-        "Whether you are a startup that needs a cost-effective SMS marketing company india to build your first customer communication program or an enterprise that needs a specialist SMS marketing agency to manage complex automation and segmentation at scale - Mematdigi delivers the SMS marketing services in india that help your business reach more customers, retain them longer, and convert them more consistently through India's most direct digital communication channel.",
+        "At Mematdigi, we have built our reputation as a trusted AR development company in India by approaching augmented reality the way it should be approached - as a business tool with a specific job to do, not a technology showcase built to impress at a demo and disappoint in real use. We are not the AR app development company that builds technically complex AR experiences that solve the wrong problem or reach the wrong users. We are the augmented reality development company that starts with the business outcome, designs the experience around the user, and measures success by whether the AR application actually delivers the result it was built to achieve. As one of the leading ar vr companies in India offering both augmented and virtual reality development services, our capabilities span every platform, every industry, and every scale of AR application.",
+        "Whether you are a startup that needs an AR development company in India to build your first augmented reality experience cost-effectively or an enterprise that needs a specialist augmented reality development company to deliver complex, integrated AR training or retail solutions at scale - Mematdigi delivers the augmented reality development services that create real business impact. Not just impressive technology - working AR solutions that solve real problems and deliver measurable results for businesses across India.",
     ],
     features: [
-        "SMS marketing services in india with proven results across ecommerce, healthcare, education, real estate, and more",
-        "SMS marketing agency with full-service delivery - strategy, content, automation, delivery, and reporting under one roof",
-        "Transactional SMS services - reliable, instant delivery for OTPs, order updates, and customer notifications that build operational trust",
-        "Bulk SMS marketing services - high-volume campaigns with proper segmentation, personalization, and compliance management",
-        "SMS automation services - behavioral triggers and lifecycle sequences that engage customers at the right moment without manual effort",
-        "Enterprise SMS solutions - scalable infrastructure and dedicated support for businesses managing high-volume, multi-segment SMS communication",
+        "AR development company in India trusted by businesses across education, retail, healthcare, real estate, and manufacturing",
+        "AR app development company with full in-house capabilities - strategy, design, development, testing, and post-launch support",
+        "AR companies in India with genuine business application expertise - not just technical developers building without business context",
+        "AR vr development capabilities under one roof - augmented and virtual reality from a single specialist partner",
+        "Hire ar developers from Mematdigi - dedicated specialists assigned to your project from discovery through delivery and beyond",
+        "AR consulting services before development begins - defining the right strategy, right technology, and right investment level for your specific business use case",
     ],
 };
 
 const faqData = {
     subTitle: "FAQs",
     subIcon: "tji-box",
-    title: "Frequently Asked Questions About SMS Marketing Services in India",
+    title: "Frequently Asked Questions About AR Development Services in India",
     phone: { display: "1-888-452-1505", tel: "18884521505" },
     items: [
         {
-            title: "What are SMS marketing services and how can they benefit my business?",
-            desc: "SMS marketing services in India involve using text messages to communicate with customers - promotional offers, transactional notifications, appointment reminders, and automated follow-up sequences. With open rates of up to 98%, SMS marketing delivers messages that actually get read. Our SMS marketing services help businesses improve customer engagement, increase conversions, and build stronger customer relationships through direct, personalized messaging.",
+            title: "What does an AR development company in India do?",
+            desc: "An AR development company in India builds augmented reality applications that overlay digital content onto the real world - product visualization tools, training overlays, educational experiences, retail try-on applications, and interactive marketing tools. At Mematdigi, our augmented reality development company approach starts with your business objective - ensuring every AR experience we build delivers real, measurable business value rather than just technical novelty.",
             initActive: true,
         },
         {
-            title: "What is the difference between promotional and transactional SMS?",
-            desc: "Promotional SMS services are used for marketing - offers, product launches, flash sales, and campaigns designed to drive purchases. Transactional SMS services are triggered by customer actions - order confirmations, OTPs, shipping updates, and appointment reminders. Both serve different purposes, and a complete SMS marketing strategy uses both types to communicate with customers throughout their journey.",
+            title: "How much does AR development cost in India?",
+            desc: "AR development cost in India depends on the complexity of the experience, the platform, and the level of interactivity required. A focused WebAR product visualization might cost ₹1–3 lakhs. A complex custom AR development project with multi-environment functionality could range from ₹8–25 lakhs or more. We provide transparent, detailed quotes based on your specific brief - no vague estimates, no surprises after you commit to working with us.",
             initActive: false,
         },
         {
-            title: "Do you provide bulk SMS marketing services for businesses?",
-            desc: "Yes - our bulk SMS marketing services are designed for businesses that need to reach large customer lists quickly and reliably. We manage audience segmentation, message personalization, compliance, and delivery optimization for high-volume mobile SMS marketing campaigns - ensuring your messages reach customers without damaging your sender reputation or violating platform policies.",
+            title: "What is the difference between WebAR and native AR app development?",
+            desc: "WebAR development delivers augmented reality through a mobile browser - no app download required, accessible to anyone with a smartphone. Native AR app development delivers richer, more complex AR experiences through a dedicated iOS or Android application. The right choice depends on your audience, your use case, and your distribution strategy. Our AR consulting services help you make the right decision before development begins.",
             initActive: false,
         },
         {
-            title: "Can you automate SMS campaigns for customer engagement?",
-            desc: "Yes. Our SMS automation services build behavioral trigger campaigns - welcome messages, abandoned cart reminders, re-engagement sequences, and loyalty campaigns - that send automatically based on customer actions without any manual effort. Combined with strategic SMS campaign management, automation allows your business to communicate with customers at scale while maintaining the personalization that drives engagement.",
+            title: "Can I hire dedicated AR developers from Mematdigi?",
+            desc: "Yes. When you hire ar developers from Mematdigi, you get dedicated specialists assigned exclusively to your project - communicating directly with your team, working within your preferred processes, and staying accountable throughout the entire development lifecycle. Our AR app development company model ensures you get senior AR talent with genuine business application expertise without the overhead and risk of full-time employment.",
             initActive: false,
         },
         {
-            title: "Which industries benefit most from SMS marketing?",
-            desc: "SMS marketing delivers results across virtually every industry - ecommerce, healthcare, education, real estate, finance, and hospitality all see strong results from properly managed campaigns. Enterprise SMS solutions are particularly valuable for businesses with large customer bases and complex communication needs. Any business that needs to reach customers quickly, reliably, and cost-effectively can benefit from a strategic SMS lead generation and engagement program.",
+            title: "What industries do you serve with AR development services?",
+            desc: "We deliver augmented reality development services across education, retail, healthcare, real estate, manufacturing, and architecture. Our AR for education solutions are particularly in demand - covering interactive learning experiences, 3D concept visualization, and virtual laboratory simulations that improve engagement and learning outcomes. Our AR for retail virtual try-on solutions are equally popular with D2C and ecommerce brands.",
             initActive: false,
         },
         {
-            title: "Do you provide campaign reports and performance tracking?",
-            desc: "Yes. Every client receives detailed SMS analytics and reporting covering delivery rates, open rates, click-through rates, conversion rates, and campaign ROI - delivered monthly in plain language. Our SMS campaign management reporting gives you complete visibility into what is working, what needs improvement, and how your SMS marketing services in india investment is contributing to your business growth.",
+            title: "Do you offer AR consulting services before development begins?",
+            desc: "Yes - always. Our AR consulting services help businesses define the right augmented reality strategy before any development investment is made. We identify your highest-impact AR use case, recommend the right technology approach, provide realistic cost estimates, and help you build the business case for AR investment - so when development begins, every decision is grounded in a clear business outcome and a realistic path to achieving it.",
             initActive: false,
         },
     ],
@@ -310,22 +308,23 @@ const faqData = {
 const contactData = {
     left: {
         subTitle: "CONTACT US NOW",
-        title: "Ready to Grow Your Business With Professional SMS Marketing Services in India?",
-        desc: "Partner with Mematdigi for SMS marketing services in India that help you connect with customers instantly through targeted campaigns, automation, and personalized messaging. From bulk SMS to transactional notifications, we build communication strategies that increase engagement, improve conversions, and support long-term business growth.",
+        title: "Ready to Build Your AR Solution With India's Leading AR Development Company?",
+        desc: "Bring your ideas to life with Mematdigi's AR development services in India. From custom AR applications and WebAR experiences to enterprise-grade augmented reality solutions, we build immersive technologies that improve engagement, solve real business challenges, and support long-term business growth.",
     },
     form: {
-        subTitle: "Get a Call Now",
+        subTitle: "Get Free Consultation",
         subIcon: "tji-box",
         title: "Drop Us a",
         titleSpan: "Line.",
         selectOptions: [
             { value: "0", optionName: "Choose an option" },
-            { value: "1", optionName: "Bulk SMS Marketing" },
-            { value: "2", optionName: "Promotional SMS" },
-            { value: "3", optionName: "Transactional SMS" },
-            { value: "4", optionName: "SMS Campaign Management" },
-            { value: "5", optionName: "SMS Automation Services" },
-            { value: "6", optionName: "SMS Analytics & Reporting" },
+            { value: "1", optionName: "AR App Development" },
+            { value: "2", optionName: "Custom AR Development" },
+            { value: "3", optionName: "WebAR Development" },
+            { value: "4", optionName: "AR Consulting Services" },
+            { value: "5", optionName: "AR for Education" },
+            { value: "6", optionName: "AR for Retail & Virtual Try-On" },
+            { value: "7", optionName: "Other AR Solution" },
         ],
     },
 };
@@ -653,6 +652,14 @@ const ServicesSection2 = () => {
                                         </div>
                                         <div className="service-content">
                                             <p className="desc">{item.desc}</p>
+                                            {/* <ul className="list-items">
+                                                {item.list.map((li, i) => (
+                                                    <li key={i}>
+                                                        <i className="tji-list"></i>
+                                                        {li}
+                                                    </li>
+                                                ))}
+                                            </ul> */}
                                         </div>
                                     </div>
                                 </div>
@@ -941,7 +948,7 @@ const ContactSection = () => {
                                 <p>{contactData.left.desc}</p>
                             </div>
                                     <div className="submit-btn">
-                                        <ButtonPrimary text={"Get a Call Now"} url={'/services'}/>
+                                        <ButtonPrimary text={"Get Free Consultation"} url={'/contact-us'}/>
                                     </div>
                         </div>
 
@@ -1030,7 +1037,7 @@ const ContactSection = () => {
     );
 };
 
-export default function SmsMarketingServices() {
+export default function ArDevelopmentServices() {
     return (
         <div>
             <BackToTop />
