@@ -5,6 +5,14 @@ import PortfoliosPrimary from "@/components/sections/portfolios/PortfoliosPrimar
 import BackToTop from "@/components/shared/others/BackToTop";
 import HeaderSpace from "@/components/shared/others/HeaderSpace";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
+export const metadata = {
+  title: "Website Development Portfolio of Memat Digi",
+  description:
+    "Explore Memat Digi's website development portfolio featuring responsive, custom and business-focused websites built for startups, brands and enterprises.",
+  alternates: {
+    canonical: "https://www.mematdigi.com/portfolios",
+  },
+};
 export default function Portfolios() {
 	return (
 		<div>

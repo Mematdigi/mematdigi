@@ -13,24 +13,20 @@ const BlogCategoriesWidget = () => {
 		<div className="tj-sidebar-widget widget-categories">
 			<h4 className="widget-title">Categories</h4>
 			<ul>
-				{categories?.length
-					? categories?.map((category, idx) => (
-							<li key={idx}>
-								<Link href={`/blogs?category=${makePath(category)}`}>
-									{category}{" "}
-									<span className="number">
-										(
-										{modifyNumber(
-											countDataLength(
-												filterItems(blogs, "category", makePath(category))
-											)
-										)}
-										)
-									</span>
-								</Link>{" "}
-							</li>
-					  ))
-					: ""}
+				{categories?.map((category, idx) => (
+					<li key={idx}>
+						<Link href={`/blogs?category=${makePath(category.title)}`}>
+							{category.title}
+							<span className="number">
+								(
+								{modifyNumber(
+									filterItems(blogs, "category", makePath(category.title))?.length || 0
+								)}
+								)
+							</span>
+						</Link>
+					</li>
+				))}
 			</ul>
 		</div>
 	);

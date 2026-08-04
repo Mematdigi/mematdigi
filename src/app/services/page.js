@@ -9,6 +9,16 @@ import ServicesPrimary from "@/components/sections/services/ServicesPrimary";
 import BackToTop from "@/components/shared/others/BackToTop";
 import HeaderSpace from "@/components/shared/others/HeaderSpace";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
+
+export const metadata = {
+  title: "Our Digital Marketing & IT Services | Memat Digi",
+  description:
+    "Discover result-driven digital marketing, website development, mobile app, and IT consulting services by Memat Digi for businesses across India.",
+  alternates: {
+    canonical: "https://www.mematdigi.com/services",
+  },
+};
+
 export default function Services() {
 	return (
 		<div>

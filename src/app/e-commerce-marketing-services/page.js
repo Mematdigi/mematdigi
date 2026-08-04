@@ -1,5 +1,3 @@
-'use client';
-import { useState } from "react";
 import Link from "next/link";
 import ButtonPrimary from "@/components/shared/buttons/ButtonPrimary";
 import BootstrapWrapper from "@/components/shared/wrappers/BootstrapWrapper";
@@ -10,30 +8,15 @@ import Header from "@/components/layout/header/Header";
 import BackToTop from "@/components/shared/others/BackToTop";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
 
-const heroData = {
-    bgImage: "/images/hero/h9-hero-bg.webp",
-    eyebrow: "ECOMMERCE MARKETING",
-    titlePre: "Ecommerce Marketing Agency in India That",
-    titleHighlight: "Grows Your Online Store Revenue",
-    titlePost: "",
-    desc: (
-        <>
-            As a trusted ecommerce marketing agency in India, we deliver result-driven ecommerce marketing services that increase conversions, maximize online store revenue, and improve customer retention. From SEO and performance marketing to email automation, social media, and marketplace growth, we build strategies that drive sustainable ecommerce success.
-        </>
-    ),
-    stats: [
-        { number: "100", suffix: "+", label: "Happy Clients" },
-        { number: "99", suffix: "%", label: "Client Satisfaction" },
-        { number: "15", suffix: "+", label: "Industries Served" },
-        { number: "135", suffix: "+", label: "Projects Delivered" },
-    ],
-    primaryCta: { text: "Get Ecommerce Audit", url: "/contact-us" },
-    form: {
-        tag: "GET IN TOUCH",
-        title: "Get Your Free Ecommerce Audit",
-        subtitle: "Fill out the form and our team will reach out within 24 hours.",
-        // Mobile form fields = Name, Email, Phone, Store URL, Message.
-    },
+import HeroSection from "../HeroSection";
+
+export const metadata = {
+  title: "Ecommerce Marketing Agency India | Grow Sales Faster",
+  description:
+    "Grow your online store with Memat Digi's ecommerce marketing services. Drive more sales with SEO, performance marketing & email marketing. Get a free audit.",
+  alternates: {
+    canonical: "https://www.mematdigi.com/e-commerce-marketing-services",
+  },
 };
 
 const chooseData = {
@@ -346,171 +329,6 @@ const contactData = {
  *  SECTIONS
  * ========================================================== */
 
-const HeroSection = () => {
-    const [formData, setFormData] = useState({
-        fullName: "",
-        phone: "",
-        email: "",
-        storeUrl: "",
-        message: "",
-    });
-    const [isSubmitting, setIsSubmitting] = useState(false);
-
-    const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-    };
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        setIsSubmitting(true);
-        try {
-            console.log("Form submitted:", formData);
-            await new Promise((r) => setTimeout(r, 600));
-            alert("Thanks! We'll be in touch shortly.");
-            setFormData({ fullName: "", phone: "", email: "", storeUrl: "", message: "" });
-        } catch (err) {
-            console.error(err);
-        } finally {
-            setIsSubmitting(false);
-        }
-    };
-
-    return (
-        <section className="h9-hero">
-            <div className="h9-hero-inner">
-                <div
-                    className="h9-hero-bg-image"
-                    style={{ backgroundImage: `url('${heroData.bgImage}')` }}
-                ></div>
-                <div className="h9-hero-overlay"></div>
-                <div className="h9-hero-glow" aria-hidden="true"></div>
-
-                <div className="h9-hero-item-wrapper">
-                    <div className="h9-hero-content">
-                        <div className="h9-hero-row">
-                            <div className="h9-hero-left">
-                                <span className="h9-hero-eyebrow wow fadeInUp" data-wow-delay="0.1s">
-                                    <span className="dot"></span> {heroData.eyebrow}
-                                </span>
-
-                                <h1 className="h9-hero-title wow fadeInUp" data-wow-delay="0.2s">
-                                    {heroData.titlePre}{" "}
-                                    <span className="highlight">{heroData.titleHighlight}</span>{" "}
-                                    {heroData.titlePost}
-                                </h1>
-
-                                <p className="h9-hero-desc wow fadeInUp" data-wow-delay="0.3s">
-                                    {heroData.desc}
-                                </p>
-
-                                <div className="h9-hero-stats wow fadeInUp" data-wow-delay="0.4s">
-                                    {heroData.stats.map((stat, idx) => (
-                                        <div key={idx} style={{ display: "contents" }}>
-                                            {idx > 0 && (
-                                                <div className="stat-divider" aria-hidden="true"></div>
-                                            )}
-                                            <div className="stat-item">
-                                                <h3 className="stat-number">
-                                                    {stat.number}
-                                                    <span>{stat.suffix}</span>
-                                                </h3>
-                                                <p className="stat-label">{stat.label}</p>
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
-
-                                <div className="h9-hero-cta wow fadeInUp" data-wow-delay="0.5s">
-                                    <Link href={heroData.primaryCta.url} className="h9-hero-btn">
-                                        <span>{heroData.primaryCta.text}</span>
-                                        <i className="fa-solid fa-arrow-right"></i>
-                                    </Link>
-                                </div>
-                            </div>
-
-                            <div className="h9-hero-right wow fadeInRight" data-wow-delay="0.4s">
-                                <div className="h9-hero-form-card">
-                                    <span className="form-tag">
-                                        <i className="fa-solid fa-arrow-right"></i> {heroData.form.tag}
-                                    </span>
-                                    <h2 className="form-title">{heroData.form.title}</h2>
-                                    <p className="form-subtitle">{heroData.form.subtitle}</p>
-
-                                    <form className="h9-hero-form" onSubmit={handleSubmit}>
-                                        <div className="form-row">
-                                            <div className="form-group">
-                                                <input
-                                                    type="text"
-                                                    name="fullName"
-                                                    placeholder="Full Name*"
-                                                    value={formData.fullName}
-                                                    onChange={handleChange}
-                                                    required
-                                                />
-                                            </div>
-                                            <div className="form-group">
-                                                <input
-                                                    type="tel"
-                                                    name="phone"
-                                                    placeholder="Phone No.*"
-                                                    value={formData.phone}
-                                                    onChange={handleChange}
-                                                    required
-                                                />
-                                            </div>
-                                        </div>
-
-                                        <div className="form-group">
-                                            <input
-                                                type="email"
-                                                name="email"
-                                                placeholder="Email*"
-                                                value={formData.email}
-                                                onChange={handleChange}
-                                                required
-                                            />
-                                        </div>
-
-                                        {/* Mobile form me Store URL input (Business Type dropdown ki jagah) */}
-                                        <div className="form-group">
-                                            <input
-                                                type="text"
-                                                name="storeUrl"
-                                                placeholder="Store URL*"
-                                                value={formData.storeUrl}
-                                                onChange={handleChange}
-                                                required
-                                            />
-                                        </div>
-
-                                        <div className="form-group">
-                                            <textarea
-                                                name="message"
-                                                placeholder="Tell us about your project..."
-                                                rows="3"
-                                                value={formData.message}
-                                                onChange={handleChange}
-                                            ></textarea>
-                                        </div>
-
-                                        <button
-                                            type="submit"
-                                            className="form-submit-btn"
-                                            disabled={isSubmitting}
-                                        >
-                                            <i className="fa-regular fa-envelope"></i>
-                                            {isSubmitting ? "Sending..." : "Get Quote"}
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    );
-};
 
 const ChooseSection = () => {
     return (

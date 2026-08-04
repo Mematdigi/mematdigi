@@ -6,6 +6,16 @@ import HeroInner from "@/components/sections/hero/HeroInner";
 import BackToTop from "@/components/shared/others/BackToTop";
 import HeaderSpace from "@/components/shared/others/HeaderSpace";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
+
+export const metadata = {
+  title: "Contact Memat Digi | Get a Free Consultation",
+  description:
+    "Have a project in mind? Contact Memat Digi today for expert digital marketing, web development, and IT consulting services across India.",
+  alternates: {
+    canonical: "https://www.mematdigi.com/contact-us",
+  },
+};
+
 export default function Contact() {
 	return (
 		<div>

@@ -1,5 +1,3 @@
-'use client';
-import { useState } from "react";
 import Link from "next/link";
 import ButtonPrimary from "@/components/shared/buttons/ButtonPrimary";
 import BootstrapWrapper from "@/components/shared/wrappers/BootstrapWrapper";
@@ -10,60 +8,38 @@ import Header from "@/components/layout/header/Header";
 import BackToTop from "@/components/shared/others/BackToTop";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
 
-const heroData = {
-    bgImage: "/images/hero/h9-hero-bg.webp",
-    eyebrow: "3D ANIMATION",
-    titlePre: "Best 3D Animation Company in India That",
-    titleHighlight: "Brings Your Vision to Life",
-    titlePost: "",
-    desc: (
-        <>
-            As a trusted 3D animation company in India, we deliver professional 3D animation services that transform ideas into visually engaging experiences. From product animations and architectural walkthroughs to medical and industrial animation, we create high-quality visuals that strengthen brand communication and drive business growth.
-        </>
-    ),
-    stats: [
-        { number: "100", suffix: "+", label: "Happy Clients" },
-        { number: "99", suffix: "%", label: "Client Satisfaction" },
-        { number: "15", suffix: "+", label: "Industries Served" },
-        { number: "135", suffix: "+", label: "Projects Delivered" },
-    ],
-    primaryCta: { text: "Get Free Consultation", url: "/contact-us" },
-    form: {
-        tag: "GET IN TOUCH",
-        title: "Get Your Free Consultation",
-        subtitle: "Fill out the form and our team will reach out within 24 hours.",
-        // Mobile form fields = Name, Email, Phone, Business Type, Message.
-        serviceOptions: [
-            { value: "", label: "Business Type *" },
-            { value: "startup", label: "Startup / Small Business" },
-            { value: "d2c", label: "D2C / Ecommerce Brand" },
-            { value: "b2b", label: "B2B / Enterprise" },
-            { value: "other", label: "Other" },
-        ],
-    },
+import HeroSection from "../HeroSection";
+
+export const metadata = {
+  title: "Best 3D Animation Company in India | Memat Digi",
+  description:
+    "Need high-quality 3D animation services? Memat Digi creates product animations, walkthroughs & photorealistic 3D rendering. Get a free quote today.",
+  alternates: {
+    canonical: "https://www.mematdigi.com/3d-animation-services",
+  },
 };
 
 const chooseData = {
-    subTitle: "COMMON ANIMATION CHALLENGES",
+    subTitle: "COMMON CHALLENGES",
     subIcon: "tji-box",
-    title: "Why Most Businesses Struggle to Communicate Their Product or Vision Effectively",
+    title: "Why Most Businesses Are Not Getting Results From Augmented Reality",
     desc: "",
     banner: "/images/choose/h8-choose-bnner.webp",
     boxes: [
         {
             icon: "tji-innovative",
-            title: "Complex Ideas Are Hard to Explain",
-            desc: "Static images and lengthy descriptions often fail to communicate product features, architectural designs, or technical processes, making it difficult for customers to fully understand your offering.",
+            title: "Lack of a Clear AR Strategy",
+            desc: "Many businesses recognize the potential of augmented reality but struggle to identify the right use cases. Without a clear strategy, businesses often invest in AR experiences that fail to solve real problems or deliver measurable business outcomes.",
         },
         {
             icon: "tji-award",
-            title: "Low Visual Engagement",
-            desc: "Poor-quality visuals and generic presentations struggle to capture attention, reduce audience engagement, and weaken your brand's ability to stand out in a competitive market.",
+            title: "Limited Development Expertise",
+            desc: "Working with an inexperienced AR development company in India can result in poor user experiences, unreliable performance, and applications that lack scalability. Successful AR solutions require technical expertise combined with a deep understanding of business objectives.",
         },
         {
             icon: "tji-support",
-            title: "Limited Business Impact",
-            desc: "Without professional 3D animation services, businesses miss opportunities to simplify complex concepts, build customer confidence, and improve marketing, sales, and project presentations.",
+            title: "High Costs Without Measurable ROI",
+            desc: "Businesses often assume AR development is expensive because projects are built without proper planning. Choosing the right development partner ensures cost-effective solutions focused on customer engagement, operational efficiency, and long-term return on investment.",
         },
     ],
 };
@@ -71,62 +47,44 @@ const chooseData = {
 const servicesData = {
     subTitle: "WHAT WE OFFER",
     subIcon: "tji-box",
-    title: "Our 3D Animation Services for Businesses Across India",
-    desc: "From product animation and architectural walkthroughs to medical visualization and photorealistic CGI - complete 3D animation services built to communicate your vision with clarity and impact.",
+    title: "Our AR Development Services for Businesses Across India",
+    desc: "From AR app development and WebAR to custom augmented reality solutions and industry-specific applications - complete AR development services built to deliver real business impact.",
     moreUrl: "/services",
     items: [
         {
             icon: "tji-service-1",
-            title: "3D Product Animation",
-            desc: "We bring your products to life with high-quality 3D product animation services - showcasing features, demonstrating functionality, and creating the kind of visual impact that static photography simply cannot achieve for your marketing and sales materials.",
+            title: "AR App Development",
+            desc: "We build high-performance augmented reality applications for iOS and Android - product visualization tools, training overlays, interactive marketing experiences, and customer-facing AR features that create genuine business value through immersive technology.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "Architectural Walkthrough Animation",
-            desc: "Let clients and investors experience a space before it is built. Our 3D walkthrough animation services create immersive, photorealistic architectural animations that communicate design intent, sell projects faster, and reduce costly misunderstandings before construction begins.",
+            title: "Custom AR Development",
+            desc: "Every business has different AR requirements. Our custom AR development service builds fully bespoke augmented reality solutions from the ground up - designed around your specific industry, your specific users, and the specific problem your business needs AR to solve.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "Industrial 3D Animation",
-            desc: "Explain complex machinery, manufacturing processes, and engineering systems with clarity. Our industrial 3D animation services translate technical complexity into visually compelling animations that communicate process, scale, and function to any audience.",
+            title: "WebAR Development",
+            desc: "No app download required. Our WebAR development service builds browser-based augmented reality experiences that customers access instantly through any smartphone - product try-ons, interactive packaging, location-based AR, and brand experiences delivered without friction.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "Medical 3D Animation",
-            desc: "From surgical procedures and drug mechanisms to anatomical education and medical device demonstrations - our medical 3D animation services create accurate, visually compelling animations for healthcare brands, medical educators, and life sciences companies.",
+            title: "AR Consulting Services",
+            desc: "Not sure where AR fits in your business or whether the investment is justified? Our AR consulting services help you define the right augmented reality strategy - identifying your highest-impact use cases, recommending the right technology approach, and providing realistic cost estimates before any development begins.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "CGI Animation",
-            desc: "Photorealistic CGI animation services in India for brands that need visual content beyond what photography can capture - product launches, brand films, concept visualization, and high-end commercial content that makes an unforgettable impression.",
+            title: "AR for Education",
+            desc: "Immersive learning experiences, interactive textbook content, 3D concept visualization, and virtual laboratory simulations - our AR for education solutions make complex subjects genuinely engaging and improve learning outcomes for students across every age group and subject area.",
             url: "/services",
         },
         {
             icon: "tji-service-1",
-            title: "3D Explainer Videos",
-            desc: "Turn complex ideas into simple, engaging visual stories. Our 3D explainer videos combine clear scripting with high-quality animation to communicate your product, service, or process in a format that audiences understand and remember.",
-            url: "/services",
-        },
-        {
-            icon: "tji-service-1",
-            title: "Photorealistic 3D Rendering",
-            desc: "Still images with the visual quality of photography - without the limitations of a camera. Our photorealistic 3D rendering service produces marketing-ready product visuals, architectural renders, and brand imagery that looks real and performs better than real photography.",
-            url: "/services",
-        },
-        {
-            icon: "tji-service-1",
-            title: "3D Modeling & Animation",
-            desc: "The foundation of everything we produce. Our 3D modeling and animation team creates highly detailed, accurate 3D models of products, spaces, and concepts - built to the precision your project demands and optimized for the output format you need.",
-            url: "/services",
-        },
-        {
-            icon: "tji-service-1",
-            title: "3D Animation for Real Estate",
-            desc: "We help real estate developers sell projects before they are complete. From site walkthrough animations and interior visualization to amenity showcases and master plan fly-throughs - our 3D animation for real estate projects converts prospects into buyers.",
+            title: "AR for Retail & Virtual Try-On",
+            desc: "Let customers try before they buy - virtually. Our AR for retail solutions include virtual try-on for fashion and beauty, 3D product placement for furniture and home decor, and interactive product demonstrations that reduce purchase hesitation and cut return rates for online and offline retailers.",
             url: "/services",
         },
     ],
@@ -134,135 +92,134 @@ const servicesData = {
 
 const solutionsData = {
     subTitle: "WHO WE SERVE",
-    title: "3D Animation Services for Every Business Type",
+    title: "AR Development Solutions for Every Business Type",
     moreText: "More Services",
     moreUrl: "/services",
     items: [
         {
             icon: "tji-service-1",
-            title: "Product & Ecommerce Brands",
+            title: "Startups & Small Businesses",
             url: "/services",
-            desc: "When your product has features that photographs cannot show and words cannot fully explain, 3D product animation services become your most powerful marketing asset. We help product brands and ecommerce businesses create animation content that demonstrates value, answers objections, and converts browsers into buyers at a level static content simply cannot reach.",
+            desc: "Augmented reality is no longer exclusively for enterprise budgets. As an ar development company in india that works with businesses at every stage, we help startups build focused, high-impact AR experiences that create genuine competitive differentiation - whether that is a WebAR product visualization, an interactive brand experience, or an AR tool that makes your small team deliver at a level that surprises much larger competitors.",
             list: ["Expansion Strategies", "Operational Efficiency", "Competitive Edge"],
         },
         {
             icon: "tji-service-1",
-            title: "Real Estate & Architecture Firms",
+            title: "D2C & Ecommerce Brands",
             url: "/services",
-            desc: "Selling or approving a project before ground is broken requires the ability to help people see something that does not yet exist. Our 3D animation services for real estate projects create immersive walkthroughs, exterior visualizations, and interior renders that give developers, agents, and buyers the confidence to commit - faster and with less friction.",
+            desc: "Virtual try-on, 3D product visualization, and AR-powered shopping experiences are reshaping how consumers discover and evaluate products online. Our AR app development company team helps D2C brands build the augmented reality shopping experiences that reduce the gap between online browsing and purchase confidence - cutting return rates and increasing conversion at the same time.",
             list: ["Expansion Strategies", "Operational Efficiency", "Competitive Edge"],
         },
         {
             icon: "tji-service-1",
-            title: "Industrial & Healthcare Companies",
+            title: "B2B & Enterprise Companies",
             url: "/services",
-            desc: "Technical complexity is a communication challenge. Whether you need to explain how a piece of industrial equipment works or how a medical device interacts with the body, our industrial 3D animation services and medical 3D animation services translate technical reality into visual clarity that any audience can understand and act on.",
+            desc: "Enterprise AR applications - employee training overlays, equipment maintenance guidance, remote assistance tools, and client presentation experiences - deliver measurable efficiency gains at scale. As one of the leading AR companies in India for enterprise clients, we build the complex, integrated AR solutions that large organizations need to transform how they train, operate, and engage customers.",
             list: ["Expansion Strategies", "Operational Efficiency", "Competitive Edge"],
         },
-        // Aur solutions add karne ho to yahan object push kar do ⬇️
     ],
 };
 
 const featuresData = {
     subTitle: "INDUSTRIES WE SERVE",
     subIcon: "tji-box",
-    title: "Industries We Serve With Our 3D Animation Services in India",
+    title: "Industries We Serve With Our AR Development Services in India",
     items: [
         {
             id: 1,
             icon: "tji-innovative",
-            title: "Healthcare",
-            desc: "Medical device demonstrations, surgical procedure animations, and anatomical visualization that educates patients and supports healthcare marketing",
+            title: "Education",
+            desc: "Interactive learning experiences, 3D concept visualization, and virtual laboratory simulations that improve engagement and learning outcomes across schools, colleges, and edtech platforms",
         },
         {
             id: 2,
             icon: "tji-award",
-            title: "Real Estate",
-            desc: "Architectural walkthroughs, interior renders, and project visualization that sells developments before construction is complete",
+            title: "Retail & Ecommerce",
+            desc: "Virtual try-on experiences, 3D product placement tools, and interactive shopping features that improve purchase confidence and reduce return rates for online and offline retailers",
         },
         {
             id: 3,
             icon: "tji-team",
-            title: "Education",
-            desc: "Complex concept visualization, scientific process animation, and educational content that makes difficult subjects engaging and accessible",
+            title: "Healthcare",
+            desc: "Medical training overlays, surgical procedure guidance, patient education tools, and anatomy visualization applications that improve clinical training and patient communication",
         },
         {
             id: 4,
             icon: "tji-support",
-            title: "Ecommerce",
-            desc: "Product animation and 3D visualization that shows features, demonstrates use, and converts product page visitors into confident buyers",
+            title: "Real Estate",
+            desc: "AR property visualization, interior design overlay tools, and virtual staging applications that help developers and agents sell properties faster with greater buyer confidence",
         },
         {
             id: 5,
             icon: "tji-support",
             title: "Manufacturing",
-            desc: "Industrial process animation, equipment demonstrations, and technical training content that explains complex manufacturing systems clearly",
+            desc: "Assembly guidance overlays, equipment maintenance instructions, quality control tools, and safety procedure applications that reduce errors and improve workforce efficiency",
         },
         {
             id: 6,
             icon: "tji-support",
-            title: "Architecture",
-            desc: "Design visualization, concept presentation animations, and client communication tools that bring architectural vision to life before it is built",
+            title: "Architecture & Construction",
+            desc: "Design visualization overlays, on-site AR reference tools, and client presentation experiences that improve communication and reduce costly design change requests",
         },
     ],
 };
 
 const scalableHighlightData = {
     eye: 'BUSINESS CHALLENGES',
-    title: "3D Animation Challenges Every Business in India Faces -",
+    title: "AR Development Challenges Every Business Faces -",
     titleSpan: "And How We Fix Them",
     paragraphs: [
-        "Most businesses that come to us have tried to communicate their product or vision through photographs, brochures, or basic videos - and found that none of it captures what actually makes what they do special. Others have received quotes from large animation studios, seen the price, and assumed high-quality 3D animation services are simply out of their reach. As a trusted 3D animation company in India working with 100+ businesses, we know exactly what communication challenges 3D animation solves and exactly how to deliver it at a price that makes business sense.",
+        "Most businesses that approach us for augmented reality development services have already spent significant time researching AR and come away with more questions than answers - about cost, about whether AR will actually solve their problem, and about how to find AR companies in India with genuine business application expertise rather than just technical capability. As a trusted AR development company working with businesses across education, retail, healthcare, and real estate, we have helped every type of business navigate these exact challenges.",
     ],
     features: [
-        "Complex products that photographs cannot explain - losing customers at the consideration stage because the value is not visually clear",
-        "Architectural projects being evaluated without visualization - slowing approvals and sales because stakeholders cannot see the finished result",
-        "Technical processes that words fail to communicate - creating confusion, misalignment, and lost business at critical decision moments",
-        "High studio quotes making quality animation feel inaccessible - leaving businesses with poor quality content that damages rather than builds brand perception",
-        "No 3D content for marketing campaigns - missing the engagement uplift that animation delivers compared to static image content",
-        "Inconsistent visualization quality across projects - creating an unprofessional impression that undermines otherwise strong products and proposals",
+        "Cannot find ar companies in india that understand business outcomes - working with technical developers who build impressive AR but cannot connect it to the business problem that needs solving",
+        "Assuming ar development cost is out of reach - without ever getting a realistic quote from an AR development company that builds lean, focused solutions for specific business use cases",
+        "Poor AR experiences that users abandon immediately - applications built without UX expertise that cause disorientation, confusion, and zero adoption regardless of technical quality",
+        "No clear AR strategy before development begins - investing in augmented reality development services without a defined use case, target user, or success metric in place",
+        "WebAR versus native app confusion - not knowing which approach is right for the specific use case and ending up with the wrong technology choice for the audience",
+        "No post-launch support from the development team - AR applications that cannot be updated, improved, or maintained after initial delivery as business requirements evolve",
     ],
 };
 
 const servicesData9 = {
     subTitle: "OUR PROCESS",
-    title: "How We Deliver Our 3D Animation Services",
+    title: "How We Deliver Your AR Development Project",
     moreText: "More services",
     moreUrl: "/services",
     items: [
         {
             id: 1,
             icon: "tji-innovative",
-            title: "Brief & Concept Development",
-            desc: "We start by understanding exactly what you need to communicate, who the audience is, and what action you want them to take after watching. Every animation decision from here - style, camera movement, level of detail - is made in service of that specific communication goal.",
+            title: "Discovery & AR Strategy Planning",
+            desc: "We start with your business goals, your target users, and the specific problem your AR application needs to solve. Our AR consulting services approach ensures every technical decision is grounded in business value - defining the right use case, the right platform, and the right AR approach before development investment is committed.",
             url: "/services",
         },
         {
             id: 2,
             icon: "tji-award",
-            title: "Storyboard & Script Planning",
-            desc: "Before modeling begins, we plan every shot, sequence, and narrative beat. You approve the full storyboard and script so there are no surprises in the final animation - only the visual story we agreed on, executed at the quality level your project demands.",
+            title: "Concept Design & Prototyping",
+            desc: "We design the complete AR experience - interaction flows, environment design, content requirements, and user journey - and build a prototype for your review before full development begins. You see and experience what will be built before any significant development resource is invested.",
             url: "/services",
         },
         {
             id: 3,
             icon: "tji-team",
-            title: "3D Modeling & Texturing",
-            desc: "Our 3D modeling team builds every element of your animation with the precision and detail your project requires - products, spaces, characters, and environments all created from scratch and textured to achieve the visual quality your brand deserves.",
+            title: "AR Development & Build",
+            desc: "Our ar app development company team builds your augmented reality application with technical precision and creative quality - optimized for the target platform, tested for performance and usability throughout development, and built to the standards that make AR genuinely useful rather than just visually impressive.",
             url: "/services",
         },
         {
             id: 4,
             icon: "tji-support",
-            title: "Animation & Rendering",
-            desc: "We animate every element with the right timing, movement, and camera work to tell your story compellingly - then render at high resolution for the output format you need, whether that is photorealistic 3D rendering for marketing materials or optimized formats for digital distribution.",
+            title: "Testing & Quality Assurance",
+            desc: "We test every element of your AR application across real devices in real conditions - tracking accuracy, rendering performance, interaction reliability, and user comfort - catching and fixing every issue during development rather than discovering them after launch.",
             url: "/services",
         },
         {
             id: 5,
             icon: "tji-support",
-            title: "Final Delivery & Revisions",
-            desc: "We deliver your completed animation with a structured revision process - ensuring every element meets your expectations before final files are handed over. You receive all formats needed for your intended use, with technical support for any platform-specific requirements.",
+            title: "Launch & Post-Launch Support",
+            desc: "We manage the complete deployment of your AR development project and stay involved after launch - providing updates, content additions, performance optimization, and technical support that keeps your augmented reality application effective as your business needs grow and change.",
             url: "/services",
         },
     ],
@@ -271,55 +228,55 @@ const servicesData9 = {
 const scalableHighlightData2 = {
     eye: 'WHY CHOOSE US',
     title: "Why Choose Mematdigi as Your ",
-    titleSpan: "3D Animation Company in India",
+    titleSpan: "AR Development Company in India",
     paragraphs: [
-        "At Mematdigi, we have built our reputation as the best 3D animation company in India by solving the problem that stops most businesses from investing in 3D animation - the gap between the quality they need and the price they can justify. We are the 3D animation company in India that delivers premium studio quality through an efficient, experienced team that does not charge premium studio rates. Whether you need affordable 3D animation services in India for a product launch, a complex architectural walkthrough animation services india project, or industrial 3D animation services for a technical training program - our 3D animation studio in india brings the same commitment to quality, precision, and business impact to every project we take on.",
-        "Whether you need to hire a 3D animation company for product videos that convert ecommerce browsers into buyers, industrial 3D animation services that explain complex engineering to non-technical audiences, or architectural walkthrough animation services india that sell real estate projects before construction begins - Mematdigi is the 3D animation company in India that delivers the quality, precision, and business impact your project deserves.",
+        "At Mematdigi, we have built our reputation as a trusted AR development company in India by approaching augmented reality the way it should be approached - as a business tool with a specific job to do, not a technology showcase built to impress at a demo and disappoint in real use. We are not the AR app development company that builds technically complex AR experiences that solve the wrong problem or reach the wrong users. We are the augmented reality development company that starts with the business outcome, designs the experience around the user, and measures success by whether the AR application actually delivers the result it was built to achieve. As one of the leading ar vr companies in India offering both augmented and virtual reality development services, our capabilities span every platform, every industry, and every scale of AR application.",
+        "Whether you are a startup that needs an AR development company in India to build your first augmented reality experience cost-effectively or an enterprise that needs a specialist augmented reality development company to deliver complex, integrated AR training or retail solutions at scale - Mematdigi delivers the augmented reality development services that create real business impact. Not just impressive technology - working AR solutions that solve real problems and deliver measurable results for businesses across India.",
     ],
     features: [
-        "3D animation company in india with 100+ projects delivered across 15+ industries and use cases",
-        "Best 3D animation company in india for affordability - premium quality at a price point that makes business sense",
-        "3D animation agency with full in-house capabilities - modeling, texturing, animation, and rendering under one roof",
-        "Affordable 3D animation services in india - transparent pricing, no hidden costs, no scope creep surprises",
-        "Hire 3D animation company for product videos - dedicated teams for product animation that converts and convinces",
-        "CGI animation services india - photorealistic visual content for brands that need to make an unforgettable first impression",
+        "AR development company in India trusted by businesses across education, retail, healthcare, real estate, and manufacturing",
+        "AR app development company with full in-house capabilities - strategy, design, development, testing, and post-launch support",
+        "AR companies in India with genuine business application expertise - not just technical developers building without business context",
+        "AR vr development capabilities under one roof - augmented and virtual reality from a single specialist partner",
+        "Hire ar developers from Mematdigi - dedicated specialists assigned to your project from discovery through delivery and beyond",
+        "AR consulting services before development begins - defining the right strategy, right technology, and right investment level for your specific business use case",
     ],
 };
 
 const faqData = {
     subTitle: "FAQs",
     subIcon: "tji-box",
-    title: "Frequently Asked Questions About 3D Animation Services in India",
+    title: "Frequently Asked Questions About AR Development Services in India",
     phone: { display: "1-888-452-1505", tel: "18884521505" },
     items: [
         {
-            title: "What does a 3D animation company in India do? ",
-            desc: "A 3D animation company in India creates computer-generated visual content - product animations, architectural walkthroughs, medical visualizations, industrial process animations, and CGI content - for businesses that need to communicate complex ideas visually. At Mematdigi, our 3D animation services are built around specific business outcomes - not just visual quality for its own sake.",
+            title: "What does an AR development company in India do?",
+            desc: "An AR development company in India builds augmented reality applications that overlay digital content onto the real world - product visualization tools, training overlays, educational experiences, retail try-on applications, and interactive marketing tools. At Mematdigi, our augmented reality development company approach starts with your business objective - ensuring every AR experience we build delivers real, measurable business value rather than just technical novelty.",
             initActive: true,
         },
         {
-            title: "How much do 3D animation services cost in India? ",
-            desc: "Affordable 3D animation services in india typically range from ₹30,000 to ₹5,00,000+ depending on complexity, length, and level of detail required. At Mematdigi, every project is quoted based on your specific brief. As a trusted 3D animation agency, we provide transparent pricing with a detailed breakdown before any work begins - no vague estimates, no post-project surprises.",
+            title: "How much does AR development cost in India?",
+            desc: "AR development cost in India depends on the complexity of the experience, the platform, and the level of interactivity required. A focused WebAR product visualization might cost ₹1–3 lakhs. A complex custom AR development project with multi-environment functionality could range from ₹8–25 lakhs or more. We provide transparent, detailed quotes based on your specific brief - no vague estimates, no surprises after you commit to working with us.",
             initActive: false,
         },
         {
-            title: "Do you offer architectural walkthrough animation services? ",
-            desc: "Yes - architectural walkthrough animation services india is one of our most popular services. We create fully photorealistic walkthrough animations for residential, commercial, and mixed-use developments that help developers, architects, and agents sell and approve projects faster by helping stakeholders visualize the finished space with complete clarity.",
+            title: "What is the difference between WebAR and native AR app development?",
+            desc: "WebAR development delivers augmented reality through a mobile browser - no app download required, accessible to anyone with a smartphone. Native AR app development delivers richer, more complex AR experiences through a dedicated iOS or Android application. The right choice depends on your audience, your use case, and your distribution strategy. Our AR consulting services help you make the right decision before development begins.",
             initActive: false,
         },
         {
-            title: "Do you create 3D product animation for ecommerce brands? ",
-            desc: "Yes. Our 3D product animation services are specifically designed for brands that need to show their products in ways photography cannot - features in action, internal mechanisms, scale comparisons, and use-case demonstrations. When you hire 3D animation company for product videos from Mematdigi, you get animation content built to convert.",
+            title: "Can I hire dedicated AR developers from Mematdigi?",
+            desc: "Yes. When you hire ar developers from Mematdigi, you get dedicated specialists assigned exclusively to your project - communicating directly with your team, working within your preferred processes, and staying accountable throughout the entire development lifecycle. Our AR app development company model ensures you get senior AR talent with genuine business application expertise without the overhead and risk of full-time employment.",
             initActive: false,
         },
         {
-            title: "Do you provide medical and industrial 3D animation? ",
-            desc: "Yes - medical 3D animation services and industrial 3D animation services are both core capabilities of our studio. We work with healthcare brands, medical device companies, manufacturers, and engineering firms to create technically accurate, visually compelling animations that communicate complex processes to specialized and general audiences alike.",
+            title: "What industries do you serve with AR development services?",
+            desc: "We deliver augmented reality development services across education, retail, healthcare, real estate, manufacturing, and architecture. Our AR for education solutions are particularly in demand - covering interactive learning experiences, 3D concept visualization, and virtual laboratory simulations that improve engagement and learning outcomes. Our AR for retail virtual try-on solutions are equally popular with D2C and ecommerce brands.",
             initActive: false,
         },
         {
-            title: "How long does it take to complete a 3D animation project?",
-            desc: "Timelines depend on project complexity and length. A product animation typically takes 2–4 weeks. A complex architectural walkthrough from our 3D animation studio in india may take 4–8 weeks. As the best 3D animation company in india, we provide a detailed project timeline at the start of every engagement so you always know exactly when to expect delivery.",
+            title: "Do you offer AR consulting services before development begins?",
+            desc: "Yes - always. Our AR consulting services help businesses define the right augmented reality strategy before any development investment is made. We identify your highest-impact AR use case, recommend the right technology approach, provide realistic cost estimates, and help you build the business case for AR investment - so when development begins, every decision is grounded in a clear business outcome and a realistic path to achieving it.",
             initActive: false,
         },
     ],
@@ -328,200 +285,30 @@ const faqData = {
 const contactData = {
     left: {
         subTitle: "CONTACT US NOW",
-        title: "Ready to Bring Your Vision to Life With India's Best 3D Animation Company?",
-        desc: "Ready to partner with a trusted 3D animation company in India? Mematdigi delivers professional 3D animation services that transform products, projects, and ideas into compelling visual experiences. From startups to enterprise businesses, we create high-quality animations designed to increase engagement, strengthen brand communication, and drive measurable business growth.",
+        title: "Ready to Build Your AR Solution With India's Leading AR Development Company?",
+        desc: "Bring your ideas to life with Mematdigi's AR development services in India. From custom AR applications and WebAR experiences to enterprise-grade augmented reality solutions, we build immersive technologies that improve engagement, solve real business challenges, and support long-term business growth.",
     },
     form: {
-        subTitle: "Get a Call Now",
+        subTitle: "Get Free Consultation",
         subIcon: "tji-box",
         title: "Drop Us a",
         titleSpan: "Line.",
         selectOptions: [
             { value: "0", optionName: "Choose an option" },
-            { value: "1", optionName: "3D Product Animation" },
-            { value: "2", optionName: "Architectural Walkthrough Animation" },
-            { value: "3", optionName: "Industrial 3D Animation" },
-            { value: "4", optionName: "Medical 3D Animation" },
-            { value: "5", optionName: "CGI Animation" },
-            { value: "6", optionName: "3D Explainer Videos" },
-            { value: "7", optionName: "Photorealistic 3D Rendering" },
+            { value: "1", optionName: "AR App Development" },
+            { value: "2", optionName: "Custom AR Development" },
+            { value: "3", optionName: "WebAR Development" },
+            { value: "4", optionName: "AR Consulting Services" },
+            { value: "5", optionName: "AR for Education" },
+            { value: "6", optionName: "AR for Retail & Virtual Try-On" },
+            { value: "7", optionName: "Other AR Solution" },
         ],
     },
 };
 
 /* ============================================================
- *  SECTIONS
+ * SECTIONS
  * ========================================================== */
-
-const HeroSection = () => {
-    const [formData, setFormData] = useState({
-        fullName: "",
-        phone: "",
-        email: "",
-        service: "",
-        message: "",
-    });
-    const [isSubmitting, setIsSubmitting] = useState(false);
-
-    const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-    };
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        setIsSubmitting(true);
-        try {
-            console.log("Form submitted:", formData);
-            await new Promise((r) => setTimeout(r, 600));
-            alert("Thanks! We'll be in touch shortly.");
-            setFormData({ fullName: "", phone: "", email: "", service: "", message: "" });
-        } catch (err) {
-            console.error(err);
-        } finally {
-            setIsSubmitting(false);
-        }
-    };
-
-    return (
-        <section className="h9-hero">
-            <div className="h9-hero-inner">
-                <div
-                    className="h9-hero-bg-image"
-                    style={{ backgroundImage: `url('${heroData.bgImage}')` }}
-                ></div>
-                <div className="h9-hero-overlay"></div>
-                <div className="h9-hero-glow" aria-hidden="true"></div>
-
-                <div className="h9-hero-item-wrapper">
-                    <div className="h9-hero-content">
-                        <div className="h9-hero-row">
-                            <div className="h9-hero-left">
-                                <span className="h9-hero-eyebrow wow fadeInUp" data-wow-delay="0.1s">
-                                    <span className="dot"></span> {heroData.eyebrow}
-                                </span>
-
-                                <h1 className="h9-hero-title wow fadeInUp" data-wow-delay="0.2s">
-                                    {heroData.titlePre}{" "}
-                                    <span className="highlight">{heroData.titleHighlight}</span>{" "}
-                                    {heroData.titlePost}
-                                </h1>
-
-                                <p className="h9-hero-desc wow fadeInUp" data-wow-delay="0.3s">
-                                    {heroData.desc}
-                                </p>
-
-                                <div className="h9-hero-stats wow fadeInUp" data-wow-delay="0.4s">
-                                    {heroData.stats.map((stat, idx) => (
-                                        <div key={idx} style={{ display: "contents" }}>
-                                            {idx > 0 && (
-                                                <div className="stat-divider" aria-hidden="true"></div>
-                                            )}
-                                            <div className="stat-item">
-                                                <h3 className="stat-number">
-                                                    {stat.number}
-                                                    <span>{stat.suffix}</span>
-                                                </h3>
-                                                <p className="stat-label">{stat.label}</p>
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
-
-                                <div className="h9-hero-cta wow fadeInUp" data-wow-delay="0.5s">
-                                    <Link href={heroData.primaryCta.url} className="h9-hero-btn">
-                                        <span>{heroData.primaryCta.text}</span>
-                                        <i className="fa-solid fa-arrow-right"></i>
-                                    </Link>
-                                </div>
-                            </div>
-
-                            <div className="h9-hero-right wow fadeInRight" data-wow-delay="0.4s">
-                                <div className="h9-hero-form-card">
-                                    <span className="form-tag">
-                                        <i className="fa-solid fa-arrow-right"></i> {heroData.form.tag}
-                                    </span>
-                                    <h2 className="form-title">{heroData.form.title}</h2>
-                                    <p className="form-subtitle">{heroData.form.subtitle}</p>
-
-                                    <form className="h9-hero-form" onSubmit={handleSubmit}>
-                                        <div className="form-row">
-                                            <div className="form-group">
-                                                <input
-                                                    type="text"
-                                                    name="fullName"
-                                                    placeholder="Full Name*"
-                                                    value={formData.fullName}
-                                                    onChange={handleChange}
-                                                    required
-                                                />
-                                            </div>
-                                            <div className="form-group">
-                                                <input
-                                                    type="tel"
-                                                    name="phone"
-                                                    placeholder="Phone No.*"
-                                                    value={formData.phone}
-                                                    onChange={handleChange}
-                                                    required
-                                                />
-                                            </div>
-                                        </div>
-
-                                        <div className="form-group">
-                                            <input
-                                                type="email"
-                                                name="email"
-                                                placeholder="Email*"
-                                                value={formData.email}
-                                                onChange={handleChange}
-                                                required
-                                            />
-                                        </div>
-
-                                        {/* Mobile form me Business Type dropdown (Website URL input hata diya) */}
-                                        <div className="form-group">
-                                            <select
-                                                name="service"
-                                                value={formData.service}
-                                                onChange={handleChange}
-                                                required
-                                            >
-                                                {heroData.form.serviceOptions.map((opt) => (
-                                                    <option key={opt.value} value={opt.value}>
-                                                        {opt.label}
-                                                    </option>
-                                                ))}
-                                            </select>
-                                        </div>
-
-                                        <div className="form-group">
-                                            <textarea
-                                                name="message"
-                                                placeholder="Tell us about your project..."
-                                                rows="3"
-                                                value={formData.message}
-                                                onChange={handleChange}
-                                            ></textarea>
-                                        </div>
-
-                                        <button
-                                            type="submit"
-                                            className="form-submit-btn"
-                                            disabled={isSubmitting}
-                                        >
-                                            <i className="fa-regular fa-envelope"></i>
-                                            {isSubmitting ? "Sending..." : "Get Quote"}
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    );
-};
 
 const ChooseSection = () => {
     return (
@@ -737,12 +524,9 @@ const FeaturesSection = () => {
     );
 };
 
-/* Reusable — pehle ye 2 baar copy-paste hua tha (dono highlight section
- * bilkul same the). Ab ek hi component hai, data prop ke through render hota hai. */
 const ScalableHighlightSection = ({ data }) => {
     return (
         <section className="services-section p-3 m-5 mb-5 border rounded-3 box-shadow">
-            {/* SCSS me defined decorative glows */}
             <span className="ss-glow ss-glow--orange" />
             <span className="ss-glow ss-glow--blue" />
 
@@ -786,7 +570,6 @@ const ScalableHighlightSection = ({ data }) => {
                                         />
                                     </svg>
                                 </div>
-                                {/* text ab icon ke BAHAR, uska sibling */}
                                 <span className="feature-text">{text}</span>
                             </div>
                         ))}
@@ -928,7 +711,6 @@ const FaqSection = () => {
 const ContactSection = () => {
     return (
         <section className="tj-contact-section section-gap">
-            {/* Scoped CSS to fix dark theme text visibility */}
             <style
                 dangerouslySetInnerHTML={{
                     __html: `
@@ -974,7 +756,7 @@ const ContactSection = () => {
                                 <p>{contactData.left.desc}</p>
                             </div>
                                     <div className="submit-btn">
-                                        <ButtonPrimary text={"Get a Call Now"} url={'/services'}/>
+                                        <ButtonPrimary text={"Get Free Consultation"} url={'/contact-us'}/>
                                     </div>
                         </div>
 
@@ -1063,7 +845,7 @@ const ContactSection = () => {
     );
 };
 
-export default function ThreeDeeAnimationServices() {
+export default function ArDevelopmentServices() {
     return (
         <div>
             <BackToTop />

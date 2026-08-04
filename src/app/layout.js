@@ -32,9 +32,15 @@ const headingFont = Mona_Sans({
 });
 
 export const metadata = {
-	title: "Bexon - Corporate Business React NextJs Template",
-	description: "Bexon - Corporate Business React NextJs Template",
+  metadataBase: new URL("https://www.mematdigi.com"),
+  title: "Best AI-Powered Digital Marketing Company in India | Memat Digi",
+  description:
+    "Memat Digi is the best digital marketing company in India offering SEO, PPC, web development, AI-powered marketing, and digital solutions.",
+  alternates: {
+    canonical: "/",
+  },
 };
+
 
 export default function RootLayout({ children }) {
 	return (
