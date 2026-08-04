@@ -9,6 +9,15 @@ import HeaderSpace from "@/components/shared/others/HeaderSpace";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
 import FeatureCard from "@/components/shared/cards/FeatureCard";
 
+export const metadata = {
+  title: "Contact Memat Digi | Digital Marketing, AI & Technology Solutions",
+  description:
+    "Discover Memat Digi, a trusted digital growth partner helping businesses grow through digital marketing, AI consulting, web development, and technology solutions.",
+  alternates: {
+    canonical: "https://www.mematdigi.com/contact-us",
+  },
+};
+
 export default function About() {
 
 	const Features = () => {
