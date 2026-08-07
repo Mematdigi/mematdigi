@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import Footer from "@/components/layout/footer/Footer";
+import Footer5 from "@/components/layout/footer/Footer5";
 import Header from "@/components/layout/header/Header";
 import DynamicBlogMain from "@/components/blog/DynamicBlogMain";
 import Cta from "@/components/sections/cta/Cta";
@@ -28,13 +28,13 @@ export default function Blogs() {
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
-            <HeaderSpace />
+            {/* <HeaderSpace /> */}
             <Suspense fallback={<div style={{ minHeight: "60vh" }} />}>
               <DynamicBlogMain />
             </Suspense>
             <Cta />
           </main>
-          <Footer />
+          <Footer5 />
         </div>
       </div>
       <ClientWrapper />

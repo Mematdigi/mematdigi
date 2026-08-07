@@ -267,7 +267,7 @@ const faqData = {
     subTitle: "FAQs",
     subIcon: "tji-box",
     title: "Frequently Asked Questions About Digital Marketing Services ",
-    phone: { display: "1-888-452-1505", tel: "18884521505" },
+    phone: { display: "+91 9136797555", tel: "+91 9136797555" },
     items: [
         {
             title: "How do I choose the right digital marketing agency in India? ",

@@ -61,7 +61,7 @@ const ImageUpload = ({ label, value, onChange, apiBase }) => {
     setUploading(true);
     const res = await uploadImage(file);
     if (res.success) {
-      const fullUrl = `${apiBase || "http://localhost:5000"}${res.url}`;
+      const fullUrl = `${apiBase || "https://mematdigi.com/"}${res.url}`;
       onChange(fullUrl);
     } else {
       alert("Upload failed: " + res.message);
@@ -167,7 +167,7 @@ const TABS = [
 // ── Main Form Component ───────────────────────────────────────────────────
 
 export default function ServicePageForm({ initialData = {}, onSubmit, submitting }) {
-  const API_BASE = process.env.NEXT_PUBLIC_API_URL?.replace("/api", "") || "http://localhost:5000";
+  const API_BASE = process.env.NEXT_PUBLIC_API_URL?.replace("/api", "") || "https://mematdigi.com/";
   const [activeTab, setActiveTab] = useState("basic");
 
   const [form, setForm] = useState({

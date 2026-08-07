@@ -20,9 +20,7 @@ const Navbar = ({ headerType, isStickyHeader }) => {
         <ul>
           {/* Home Nav */}
           <li
-            className={`has-dropdown ${
-              homeNav?.isActive ? "current-menu-ancestor" : ""
-            }`}
+            className={contactNav?.isActive ? "current-menu-ancestor" : ""}
           >
             <Link href={homeNav?.path ? homeNav?.path : "#"}>
               {homeNav?.name}
@@ -31,9 +29,7 @@ const Navbar = ({ headerType, isStickyHeader }) => {
 
           {/* Pages Nav */}
           <li
-            className={`has-dropdown ${
-              pagesNav?.isActive ? "current-menu-ancestor" : ""
-            }`}
+            className={contactNav?.isActive ? "current-menu-ancestor" : ""}
           >
             <Link href={pagesNav?.path ? pagesNav?.path : "#"}>
               {pagesNav?.name}
@@ -69,7 +65,6 @@ const Navbar = ({ headerType, isStickyHeader }) => {
                       </span>
                       <span className="mega-menu-service-nav">
                         <i className="tji-arrow-right-long"></i>
-                        <i className="tji-arrow-right-long"></i>
                       </span>
                     </Link>
 
@@ -87,7 +82,6 @@ const Navbar = ({ headerType, isStickyHeader }) => {
                               </span>
                               <span className="mega-menu-service-nav">
                                 <i className="tji-arrow-right-long"></i>
-                                <i className="tji-arrow-right-long"></i>
                               </span>
                             </Link>
                           </li>
@@ -101,9 +95,7 @@ const Navbar = ({ headerType, isStickyHeader }) => {
 
           {/* Portfolio Nav */}
           <li
-            className={`has-dropdown ${
-              portfolioNav?.isActive ? "current-menu-ancestor" : ""
-            }`}
+            className={contactNav?.isActive ? "current-menu-ancestor" : ""}
           >
             <Link href={portfolioNav?.path ? portfolioNav?.path : "#"}>
               {portfolioNav?.name}
@@ -112,9 +104,7 @@ const Navbar = ({ headerType, isStickyHeader }) => {
 
           {/* Blog Nav */}
           <li
-            className={`has-dropdown ${
-              blogNav?.isActive ? "current-menu-ancestor" : ""
-            }`}
+            className={contactNav?.isActive ? "current-menu-ancestor" : ""}
           >
             <Link href={blogNav?.path ? blogNav?.path : "#"}>
               {blogNav?.name}

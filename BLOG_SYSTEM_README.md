@@ -25,7 +25,7 @@ cd backend
 npm install
 # Make sure MongoDB is running and backend/.env is set
 # (MONGO_URI, JWT_SECRET, PORT=5000, FRONTEND_URL)
-npm run dev          # starts the API on http://localhost:5000
+npm run dev          # starts the API on https://mematdigi.com/
 ```
 
 ### 2. Create the admin account
@@ -44,7 +44,7 @@ node seedBlog.js     # adds 4 categories, 2 authors, 3 sample posts
 npm install
 npm run dev          # http://localhost:3000
 ```
-Make sure `.env` has `NEXT_PUBLIC_API_URL=http://localhost:5000/api`.
+Make sure `.env` has `NEXT_PUBLIC_API_URL=https://mematdigi.com/api`.
 
 ### 5. Use it
 - Manage content at `http://localhost:3000/admin/blog`

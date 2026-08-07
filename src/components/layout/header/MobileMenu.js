@@ -23,7 +23,7 @@ const MobileMenu = ({ isMobileMenuOpen, setIsMobileMenuOpen }) => {
 						<div className="hamburger_top d-flex align-items-center justify-content-between">
 							<div className="hamburger_logo">
 								<Link href="/" className="mobile_logo">
-									<img src="/images/logos/logo-2.webp" alt="Logo" />
+									<img src="/images/logos/memat-digi-logo.png" alt="Logo" />
 								</Link>
 							</div>
 							<div className="hamburger_close">
@@ -38,20 +38,20 @@ const MobileMenu = ({ isMobileMenuOpen, setIsMobileMenuOpen }) => {
 							<div className="contact-info">
 								<div className="contact-item">
 									<span className="subtitle">Phone</span>
-									<Link className="contact-link" href="tel:8089091313">
-										808-909-1313
+									<Link className="contact-link" href="tel:+91 9136797555 ">
+										+91 9136797555 
 									</Link>
 								</div>
 								<div className="contact-item">
 									<span className="subtitle">Email</span>
-									<Link className="contact-link" href="mailto:info@bexon.com">
-										info@bexon.com
+									<Link className="contact-link" href="mailto:info@mematdigi.com">
+										info@mematdigi.com
 									</Link>
 								</div>
 								<div className="contact-item">
 									<span className="subtitle">Location</span>
 									<span className="contact-link">
-										993 Renner Burg, West Rond, MT 94251-030
+										129, P.P Trade Center, NSP, Pitampura, Delhi-110034
 									</span>
 								</div>
 							</div>

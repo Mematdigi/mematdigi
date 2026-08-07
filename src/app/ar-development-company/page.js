@@ -12,12 +12,12 @@ import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
 import HeroSection from "../HeroSection";
 
 export const metadata = {
-  title: "AR Development Company in India for Business Growth",
-  description:
-    "Grow your business with Memat Digi's AR development services. Build immersive AR apps that engage users, generate leads and increase conversions. ",
-  alternates: {
-    canonical: "https://www.mematdigi.com/ar-development-company",
-  },
+    title: "AR Development Company in India for Business Growth",
+    description:
+        "Grow your business with Memat Digi's AR development services. Build immersive AR apps that engage users, generate leads and increase conversions. ",
+    alternates: {
+        canonical: "https://www.mematdigi.com/ar-development-company",
+    },
 };
 
 const chooseData = {
@@ -248,7 +248,7 @@ const faqData = {
     subTitle: "FAQs",
     subIcon: "tji-box",
     title: "Frequently Asked Questions About AR Development Services in India",
-    phone: { display: "1-888-452-1505", tel: "18884521505" },
+    phone: { display: "+91 9136797555", tel: "+91 9136797555" },
     items: [
         {
             title: "What does an AR development company in India do?",
@@ -539,7 +539,7 @@ const ScalableHighlightSection = ({ data }) => {
                                 <i className={data.subIcon}></i>
                                 {data.eye}
                             </span>
-                            <h2 className="main-title mt-4" style={{fontSize:'40px'}}>
+                            <h2 className="main-title mt-4" style={{ fontSize: '40px' }}>
                                 {data.title} <span>{data.titleSpan}</span>
                             </h2>
                         </div>
@@ -756,9 +756,9 @@ const ContactSection = () => {
                                 <h4 className="sec-title title-anim">{contactData.left.title}</h4>
                                 <p>{contactData.left.desc}</p>
                             </div>
-                                    <div className="submit-btn">
-                                        <ButtonPrimary text={"Get Free Consultation"} url={'/contact-us'}/>
-                                    </div>
+                            <div className="submit-btn">
+                                <ButtonPrimary text={"Get Free Consultation"} url={'/contact-us'} />
+                            </div>
                         </div>
 
                         <div className="global-map wow fadeInUp" data-wow-delay=".3s">

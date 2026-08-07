@@ -1,14 +1,13 @@
 import { notFound } from "next/navigation";
-import Footer from "@/components/layout/footer/Footer";
+import Footer5 from "@/components/layout/footer/Footer5";
 import Header from "@/components/layout/header/Header";
 import HeroInner from "@/components/sections/hero/HeroInner";
 import DynamicBlogDetails from "@/components/blog/DynamicBlogDetails";
-import Cta from "@/components/sections/cta/Cta";
 import BackToTop from "@/components/shared/others/BackToTop";
 import HeaderSpace from "@/components/shared/others/HeaderSpace";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000/api";
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || "https://mematdigi.com/api";
 const API_ORIGIN = API_BASE.replace(/\/api\/?$/, "");
 
 const resolveImg = (src) => {
@@ -97,9 +96,8 @@ export default async function BlogDetailPage({ params }) {
               next={next}
               commentCount={commentCount || 0}
             />
-            <Cta />
           </main>
-          <Footer />
+          <Footer5 />
         </div>
       </div>
       <ClientWrapper />

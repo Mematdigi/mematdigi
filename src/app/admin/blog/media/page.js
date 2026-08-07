@@ -15,7 +15,7 @@ export default function AdminMedia() {
   const [altText, setAltText] = useState("");
   const [copied, setCopied] = useState(null);
 
-  const API_BASE = process.env.NEXT_PUBLIC_API_URL?.replace("/api", "") || "http://localhost:5000";
+  const API_BASE = process.env.NEXT_PUBLIC_API_URL?.replace("/api", "") || "https://mematdigi.com/";
 
   const load = useCallback(() => {
     setLoading(true);

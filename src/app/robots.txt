@@ -1,0 +1,36 @@
+# Robots.txt for Mematdigi - Digital Marketing Agency
+# https://www.mematdigi.com
+
+User-agent: *
+Allow: /
+
+# Search URLs
+Disallow: /search
+Disallow: /*?s=
+Disallow: /*?q=
+Disallow: /*search=
+
+# Tag pages
+Disallow: /tag/
+
+# Empty category pages
+Disallow: /*?category=
+Disallow: /*?tag=
+
+# Login & Password
+Disallow: /login
+Disallow: /password
+
+# Admin
+Disallow: /admin/
+Disallow: /private/
+Disallow: /cgi-bin/
+
+# Allow crawling of assets
+Allow: /assets/
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Sitemap location
+Sitemap: https://www.mematdigi.com/sitemap.xml

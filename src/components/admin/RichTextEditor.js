@@ -3,7 +3,7 @@ import { useRef, useEffect, useState, useCallback } from "react";
 import { uploadImage } from "@/lib/api";
 import { T } from "./ui";
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL?.replace("/api", "") || "http://localhost:5000";
+const API_BASE = process.env.NEXT_PUBLIC_API_URL?.replace("/api", "") || "https://mematdigi.com/";
 
 // One toolbar button
 const TBtn = ({ onClick, title, children, active }) => (

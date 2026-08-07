@@ -184,7 +184,7 @@ export const Button = ({ children, onClick, disabled, variant = "primary", style
 // ── Single image upload with preview ───────────────────────────────────────
 export const ImageUpload = ({ label, value, onChange, hint }) => {
   const [uploading, setUploading] = useState(false);
-  const API_BASE = process.env.NEXT_PUBLIC_API_URL?.replace("/api", "") || "http://localhost:5000";
+  const API_BASE = process.env.NEXT_PUBLIC_API_URL?.replace("/api", "") || "https://mematdigi.com/";
 
   const handleFile = async (e) => {
     const file = e.target.files[0];

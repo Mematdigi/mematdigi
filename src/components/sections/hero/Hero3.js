@@ -35,9 +35,9 @@ const Hero3 = () => {
 							</h1>
 							<div className="btn-area wow fadeInUp" data-wow-delay=".8s">
 								<ButtonPrimary text={"Learn More"} url={"/contact-us"} />
-								<Link className="number" href="tel:18884521505">
+								<Link className="number" href="tel:+91 9136797555">
 									<i className="tji-phone"></i>
-									<span>1-888-452-1505</span>
+									<span>+91 9136797555</span>
 								</Link>
 							</div>
 						</div>

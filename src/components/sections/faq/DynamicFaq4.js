@@ -21,9 +21,9 @@ const DynamicFaq4 = ({ data = [] }) => {
                 <i className="tji-box"></i> OUR SOLUTIONS
               </span>
               <h2 className="sec-title text-anim">Find answers to the common questions</h2>
-              <Link className="number" href="tel:18884521505">
+              <Link className="number" href="tel:+91 9136797555">
                 <span className="call-icon"><i className="tji-phone"></i></span>
-                <span>1-888-452-1505</span>
+                <span>+91 9136797555</span>
               </Link>
             </div>
           </div>

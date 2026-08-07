@@ -83,8 +83,8 @@ const Faq2 = ({ type = 1 }) => {
 										<span className="call-icon">
 											<i className="tji-phone"></i>
 										</span>
-										<Link className="number" href="tel:18884521505">
-											<span>1-888-452-1505</span>
+										<Link className="number" href="tel:+91 9136797555">
+											<span>+91 9136797555</span>
 										</Link>
 									</div>
 								</div>

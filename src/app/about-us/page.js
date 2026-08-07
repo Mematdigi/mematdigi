@@ -14,7 +14,7 @@ export const metadata = {
   description:
     "Discover Memat Digi, a trusted digital growth partner helping businesses grow through digital marketing, AI consulting, web development, and technology solutions.",
   alternates: {
-    canonical: "https://www.mematdigi.com/contact-us",
+    canonical: "https://www.mematdigi.com/about-us",
   },
 };
 

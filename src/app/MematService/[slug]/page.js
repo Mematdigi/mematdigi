@@ -13,7 +13,7 @@ import DynamicScrollableServices from "@/components/sections/MematScrolableConte
 import DynamicFaq4 from "@/components/sections/faq/DynamicFaq4";
 import DynamicServices9 from "@/components/sections/services/DynamicServices9";
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000/api";
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || "https://mematdigi.com/api";
 
 // Fetch service data server-side
 async function getService(slug) {

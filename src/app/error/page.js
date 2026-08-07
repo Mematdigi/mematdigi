@@ -1,4 +1,4 @@
-import Footer from "@/components/layout/footer/Footer";
+import Footer5 from "@/components/layout/footer/Footer5";
 import Header from "@/components/layout/header/Header";
 import Cta from "@/components/sections/cta/Cta";
 import ErrorPrimary from "@/components/sections/error/ErrorPrimary";
@@ -20,7 +20,7 @@ export default function ErrorCustom() {
 						<ErrorPrimary />
 						<Cta />
 					</main>
-					<Footer />
+					<Footer5 />
 				</div>
 			</div>
 			<ClientWrapper />

@@ -62,71 +62,76 @@ const PortfolioCard3 = () => {
 	return (
 		<>
 			<div className="col-md-12 d-flex justify-content-center flex-wrap mb-4"> {/* Added flex-wrap here */}
-    {portfolios.map((portfolio, index) => (
-        <div className="pf-card col-md-5 m-3" key={index}>
-            {/* Browser chrome + screenshot */}
-            <div className="pf-card__img-wrap">
-                <div className="pf-card__browser-bar">
-                    <span className="pf-card__dot" style={{ background: "#ff5f56" }} />
-                    <span className="pf-card__dot" style={{ background: "#ffbd2e" }} />
-                    <span className="pf-card__dot" style={{ background: "#27c93f" }} />
-                </div>
-                <div className="pf-card__screen">
-                    <Image
-                        src={portfolio.img3}
-                        alt={portfolio.title}
-                        width={620}
-                        height={340}
-                        className="pf-card__img"
-                    />
-                </div>
-                <span className="pf-card__badge" style={{background:'#f08020'}}>{portfolio.category}</span>
-            </div>
+				{portfolios.map((portfolio, index) => (
+					<div className="pf-card col-md-5 m-3" key={index}>
+						{/* Browser chrome + screenshot */}
+						<div className="pf-card__img-wrap">
+							<div className="pf-card__browser-bar">
+								<span className="pf-card__dot" style={{ background: "#ff5f56" }} />
+								<span className="pf-card__dot" style={{ background: "#ffbd2e" }} />
+								<span className="pf-card__dot" style={{ background: "#27c93f" }} />
+							</div>
+							<div className="pf-card__screen">
+								<Image
+									src={portfolio.img3}
+									alt={portfolio.title}
+									width={620}
+									height={340}
+									className="pf-card__img"
+								/>
+							</div>
+							<span className="pf-card__badge" style={{ background: '#f08020' }}>{portfolio.category}</span>
+						</div>
 
-            {/* Card body */}
-            <div className="pf-card__body">
-                <div className="pf-card__meta">
-                    <span className="pf-card__category">{portfolio.category}</span>
-                    <span className="pf-card__sep">·</span>
-                    <span className="pf-card__tech">{portfolio.techStack}</span>
-                </div>
+						{/* Card body */}
+						<div className="pf-card__body">
+							<div className="pf-card__meta">
+								<span className="pf-card__category">{portfolio.category}</span>
+								<span className="pf-card__sep">·</span>
+								<span className="pf-card__tech">{portfolio.techStack}</span>
+							</div>
 
-                <h3 className="pf-card__title">
-                    <Link href={`/${portfolio.id}`}>{portfolio.title}</Link>
-                </h3>
+							{/* <h3 className="pf-card__title">
+								<Link href={`/${portfolio.id}`}>{portfolio.title}</Link>
+							</h3> */}
+							<h3 className="pf-card__title">
+								<a href={portfolio.id} target="_blank" rel="noopener noreferrer">
+									{portfolio.title}
+								</a>
+							</h3>
 
-                <p className="pf-card__desc">{portfolio.shortDesc}</p>
+							<p className="pf-card__desc">{portfolio.shortDesc}</p>
 
-                {/* Tech tags */}
-                {portfolio.tags?.length > 0 && (
-                    <div className="pf-card__tags">
-                        {portfolio.tags.map((tag, i) => (
-                            <span key={i} className="pf-card__tag">
-                                {tag}
-                            </span>
-                        ))}
-                    </div>
-                )}
+							{/* Tech tags */}
+							{portfolio.tags?.length > 0 && (
+								<div className="pf-card__tags">
+									{portfolio.tags.map((tag, i) => (
+										<span key={i} className="pf-card__tag">
+											{tag}
+										</span>
+									))}
+								</div>
+							)}
 
-                <Link href={`${portfolio.id}`} className="pf-card__btn " target="_blank">
-                    View Full Project
-                    <svg
-                        width="14"
-                        height="14"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                    >
-                        <path d="M5 12h14M12 5l7 7-7 7" />
-                    </svg>
-                </Link>
-            </div>
-        </div>
-    ))}
-</div>
+							<a href={portfolio.id} target="_blank" rel="noopener noreferrer" className="pf-card__btn">
+								View Full Project
+								<svg
+									width="14"
+									height="14"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									strokeWidth="2.5"
+									strokeLinecap="round"
+									strokeLinejoin="round"
+								>
+									<path d="M5 12h14M12 5l7 7-7 7" />
+								</svg>
+							</a>
+						</div>
+					</div>
+				))}
+			</div>
 		</>
 	);
 };

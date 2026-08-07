@@ -47,12 +47,12 @@ const Faq4 = () => {
 							<h2 className="sec-title text-anim">
 								Frequently Asked Questions About MematDigi
 							</h2>
-							<Link className="number" href="tel:18884521505">
+							<Link className="number" href="tel:+91 9136797555">
 								{" "}
 								<span className="call-icon">
 									<i className="tji-phone"></i>
 								</span>
-								<span>1-888-452-1505</span>
+								<span>+91 9136797555</span>
 							</Link>
 						</div>
 					</div>

@@ -2,13 +2,17 @@
 //  - a full URL (http...)           → used as-is
 //  - a backend upload path (/uploads/..) → prefixed with the API origin
 //  - a frontend public asset (/images/..) → used as-is
-const API_ORIGIN = (process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000/api").replace(
+const API_ORIGIN = (process.env.NEXT_PUBLIC_API_URL || "https://mematdigi.com/api").replace(
   /\/api\/?$/,
   ""
 );
 
 export const resolveImg = (src, fallback = "/images/blog/blog-1.webp") => {
   if (!src) return fallback;
+  // Rewrite legacy/dev absolute URLs pointing at localhost to the real API origin
+  if (/^https?:\/\/localhost(:\d+)?\/uploads/i.test(src)) {
+    return src.replace(/^https?:\/\/localhost(:\d+)?/i, API_ORIGIN);
+  }
   if (/^https?:\/\//i.test(src)) return src;
   if (src.startsWith("/uploads")) return `${API_ORIGIN}${src}`;
   return src;
