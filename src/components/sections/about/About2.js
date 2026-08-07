@@ -46,7 +46,7 @@ const About2 = () => {
 							</div>
 							<div className="video-img wow fadeInRight" data-wow-delay=".7s">
 								<Image
-									src="/images/about/about-3.webp"
+									// src="/images/about/about-3.webp"
 									alt="Image"
 									width={120}
 									height={320}
@@ -71,7 +71,7 @@ const About2 = () => {
 						>
 							<div
 								className="customers-bg"
-								style={{ backgroundImage: "url('/images/about/about-4.webp')" }}
+								// style={{ backgroundImage: "url('/images/about/about-4.webp')" }}
 							></div>
 							<div className="customers">
 								<ul>

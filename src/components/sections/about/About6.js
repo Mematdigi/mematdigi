@@ -76,10 +76,10 @@ const About6 = () => {
 			<div className="container-fluid gap-15">
 				<div className="row">
 					<div className="col-12 col-xl-6">
-						<div className="h7-about-banner  wow fadeInUp" data-wow-delay=".2s">
+						<div className=" wow fadeInUp" data-wow-delay=".2s">
 							<img
 								data-speed=".8"
-								src="/images/about/h7-about-banner.webp"
+								// src="/images/about/h7-about-banner.webp"
 								alt=""
 							/>
 						</div>
