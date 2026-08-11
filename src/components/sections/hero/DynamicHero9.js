@@ -106,12 +106,18 @@ const DynamicHero9 = ({ data = {} }) => {
                     <div className="form-group">
                       <select name="service" value={formData.service} onChange={handleChange} required>
                         <option value="">Select Services *</option>
-                        <option value="seo">SEO</option>
-                        <option value="ppc">PPC / Google Ads</option>
-                        <option value="smm">Social Media Marketing</option>
-                        <option value="web">Web Development</option>
-                        <option value="content">Content Marketing</option>
-                        <option value="other">Other</option>
+												<option value="Web Development">Web Development</option>
+												<option value="Mobile App Development">Mobile App Development</option>
+												<option value="Digital Marketing">Digital Marketing</option>
+												<option value="SEO">SEO</option>
+												<option value="Social Media Marketing">Social Media Marketing</option>
+												<option value="E-Mail Marketing">E-Mail Marketing</option>
+												<option value="PPC">PPC</option>
+												<option value="ORM">ORM</option>
+												<option value="Whatsaap Marketing">Whatsaap Marketing</option>
+												<option value="Contact Marketing">Contact Marketing</option>
+												<option value="IT Consultation">IT Consultation</option>
+												<option value="other">Other</option>
                       </select>
                     </div>
                     <div className="form-group">

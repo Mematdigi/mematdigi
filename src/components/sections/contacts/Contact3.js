@@ -60,7 +60,7 @@ const Contact3 = () => {
 															{ value: "9", optionName: "WhatsApp Marketing" },
 															{ value: "10", optionName: "Content Marketing" },
 															{ value: "11", optionName: "IT Consultation" },
-															{ value: "12", optionName: "Data Analytics" },
+															{ value: "12", optionName: "other services" },
 														]}
 													/>
 												</div>

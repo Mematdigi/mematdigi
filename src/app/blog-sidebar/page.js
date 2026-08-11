@@ -1,7 +1,6 @@
 import Footer from "@/components/layout/footer/Footer";
 import Header from "@/components/layout/header/Header";
 import BlogsGridPrimary from "@/components/sections/blogs/BlogsGridPrimary";
-import Cta from "@/components/sections/cta/Cta";
 import HeroInner from "@/components/sections/hero/HeroInner";
 import BackToTop from "@/components/shared/others/BackToTop";
 import HeaderSpace from "@/components/shared/others/HeaderSpace";
@@ -21,7 +20,6 @@ export default function BlogGrid() {
 							text={"Blog Right Sidebar"}
 						/>
 						<BlogsGridPrimary isSidebar={true} />
-						<Cta />
 					</main>
 					<Footer />
 				</div>
